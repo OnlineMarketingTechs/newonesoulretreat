@@ -12,7 +12,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                         <div className="inner-container clearfix">
                             {/*Logo*/}
                             <div className="logo-box">
-                                <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-retreats.png" alt="" /></a></div>
+                                <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-white-logo-small.png" alt="one soul retreats logo best retreats in the world!" /></a></div>
                             </div>
                             {/*Nav Box*/}
                             <div className="nav-outer clearfix">
@@ -61,7 +61,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                             <div className="inner-container clearfix">
                                 {/*Logo*/}
                                 <div className="logo-box">
-                                    <div className="logo"><a href="/"><img src="/assets/images-3/sticky-logo-8.png" alt="" /></a></div>
+                                    <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-black-logo-small.png" alt="One Soul Retreats | The number one retreat provider in the world!" /></a></div>
                                 </div>
                                 {/*Nav Box*/}
                                 <div className="nav-outer clearfix">
