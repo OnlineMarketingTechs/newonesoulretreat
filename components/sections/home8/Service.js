@@ -8,8 +8,8 @@ export default function Service() {
                 <div className="pattern-bg" style={{ backgroundImage: 'url(assets/images-3/pattern/pattern-bg-1.jpg)' }} />
                 <div className="auto-container">
                     <div className="sec-title style-eight clr2  text-center">
-                        <h4>Our Theraphy</h4>
-                        <h2>We'll Match You to a Counselor<br /> that can Help with...</h2>
+                        <h4><img src="/assets/images/logos/one-soul-white-logo-small.png" alt="" /></h4>
+                        <h2>Heal your mind, body and soul<br /></h2>
                     </div>
                     <div className="row">
                         {/*Start Service Block Eight*/}
@@ -17,19 +17,19 @@ export default function Service() {
                             <div className="inner-box">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images-3/services/service-v8-1.jpg" alt="" />
+                                        <img src="/assets/images/background/shaman-ayahuasca-taita.webp" alt="" />
                                     </div>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <span className="icon-fear" />
-                                    </div>
+                                    </div> */}
                                     <div className="button">
                                         <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Read
                                             More</span></Link>
                                     </div>
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Personal Meeting</Link></h3>
-                                    <p>Duty through weakness of will which is saying through shrinking.</p>
+                                    <h3><Link href="/onesoulpath">The One Soul Path</Link></h3>
+                                    <p>We guide your journey every step along your path, for optimal results.</p>
                                 </div>
                             </div>
                         </div>
@@ -39,19 +39,19 @@ export default function Service() {
                             <div className="inner-box">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images-3/services/service-v8-2.jpg" alt="" />
+                                        <img src="/assets/images/background/woman-enjoying-her-ayahuasca-retreat.webp" alt="" />
                                     </div>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <span className="icon-business" />
-                                    </div>
+                                    </div> */}
                                     <div className="button">
-                                        <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Read
+                                        <Link href="/onesoulpath" className="theme-btn btn-style-eight"><span className="btn-title">Read
                                             More</span></Link>
                                     </div>
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Family Counseling</Link></h3>
-                                    <p>Obligations of business it will frequently be annoyances accepted.</p>
+                                    <h3><Link href="#">Amenities & Services</Link></h3>
+                                    <p>We offer unparalleled amenities and servoices pm sote.</p>
                                 </div>
                             </div>
                         </div>
@@ -61,18 +61,18 @@ export default function Service() {
                             <div className="inner-box">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images-3/services/service-v8-3.jpg" alt="" />
+                                        <img src="/assets/images/background/integration-aftercare.webp" alt="" />
                                     </div>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <span className="icon-rest" />
-                                    </div>
+                                    </div> */}
                                     <div className="button">
                                         <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Read
                                             More</span></Link>
                                     </div>
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Relaxation Theraphy</Link></h3>
+                                    <h3><Link href="#">Integration Support</Link></h3>
                                     <p>Denounce with righteous indignation &amp; demoralized the charms.</p>
                                 </div>
                             </div>

@@ -1,19 +1,21 @@
 import ServiceTabs1 from "@/components/elements/ServiceTabs1"
-import Layout from "@/components/layout/Layout2"
-import Breadcrumb_Services from "@/components/layout/Breadcrumb_Services"
+import Layout from "@/components/layout/Layout"
+import Breadcrumb_Service_2 from "@/components/layout/Breadcrumb_Service_2"
 import ServiceSlider1 from "@/components/slider/ServiceSlider1"
 import Link from "next/link"
 import MyAside1 from "@/components/elements/myaside"
 import CallToActionOMT from "@/components/elements/CallToActionOMT"
 import AsideCallButton from "@/components/elements/AsideCallButton"
-
+import WelcomeL1 from "@/components/sections/home8/WelcomeL1"
 export default function HyperLocalMarketingSEO ({ handleSidebar}) {
 
     return (
         <>
-            <Layout headerStyle={16} footerStyle={1}  wrapperCls="home_3">
-     <Breadcrumb_Services breadcrumbTitle="Local SEO, Local Markting, Local Reputation Management, Local PR" pageTitle="Hyper Local Marketing & SEO" pageImage="assets/images/automation-analyatics-reporting.jpg" />
-                
+            <Layout headerStyle={8} footerStyle={1}  wrapperCls="home_8">
+     <Breadcrumb_Service_2  breadcrumbTitle="Live Your Best Life" pageTitle="Awaken your soul's highest potential" pageImage="/assets/images/background/buterfly_magic.webp" />
+     
+     <WelcomeL1 />
+
      <div>
                     <section className="services-details">
                         <div className="auto-container">

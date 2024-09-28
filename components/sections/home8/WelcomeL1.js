@@ -11,7 +11,7 @@ export default function Welcome() {
                             <div className="welcome-image-box-eight">
                                 <div className="thm-shape" style={{ backgroundImage: 'url(assets/images-3/shape/thm-shape-1.png)' }} />
                                 <div className="inner">
-                                <img src="/assets/images/background/one-soul-retreats-happy-visitors.webp" alt="happy-people-at-ayahuasca-retreat-in-Costa-Rica" />
+                                    <img src="/assets/images/background/one-soul-retreats-happy-visitors.webp" alt="happy-people-at-ayahuasca-retreat-in-Costa-Rica" />
                                 </div>
                             </div>
                         </div>
@@ -23,20 +23,24 @@ export default function Welcome() {
                                 </div>
                                 <div className="inner">
                                     <h3>One Soul Retreats ayahuasca-based,</h3>
-                                    <p>comprehensive transformation program is recognized as the world's best and safest place to work with ayahuasca. Enjoy luxurious amenities in a set and setting designed to give you a safe and productive place to heal. One Soul Retreats, the perfect place to experience the profound change you've been seeking, with results that last.</p>
+                                    <p>comprehensive transformation program is recognized as the world's best and safest place to work with ayahuasca. Enjoy luxurious amenities in a set and setting designed to give you a safe and productive place to heal. One Soul Retreats, the safest place for you to experience the profound change you've been seeking, with results that last.</p>
                                     <div className="authorized">
                                         <div className="left">
-                                  
+                                            <div className="image">
+                                                <img src="/assets/images-3/authorized-h8-1.png" alt="" />
+                                            </div>
+                                            <div className="social">
+                                                <Link href="#"><span className="fab fa-facebook-f" /></Link>
+                                            </div>
                                         </div>
                                         <div className="text">
-                                            <h3>Book Your Journey Now</h3>
-
+                                            <h3>Primera Z. Caldwell</h3>
+                                            <span>Founder</span>
                                         </div>
                                     </div>
-                                    <div className="btn-box">
-                                
-                                        <Link href="/booking" className="theme-btn btn-style-eight mt-4 ml-5"><span className="btn-title">Book Now </span></Link>
-                                        </div>
+                                    <div className="signature">
+                                        <img src="/assets/images-3/shape/signature-8.png" alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>

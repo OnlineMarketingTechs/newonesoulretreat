@@ -38,16 +38,46 @@ export default function Banner() {
                         </div>
                         <div className="auto-container">
                             <div className="content-box">
-                                <div>
-                                    <h3>Be the Change</h3>
-                                    <h2>Awaken Your Highest Potential</h2>
-                                    <div className="text">The #1 transformation center for individuals committed to personal growth goals and seeking profound results.</div>
-                                    <div className="btn-box">
-                                        <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Read
-                                            More</span></Link>
+                                <div class="text-center">
+                                    {/* <h3>Be the Change</h3> */}
+                                    <h2>Experience a Life-Changing Transformational Journey</h2>
+                                    <div className="text text-left hombanWOW">Discover unparalleled transformative experiences at One Soul Retreats. Immerse yourself in the beauty of premiere destinations in Colorado, Costa Rica, Peru, and Mexico as you embark on a journey of self-discovery and healing. Our retreats, led by world-renowned shaman and facilitators, offer a safe and unforgettable space for personal growth. Experience the power of ancient wisdom combined with modern techniques to connect with your inner self and find lasting peace.</div>
+                                  
+                                    <div className="row">
+                                    <div className="col-xl-5">
+                                    <div className="btn-box bckBooking">
+                                    <h3 className="homebannerSub pt-4 bannCallColor">Take the next step towards personal growth</h3>
+                                    <div className="bannCallColor text mt-4 pl-4 pr-4">Plan your Transformation Journey Now, and get on the path to your highest potential</div>
+                                    <div className="text bannCallColor smT">We offer weekly retreats year-round; <br></br>your jouney begins today</div>
+                                        <Link href="/booking" className="theme-btn btn-style-eight"><span className="btn-title">Book Now </span></Link>
+                                        </div>
+
                                     </div>
+                                    <div className="col-xl-5 btn-box wipWow">   
+                                    <div className="auto-container">
+                                             <h3 className="pt-4 text-right pr-4 bannerboxTexts">Learn Everything You Need <br></br> To Know About Ayahuasca</h3>
+                                                <ul className="ml-5 pl-5 bannerboxTexts">
+                                                       <li className="ml-5 pl-5 text-right"><span className="flaticon-check pr-2" /> What is Ayahuasca?</li>
+                                                        <li  className="ml-5 pl-5 text-right"><span className="flaticon-check pr-2" /> What are the benefits of Ayahuasca?</li>
+                                                        <li  className="ml-5 pl-5 text-right"><span className="flaticon-check pr-2" /> What are the risks of Ayahuasca?</li>
+                                                        <li  className="ml-5 pl-5 text-right"><span className="flaticon-check pr-2" /> What to expect during an Ayahuasca ceremony?</li>
+                                                        <li  className="ml-5 pl-5 text-right">So much more...</li>
+                                                </ul>
+                            
+                                        <div className="btn-box text-center">
+                                      
+                                            <Link href="#" className="theme-btn btn-style-eight mt-3"><span className="btn-title">Get - AYAHUSCA FOR REAL PEOPLE NOW!</span></Link>
+                                        </div>
+                                    </div>
+                                        
+                                         
+                                    </div></div>
+                                    
                                 </div>
                             </div>
+                        {/* new item */}
+                            
+                        {/* new item end */}
                         </div>
                     </SwiperSlide>
                     {/* Slide Item */}
@@ -93,7 +123,7 @@ export default function Banner() {
                     
                        
                     <div className="owl-nav">
-                        <button type="button" className="owl-prev h1p">
+                        <button type="button" className="owl-prev h1n">
                             <span>‹</span>
                         </button>
                         <button type="button" className="owl-next h1n">

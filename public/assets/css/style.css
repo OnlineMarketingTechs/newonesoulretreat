@@ -9,6 +9,62 @@
  ***/
 
  /* new stuff */
+ .contact-form-eight-b {
+    /* margin-top: 149px; */
+    position: relative;
+    display: block;
+    max-width: 535px;
+    width: 100%;
+    background: #ffffff;
+    padding: 55px 50px 45px;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    margin-bottom: 45px;
+}
+ .bookingTOp {
+    background-image: url(../images/background/refectingpool-earth-based-institute.webp);
+    background-size: cover;
+}
+ .contacTest {
+    margin-left: auto;
+    margin-right: auto;}
+ .bannerboxTexts {
+    color: #333333 !important;
+}
+.bckBooking {
+    background-color: #e2eaf5;
+    border-radius: 42px;
+}
+.text.bannCallColor.smT {
+    font-size: 10px !important;
+}
+.bannCallColor{
+    color:#005050 !important;
+}
+.list-display li {
+    margin-bottom:.4rem;
+    font-size:1.1rem;
+  }
+  .list-checkmarks {
+    padding-left:1.5rem;
+  }
+  .list-checkmarks li {
+    list-style-type:none;
+    padding-left:1rem;
+  }
+  .list-checkmarks li:before { 
+    content: "\f00c";   
+  margin:0 10px 0 -28px;
+  color: #17aa1c;
+  }
+.wipWow {
+    background-image: url(../images/background/ayahuasca-for-real-people-cover1-on-page-backgroun.webp);
+    z-index: 1;
+    background-size: cover;
+    background-size: 663px;
+    background-repeat: no-repeat;
+    background-position-x: -105px;
+}
  .specialMove {
     margin-top: 291px !important;
 }
@@ -3059,7 +3115,7 @@ ul.social-right.social-links li a {
 }
 
 .banner-carousel .content-box .btn-box .theme-btn {
-    margin-right: 20px;
+
     margin-bottom: 10px;
 }
 
@@ -3108,7 +3164,7 @@ ul.social-right.social-links li a {
 
 .banner-section .owl-theme .owl-nav .owl-prev::after {
     font-family: customicon;
-    content: "\f102";
+    content: "\f101";
     position: absolute;
     top: 0px;
     width: 70px;
@@ -3153,7 +3209,7 @@ ul.social-right.social-links li a {
 
 .banner-section .owl-theme .owl-nav .owl-next::after {
     font-family: customicon;
-    content: "\f102";
+    content: "\f101";
     position: absolute;
     top: 0px;
     width: 70px;
@@ -12820,9 +12876,10 @@ h2.servTitle {
     right: 0;
     bottom: 0;
     background-image: -moz-linear-gradient(0deg, rgb(32, 22, 48) 0%, rgba(32, 22, 48, 0) 100%);
-    background-image: -ms-linear-gradient(0deg, rgb(32, 22, 48) 0%, rgba(32, 22, 48, 0) 100%);
-    background-image: -webkit-linear-gradient(0deg, rgb(32, 22, 48) 0%, rgba(32, 22, 48, 0) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(32, 22, 48) 59%, rgba(32, 22, 48, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(32 22 48 / 59%) 0%, rgba(32, 22, 48, 0) 100%);
 }
+
 
 .page-title .content-box {
     padding-left: 22px;
@@ -15917,7 +15974,7 @@ h2.servTitle {
 .contact-details-section {
     position: relative;
     padding-top: 100px;
-    padding-bottom: 70px;
+
 }
 
 .contact-details-section .sec-title .text {
@@ -31200,10 +31257,10 @@ figure {
 }
 
 .banner-section.style-eight .banner-carousel .content-box .text {
-    color: #b0bebe;
+    color: #ededed;
     font-size: 18px;
     line-height: 1.6em;
-    margin: 0px auto 35px;
+    margin: 0px auto 12px;
     font-weight: 400;
 }
 
@@ -31286,7 +31343,7 @@ figure {
 
 .contact-info-eight ul li .inner .title h3 {
     color: #005050;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 600;
 }
@@ -32702,20 +32759,31 @@ figure {
 }
 
 
-
+.bumper111 {
+    padding-top: 104px;
+    padding-bottom: 100px;
+}
 /*** 
 =============================================
     Contact Form Faq Section Eight Css
 =============================================
 ***/
+
 .contact-form-faq-section-eight {
     position: relative;
     display: block;
     background: #e8f1f1;
-    padding: 100px 0 70px;
+    padding-top: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 800px;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1px;
 }
-
 .contact-form-eight {
+    margin-top: 149px;
     position: relative;
     display: block;
     max-width: 535px;
@@ -32723,6 +32791,7 @@ figure {
     background: #ffffff;
     padding: 55px 50px 45px;
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
 
 .contact-form-eight .title {

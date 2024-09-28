@@ -1,36 +1,37 @@
-'use client'
 
-import { useState } from 'react'
+import Layout from "@/components/layout/Layout"
+import Link from "next/link"
+import Breadcrumb_Services from "@/components/layout/Breadcrumb_Services"
+import ContactForm from "@/components/contact/ContactForm"
 
-export default function ContactFormFaq() {
-    const [isActive, setIsActive] = useState({
-        status: false,
-        key: 1,
-    })
 
-    const handleToggle = (key) => {
-        if (isActive.key === key) {
-            setIsActive({
-                status: false,
-            })
-        } else {
-            setIsActive({
-                status: true,
-                key,
-            })
-        }
-    }
+export default function Home() {
+
     return (
         <>
-            <section className="contact-form-faq-section-eight">
+              <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
+            {/* <Breadcrumb_Services  pageImage="assets/images/online_maarketing_services_g.jpg" /> */}
+        <div className="bookingTOp">
+        <div className="bumper111">
+                <section className="contact-form-faq-section-eight">
                 <div className="auto-container">
                     <div className="row">
+                    <div className="col-xl-6">
+                            <div className="faq-content-eight">
+                                <div className="sec-title style-eight">
+                                    <h2 className="pt-4">Lets Plan Your Journey Now</h2>
+                                </div>
+                                <div className="text">Complete the form below to speak with a senior guest consultant and get all your questions answered.</div>  
+                                <div className="text">Discover the perfect One Soul Retreat for you.</div>
+                                
+                            </div>
+                        </div>
                         <div className="col-xl-6">
-                            <div className="contact-form-eight">
+                            <div className="contact-form-eight-b">
                                 <div className="title">
                                     <h2>Send Your Message to Us</h2>
-                                    <p>Please feel free to get in touch using the form below.<br /> We'd love to hear for you.
-                                    </p>
+                                    <p>Please feel free to get in touch using the form below.<br /> We'd love to hear for you.</p>
+                                    
                                 </div>
                                 <form method="post" action="sendemail.php" className="contact-form-h8">
                                     <div className="row clearfix">
@@ -55,19 +56,18 @@ export default function ContactFormFaq() {
                                 </form>
                             </div>
                         </div>
-                        <div className="col-xl-6">
-                            <div className="faq-content-eight">
-                                <div className="sec-title style-eight">
-                                    <h4>Get Answers</h4>
-                                    <h2>Do You have Questions about<br /> Seeing a Psychologist?</h2>
-                                </div>
-                                
-                            </div>
-                        </div>
+                        
                     </div>
                     {/* end row */}
                 </div>
             </section>
+
+
+     </div>
+</div>
+                
+            </Layout> 
+            
         </>
     )
 }

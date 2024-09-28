@@ -11,37 +11,24 @@ export default function ContactInfo() {
                             <div className="contact-info-eight">
                                 <ul>
                                     <li>
-                                        <div className="inner">
+                                        <div className="inner"> 
+                                        <div className="title">
+                                                <h3>Enter To Win A Transformation Vacation</h3>
+                                                <p>We Choose a New Winner Each Season!</p>
+                                            </div>
                                             <div className="icon">
                                                 <span className="icon-location clr8" />
                                             </div>
-                                            <div className="title">
-                                                <h3>Location</h3>
-                                                <p>246 Old York Rd, NY 08505</p>
-                                            </div>
+                                           
                                         </div>
                                     </li>
+
                                     <li>
                                         <div className="inner">
-                                            <div className="icon">
-                                                <span className="icon-email clr8" />
-                                            </div>
-                                            <div className="title">
-                                                <h3>Mail us</h3>
-                                                <p><Link href="mailto:support@envolvepsyco.com">support@envolvepsyco.com</Link>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="inner">
-                                            <div className="icon">
-                                                <span className="icon-clock-1 clr8" />
-                                            </div>
-                                            <div className="title">
-                                                <h3>Office hrs</h3>
-                                                <p>9.00am to 7.00pm (Mon_Sat)</p>
-                                            </div>
+                                                <div className="btn-box text-center">
+                                            
+                                                    <Link href="#" className="theme-btn btn-style-eight mt-3 ml-5"><span className="btn-title">Enter Now!</span></Link>
+                                                </div>
                                         </div>
                                     </li>
                                 </ul>
