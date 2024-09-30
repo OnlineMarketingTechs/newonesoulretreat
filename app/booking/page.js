@@ -21,9 +21,16 @@ export default function Home() {
                                 <div className="sec-title style-eight">
                                     <h2 className="pt-4">Lets Plan Your Journey Now</h2>
                                 </div>
-                                <div className="text">Complete the form below to speak with a senior guest consultant and get all your questions answered.</div>  
+                                <div className="text">Complete this form to speak with a senior guest consultant and get all your questions answered.</div>  
                                 <div className="text">Discover the perfect One Soul Retreat for you.</div>
-                                
+                                <div className="pb-3">You will learn:</div>
+                                <div className="pl-3"><span className="flaticon-check pr-2" />The retreats offered by Onesoul</div>
+                                <div className="pl-3"><span className="flaticon-check pr-2" />Our locations and amenities</div>
+                                <div className="pl-3"><span className="flaticon-check pr-2" />Travel information</div>
+                                <div className="pl-3"><span className="flaticon-check pr-2" />Your goals and intentions for your jouney</div>
+
+                                <div className="pt-4">Our trained guides will answer any other questions or concerns you may have</div>
+
                             </div>
                         </div>
                         <div className="col-xl-6">
@@ -36,7 +43,10 @@ export default function Home() {
                                 <form method="post" action="sendemail.php" className="contact-form-h8">
                                     <div className="row clearfix">
                                         <div className="col-md-12 form-group">
-                                            <input type="text" name="username" placeholder="Your Name" required />
+                                            <input type="text" name="firstname" placeholder="Your First Name" required />
+                                        </div>
+                                        <div className="col-md-12 form-group">
+                                            <input type="text" name="lastname" placeholder="Your Last Name" required />
                                         </div>
                                         <div className="col-md-12 form-group">
                                             <input type="email" name="email" placeholder="Email Address" required />
@@ -44,12 +54,9 @@ export default function Home() {
                                         <div className="col-md-12 form-group">
                                             <input type="text" name="phone" placeholder="Phone" required />
                                         </div>
-                                        <div className="col-md-12 form-group">
-                                            <textarea name="form_message" placeholder="Message goes here" />
-                                        </div>
                                         <div className="col-md-12">
                                             <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
-                                                <span className="btn-title">Send request</span>
+                                                <span className="btn-title">Book Now</span>
                                             </button>
                                         </div>
                                     </div>

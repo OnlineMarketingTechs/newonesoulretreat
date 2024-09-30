@@ -13,10 +13,10 @@ export default function Blog() {
                                     <h4>News &amp; Updates</h4>
                                     <h2>Latest From Our News Room</h2>
                                 </div>
-                                <div className="btn-box">
+                                {/* <div className="btn-box">
                                     <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">More
                                         News</span></Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function Blog() {
                                         <li><Link href="#">By Raana irave</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
-                                        <Link href="/blog-single">How to Manage Business’s Online Reputation</Link>
+                                        <Link href="/blog-single">Everything You Need To Know About AYAHUASCA</Link>
                                     </h3>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ export default function Blog() {
                                         <li><Link href="#">By Brendan Duke</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
-                                        <Link href="/blog-single">A Child Custody Agreement can be Customized</Link>
+                                        <Link href="/blog-single">Legal Ayahuasca Retreats in Aspen Colorado!</Link>
                                     </h3>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@ export default function Blog() {
                                         <li><Link href="#">By Raana irave</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
-                                        <Link href="/blog-single">Our Law Firm Recognized By US Government</Link>
+                                        <Link href="/blog-single">Transforming Depression with Ayahuasca</Link>
                                     </h3>
                                 </div>
                             </div>

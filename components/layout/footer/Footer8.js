@@ -12,16 +12,17 @@ export default function Footer8() {
                                 <div className="single-footer-widget marbtm">
                                     <div className="our-company-info">
                                         <div className="footer-logo">
-                                            <Link href="/"><img src="/assets/images-3/footer-logo-8.png" alt="Awesome Footer Logo" title="Logo" /></Link>
+                                            <Link href="/booking"><img src="/assets/images/background/ayahuasca-ceremony-with-female-facilitator-shaman.webp" alt="Awesome Footer Logo" title="Logo" /></Link>
                                         </div>
                                         <div className="text-box">
                                             <h3>About Us</h3>
-                                            <p>Right to find fault with a man who chooses too enjoy a pleasures that annoying consequences.</p>
+                                            <p>We are your guides every step of the way</p>
+                                            <Link href="/booking" className="theme-btn btn-style-eight mt-3"><span className="btn-title">Speak to A Guide</span></Link>
                                         </div>
-                                        <div className="phone-number">
+                                        {/* <div className="phone-number">
                                             <p>Call for free consultation!</p>
-                                            <h3><Link href="tel:+18005554400">(+81) 324 56 789</Link></h3>
-                                        </div>
+                                            <h3><Link href="tel:+1800000000">(+800) 000-0000</Link></h3>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -35,22 +36,16 @@ export default function Footer8() {
                                     <div className="footer-widget-link-box">
                                         <ul className="footer-widget-links1 left">
                                             <li><Link href="#">About Company</Link></li>
-                                            <li><Link href="#">Achivements</Link></li>
-                                            <li><Link href="#">Meet Experts</Link></li>
-                                            <li><Link href="#">Our Case Studies</Link></li>
-                                            <li><Link href="#">Get a Quote</Link></li>
+                                            <li><Link href="#">Why Choose Us</Link></li>
                                             <li><Link href="#">Testimonials</Link></li>
                                             <li><Link href="#">FAQ’s</Link></li>
-                                            <li><Link href="#">Why Choose Us</Link></li>
+                                            
                                         </ul>
                                         <ul className="footer-widget-links1 right">
-                                            <li><Link href="#">Our Services</Link></li>
                                             <li><Link href="#">Latest News</Link></li>
-                                            <li><Link href="#">Pricing &amp; Plan</Link></li>
-                                            <li><Link href="#">How It’s Work</Link></li>
-                                            <li><Link href="#">Portfolio</Link></li>
-                                            <li><Link href="#">Privacy Policy</Link></li>
                                             <li><Link href="#">Contact Us</Link></li>
+                                            <li><Link href="#">Privacy Policy</Link></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -60,34 +55,34 @@ export default function Footer8() {
                             <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
                                 <div className="single-footer-widget pdtop">
                                     <div className="title">
-                                        <h3>Popular Post</h3>
+                                        <h3>Important Infromation</h3>
                                     </div>
                                     <ul className="widget-popular-post">
                                         <li>
                                             <div className="img-box">
-                                                <img src="/assets/images-3/widget-popular-post-1.jpg" alt="" />
+                                                <img src="/assets/images/icons/ayahuasca-70x70.webp" alt="ayahuasca ceremony at One Soul Retreats" />
                                             </div>
                                             <div className="title-box">
-                                                <span>14 February, {new Date().getFullYear()}</span>
-                                                <h3><Link href="#">Is Your Business Ready For<br /> Integration?</Link></h3>
+                                                <span>{new Date().getFullYear()}</span>
+                                                <h3><Link href="#">Everything You Need To Know About AYAHUASCA<br /></Link></h3>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="img-box">
-                                                <img src="/assets/images-3/widget-popular-post-2.jpg" alt="" />
+                                                <img src="/assets/images/icons/ayahuasca-aspen-colorado-70x70.webp" alt="Ayahuasca shaman performing ayahuasca ceremony" />
                                             </div>
                                             <div className="title-box">
-                                                <span>21 January, {new Date().getFullYear()}</span>
-                                                <h3><Link href="#">That Should You Include In<br /> Your Marketing Plan</Link></h3>
+                                                <span>{new Date().getFullYear()}</span>
+                                                <h3><Link href="#">Legal Ayahuasca Retreats in Aspen Colorado!</Link></h3>
                                             </div>
                                         </li>
                                         <li>
                                             <div className="img-box">
-                                                <img src="/assets/images-3/widget-popular-post-3.jpg" alt="" />
+                                                <img src="/assets/images/icons/transforming-depression-ayahuasca-70x70.webp" alt="a woman working through depression with ayahuasca" />
                                             </div>
                                             <div className="title-box">
-                                                <span>21 January, {new Date().getFullYear()}</span>
-                                                <h3><Link href="#">That Should You Include In<br /> Your Marketing Plan</Link></h3>
+                                                <span>{new Date().getFullYear()}</span>
+                                                <h3><Link href="#">Transforming Depression With Ayahuasca</Link></h3>
                                             </div>
                                         </li>
                                     </ul>
@@ -101,7 +96,7 @@ export default function Footer8() {
                     <div className="container">
                         <div className="outer-box">
                             <div className="copyright-text">
-                                <p>Copyrights © {new Date().getFullYear()} <Link href="#">Envolve </Link>, All Rights Reserved.</p>
+                                <p>Copyrights © {new Date().getFullYear()} <Link href="/">OneSoulRetreats </Link>, All Rights Reserved.</p>
                             </div>
                             <div className="footer-menu-style1">
                                 <ul>

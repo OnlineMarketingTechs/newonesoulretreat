@@ -5,7 +5,7 @@ export default function Testimonial() {
     return (
         <>
             <section className="testimonial-section-eight-h8">
-                <div className="layer-outer" style={{ backgroundImage: 'url(assets/images-3/testimonial-section-eight-h8-bg.jpg)' }} />
+                <div className="layer-outer" style={{ backgroundImage: 'url(/assets/images/background/colorado-2.webp)' }} />
                 <div className="auto-container">
                     <div className="sec-title style-eight text-center">
                         <h4>Testimonials</h4>

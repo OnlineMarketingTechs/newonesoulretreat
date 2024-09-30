@@ -33036,6 +33036,7 @@ figure {
     line-height: 40px;
     font-weight: 600;
     font-family: var(--fira-sans);
+    float: left;
 }
 
 .fact-counter-eight .counter-column .inner .content .count-box .counter-title {

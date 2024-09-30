@@ -51,7 +51,7 @@ export default function Service() {
                                 </div>
                                 <div className="text-holder">
                                     <h3><Link href="#">Amenities & Services</Link></h3>
-                                    <p>We offer unparalleled amenities and servoices pm sote.</p>
+                                    <p>We offer unparalleled amenities and services offered at all of our retreats.</p>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@ export default function Service() {
                                 </div>
                                 <div className="text-holder">
                                     <h3><Link href="#">Integration Support</Link></h3>
-                                    <p>Denounce with righteous indignation &amp; demoralized the charms.</p>
+                                    <p>Before and after your journey we are here to support your with integration</p>
                                 </div>
                             </div>
                         </div>

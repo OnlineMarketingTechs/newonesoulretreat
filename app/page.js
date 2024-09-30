@@ -25,12 +25,13 @@ export default function Home() {
                 <Service />
                 <Choose />
                 <WorkingProcess />
-                <Team />
+                {/* <Team /> */}
                 <PricingPlan />
                 <Testimonial />
+                {/* <Awards /> */}
                 <Blog />
-                <Awards />
-                <ContactFormFaq />
+                
+                {/* <ContactFormFaq /> */}
                 <Funfacts />
             </Layout>
         </>

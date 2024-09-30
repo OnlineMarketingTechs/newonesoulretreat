@@ -59,42 +59,39 @@ export default function TestimonialSlider8() {
                 {/*Testimonial Block Eight*/}
                 <SwiperSlide className="testimonial-block-eight">
                     <div className="img-holder">
-                        <img src="/assets/images-3/testimonial-v8-1.png" alt="" />
+                        <img src="/assets/images/background/rachel-lenard.webp" alt="rachel-leonard-ayahuasca-retreat-testimonial" />
                     </div>
                     <div className="inner-content text-center" style={{ backgroundImage: 'url(assets/images-3/pattern/pattern-bg-1.jpg)' }}>
-                        <h3>Raff Leonard</h3>
+                        <h3>Rachel Leonard</h3>
                         <span>California</span>
                         <div className="text">
-                            <p>Envolve service team is very prompt, courteous and professional. They are
-                                committed to doing a quality job &amp; the service</p>
+                            <p>My journey changed my life, I have never felt so present, and perfectly in the right place. The staff was amazing the retreat was like nothing I have seen.</p>
                         </div>
                     </div>
                 </SwiperSlide>
                 {/*Testimonial Block Eight*/}
                 <SwiperSlide className="testimonial-block-eight">
                     <div className="img-holder">
-                        <img src="/assets/images-3/testimonial-v8-2.png" alt="" />
+                        <img src="/assets/images/background/Jason-shaun.webp" alt="jason-shaun-ayahuasca-retreat-visitor-testimonial" />
                     </div>
                     <div className="inner-content text-center" style={{ backgroundImage: 'url(assets/images-3/pattern/pattern-bg-1.jpg)' }}>
                         <h3>Lamont Shaun</h3>
                         <span>Newyork</span>
                         <div className="text">
-                            <p>We have been using the security system of envolve from past 5 years, which is
-                                working fine without any issues &amp; good service.</p>
+                            <p>Still can not believe how profound this experience, really was. I just can not say enough about the staff, and One Soul Retreats</p>
                         </div>
                     </div>
                 </SwiperSlide>
                 {/*Testimonial Block Eight*/}
                 <SwiperSlide className="testimonial-block-eight">
                     <div className="img-holder">
-                        <img src="/assets/images-3/testimonial-v8-3.png" alt="" />
+                        <img src="/assets/images/background/kay-winston.webp" alt="Key-winston-ayahuasca-testimonial" />
                     </div>
                     <div className="inner-content text-center" style={{ backgroundImage: 'url(assets/images-3/pattern/pattern-bg-1.jpg)' }}>
                         <h3>Xavier Winston</h3>
                         <span>California</span>
                         <div className="text">
-                            <p>I have the pleasure of dealing with envolve team for the past one plus years.
-                                The team has been efficient, very knowledgeable.</p>
+                            <p>Still can not believe how profound this experience, really was. I just can not say enough about the staff, and One Soul Retreats</p>
                         </div>
                     </div>
                 </SwiperSlide>

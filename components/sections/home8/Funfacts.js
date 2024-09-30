@@ -16,7 +16,7 @@ export default function Funfacts() {
                                         <span className="icon-meeting clr8" />
                                     </div>
                                     <div className="count-outer count-box">
-                                        <CounterUp end={2579} />
+                                        <CounterUp end={4200} />
                                         <div className="counter-title">Successful Projects</div>
                                     </div>
                                 </div>
@@ -29,7 +29,7 @@ export default function Funfacts() {
                                         <span className="icon-businessman clr8" />
                                     </div>
                                     <div className="count-outer count-box">
-                                        <CounterUp end={36} />
+                                        <CounterUp end={99} /><div className="percentage">%</div>
                                         <div className="counter-title">Experienced Staff</div>
                                     </div>
                                 </div>

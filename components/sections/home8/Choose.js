@@ -8,7 +8,7 @@ export default function Choose() {
                 <div className="auto-container">
                     <div className="row">
                         <div className="col-xl-6">
-                            <div className="video-holder-box8" style={{ backgroundImage: 'url(assets/images-3/video-holder-box8-bg.jpg)' }}>
+                            <div className="video-holder-box8" style={{ backgroundImage: 'url(/assets/images/background/ayahuasca-ceremony-be-the-best-you-can-be.webp)' }}>
                                 <div className="video-box">
                                     <VideoPopup />
                                 </div>
@@ -18,7 +18,7 @@ export default function Choose() {
                             <div className="choose-content-eight">
                                 <div className="sec-title style-eight">
                                     <h4>Why Choose Us</h4>
-                                    <h2>We Make You The Best You<br /> Ever Can Be.</h2>
+                                    <h2>Be The Best You That You<br /> Can Be. Live Your Best Life!</h2>
                                 </div>
                                 <div className="inner-content">
                                     <ul>
@@ -32,9 +32,8 @@ export default function Choose() {
                                                     <span className="icon-login clr8" />
                                                 </div>
                                                 <div className="text">
-                                                    <h3>Private &amp; Confidential</h3>
-                                                    <p>Desires to obtain pain of itself because occur occasionally
-                                                        circumstances.</p>
+                                                    <h3>Safe, Private &amp; Confidential</h3>
+                                                    <p>We will help you create a life changing journey that provides lasting results and true transformation.</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -48,9 +47,8 @@ export default function Choose() {
                                                     <span className="icon-unknown clr8" />
                                                 </div>
                                                 <div className="text">
-                                                    <h3>Anonymous Discussions</h3>
-                                                    <p>These cases are perfectly simple and easy to distinguish. In a free
-                                                        hour.</p>
+                                                    <h3>On Going Support and Integration</h3>
+                                                    <p>Our talented staff and licensed therapists have created an integration curiculum and support network that helps you continue to grow.</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -65,8 +63,7 @@ export default function Choose() {
                                                 </div>
                                                 <div className="text">
                                                     <h3>24/7 Caring With Experts</h3>
-                                                    <p>Business will frequently occur that pleasures have to be repudiated
-                                                        accepted.</p>
+                                                    <p>Our customer service team is always avaliable to help with anything your need.</p>
                                                 </div>
                                             </div>
                                         </li>
