@@ -15,6 +15,7 @@ export default function ContactInfo() {
                                         <div className="title">
                                                 <h3>Enter To Win A Transformation Vacation</h3>
                                                 <p>We Choose a New Winner Each Season!</p>
+                                                <p>Spring-Summer-Fall-Winter</p>
                                             </div>
                                             <div className="icon">
                                                 <span className="icon-location clr8" />
@@ -27,7 +28,7 @@ export default function ContactInfo() {
                                         <div className="inner">
                                                 <div className="btn-box text-center">
                                             
-                                                    <Link href="#" className="theme-btn btn-style-eight mt-3 ml-5"><span className="btn-title">Enter Now!</span></Link>
+                                                    <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Enter Now!</span></Link>
                                                 </div>
                                         </div>
                                     </li>

@@ -11,7 +11,7 @@ export default function Blog() {
                             <div className="news-section-eight_title">
                                 <div className="sec-title style-eight">
                                     <h4>News &amp; Updates</h4>
-                                    <h2>Latest From Our News Room</h2>
+                                    <h2>Our Current Retreats</h2>
                                 </div>
                                 {/* <div className="btn-box">
                                     <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">More
