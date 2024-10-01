@@ -36,8 +36,8 @@ export default function Home() {
                         <div className="col-xl-6">
                             <div className="contact-form-eight-b">
                                 <div className="title">
-                                    <h2>Send Your Message to Us</h2>
-                                    <p>Please feel free to get in touch using the form below.<br /> We'd love to hear for you.</p>
+                                    <h2>Get connected with a guide</h2>
+                                    <p>Lets get started planning your journey</p>
                                     
                                 </div>
                                 <form method="post" action="sendemail.php" className="contact-form-h8">

@@ -15,7 +15,7 @@ export default function ContactInfo() {
                                         <div className="title">
                                                 <h3>Enter To Win A Transformation Vacation</h3>
                                                 <p>We Choose a New Winner Each Season!</p>
-                                                <p>Spring-Summer-Fall-Winter</p>
+                                                <p className="tsmall">Spring-Summer-Fall-Winter</p>
                                             </div>
                                             <div className="icon">
                                                 <span className="icon-location clr8" />

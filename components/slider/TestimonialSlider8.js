@@ -88,7 +88,7 @@ export default function TestimonialSlider8() {
                         <img src="/assets/images/background/kay-winston.webp" alt="Key-winston-ayahuasca-testimonial" />
                     </div>
                     <div className="inner-content text-center" style={{ backgroundImage: 'url(assets/images-3/pattern/pattern-bg-1.jpg)' }}>
-                        <h3>Xavier Winston</h3>
+                        <h3>Kay Winston</h3>
                         <span>California</span>
                         <div className="text">
                             <p>Still can not believe how profound this experience, really was. I just can not say enough about the staff, and One Soul Retreats</p>

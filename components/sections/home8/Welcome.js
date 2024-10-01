@@ -35,7 +35,7 @@ export default function Welcome() {
                                     </div>
                                     <div className="btn-box">
                                 
-                                        <Link href="/booking" className="theme-btn btn-style-eight mt-4 ml-5"><span className="btn-title">Book Now </span></Link>
+                                        <Link href="/booking" className="theme-btn btn-style-eight"><span className="btn-title">Book Now </span></Link>
                                         </div>
                                 </div>
                             </div>

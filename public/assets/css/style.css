@@ -9,8 +9,17 @@
  ***/
 
  /* new stuff */
- .contact-form-eight-b {
-    /* margin-top: 149px; */
+ .percentage {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    width: 34px;
+    float: right;
+    padding-right: 56px;
+}
+
+.contact-form-eight-b {
+    margin-top: 28px;
     position: relative;
     display: block;
     max-width: 535px;
@@ -21,6 +30,7 @@
     z-index: 100;
     margin-bottom: 45px;
 }
+
  .bookingTOp {
     background-image: url(../images/background/refectingpool-earth-based-institute.webp);
     background-size: cover;
@@ -30506,6 +30516,14 @@ figure {
 
 
 /* new parts  */
+.percentage {
+    width: 45px;
+    color: #ffffff;
+    float: right;
+    padding-right: 73px;
+    font-size: 38px;
+}
+
 .col-xl-5.btn-box.wipWow {
     margin-top: 60px;
     height: 541px;
@@ -30651,6 +30669,40 @@ figure {
 
 @media only screen and (max-width: 499px) {
 
+    /* new stuff */
+    p.tsmall {
+        font-size: 12px !important;
+    }
+    .contact-form-eight-b {
+        margin-top: 20px;
+        position: relative;
+        display: block;
+        max-width: 535px;
+        width: 100%;
+        background: #ffffff;
+        padding: 33px 50px 45px;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        margin-bottom: 45px;
+    }
+    .contact-form-eight-b .title h2 {
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
+    .contact-form-faq-section-eight {
+        position: relative;
+        display: block;
+        background: #e8f1f1;
+        padding-top: 45px;
+        padding-left: 35px;
+        padding-right: 35px;
+        width: 402px !important;
+        border-radius: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -1px;
+    }
+    /* end new stuff */
     .cta-home-6 .form-inner .form-group button,
     .subscribe-home-12 .form-inner .form-group button {
         position: relative;
@@ -31349,10 +31401,9 @@ background-repeat: no-repeat; */
 .contact-info-eight {
     position: relative;
     display: block;
-    background: #ffffff;
-    background-image: url(../images/background/shiboo-art-ayahuasca.webp);
-    background-size: ;
-    margin-top: -45px;
+    background: #ced5cc;
+    /* background-image: url(/_next/static/media/shipabo-ayahuasca-vacation-banner-small.93be85d1.webp); */
+    margin-top: -51px;
     padding: 22px 0;
     box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
     z-index: 10;
@@ -33100,13 +33151,12 @@ background-repeat: no-repeat; */
 
 .fact-counter-eight .counter-column .inner .content .count-box span {
     position: relative;
-    display: block;
+
     color: #ffffff;
     font-size: 60px;
     line-height: 40px;
     font-weight: 600;
     font-family: var(--fira-sans);
-    float: left;
 }
 
 .fact-counter-eight .counter-column .inner .content .count-box .counter-title {
