@@ -2,12 +2,12 @@
 import Layout from "@/components/layout/Layout"
 
 import Awards from "@/components/sections/home8/Awards"
-import Banner from "@/components/sections/home8/Banner"
+import Lp1 from "@/components/sections/home8/Lp1"
 import Homeset from "@/components/sections/home8/Homeset"
 import Blog from "@/components/sections/home8/Blog"
 import Choose from "@/components/sections/home8/Choose"
 import ContactFormFaq from "@/components/sections/home8/ContactFormFaq"
-import ContactInfo from "@/components/sections/home8/ContactInfo"
+import RaffleForm from "@/components/sections/home8/RaffleForm"
 import Funfacts from "@/components/sections/home8/Funfacts"
 import PricingPlan from "@/components/sections/home8/PricingPlan"
 import Service from "@/components/sections/home8/Service"
@@ -25,9 +25,10 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
-            <Homeset />
-                <ContactInfo />
+            <Layout headerStyle={15} footerStyle={15} wrapperCls="home_8">
+
+            <Lp1 />
+                <RaffleForm />
                 <Welcome />
                 <Service />
                 <Choose />
@@ -36,7 +37,7 @@ export default function Home() {
                 <PricingPlan />
                 <Testimonial />
                 {/* <Awards /> */}
-                <Blog />
+                {/* <Blog /> */}
                 
                 {/* <ContactFormFaq /> */}
                 <Funfacts />

@@ -9,6 +9,20 @@
  ***/
 
  /* new stuff */
+ .raffleT {
+    text-align: center;
+}
+
+ span.flaticon-check.bC4.pr-2 {
+    color: #256666;
+}
+ .bC3 {
+    color: #a04e3f;
+}
+ h5.baseC3 {
+    color: #a04e3f !important;
+    margin-bottom: 1px;
+}
  .percentage {
     color: #ffffff;
     font-size: 40px;
@@ -31315,6 +31329,8 @@ figure {
 .header-upper-right-style8 .right-button {
     position: relative;
     display: block;
+    padding-right: 26px;
+    padding-top: 5px;
 }
 
 

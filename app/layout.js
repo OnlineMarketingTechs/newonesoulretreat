@@ -38,11 +38,6 @@ const barlow = Barlow({
     display: 'swap',
 })
 
-export const metadata = {
-    title: 'Journey Cafe - Artisan Vegan Food, Local Sourced Farm To Table',
-    description: 'Craving delicious vegan food on the Big Island? Journey Cafe offers a vibrant menu bursting with plant-based flavors. Savor healthy, satisfying meals made with fresh, local ingredients. Find your vegan oasis at Journey Cafe!',
-}
-
 
 export default function RootLayout({ children }) {
     return (

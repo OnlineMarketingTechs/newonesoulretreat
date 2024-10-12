@@ -1,14 +1,14 @@
 
 import CounterUp from "@/components/elements/CounterUp"
 import Layout from "@/components/layout/Layout"
-import TestimonialSlider2 from "@/components/slider/TestimonialSlider2"
+import Testimonial from "@/components/sections/home8/Testimonial"
 import Link from "next/link"
 import Breadcrumb_Services from "@/components/layout/Breadcrumb_Services"
 export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={13} footerStyle={13} wrapperCls="home_13">
+            <Layout headerStyle={15} footerStyle={15} wrapperCls="home_8">
             <Breadcrumb_Services breadcrumbTitle="About Journy Cafe" pageTitle="Sharing the magic of healing foods. 🌈" pageImage="assets/images/background/breakfast-wrap-header.webp" />
                 <div>
                     <section className="about-section-six">
@@ -234,22 +234,13 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-                    {/* Testimonail Section Two */}
-                    <section className="testimonial-section-two">
-                        <div className="auto-container">
-                            <div className="sec-title text-center">
-                                <h2>Words from our customers</h2>
-                                <div className="text-decoration">
-                                    <span className="left" />
-                                    <span className="right" />
-                                </div>
-                            </div>
-                            {/*Theme Carousel*/}
-                            <TestimonialSlider2 />
-                        </div>
-                    </section>
+                    {/* Testimonial Section Two */}
+                    <Testimonial />
                     {/* Client Logo */}
-                    <section className="client-section-two style-three">
+
+
+
+                    {/* <section className="client-section-two style-three">
                         <div className="auto-container">
                             <div className="top-content row m-0 align-items-center justify-content-between">
                                 <div className="sec-title">
@@ -292,7 +283,9 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
+
+
                 </div>
 
             </Layout>

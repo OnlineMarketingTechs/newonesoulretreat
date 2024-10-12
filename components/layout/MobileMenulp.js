@@ -38,11 +38,11 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                     </ul>
                                     <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="fa fa-angle-right" /></div>
                                 </li> */}
-                                <li className=""><Link href="#">One Soul Path</Link> </li>
-                                <li className="dropdown"><Link href="#">Amenities & Services</Link>
+                                <li className=""><Link href="/onesoullp">One Soul Path</Link> </li>
+                                <li className="dropdown"><Link href="/amenitieslp">Amenities & Services</Link>
                     
                                 </li>
-                                <li className="dropdown"><Link href="#">Testimonials</Link>
+                                <li className="dropdown"><Link href="#Testimonials">Testimonials</Link>
                                 
                                 </li>
                             

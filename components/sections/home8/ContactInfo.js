@@ -28,7 +28,7 @@ export default function ContactInfo() {
                                         <div className="inner">
                                                 <div className="btn-box text-center">
                                             
-                                                    <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Enter Now!</span></Link>
+                                                    <Link href="/raffle" className="theme-btn btn-style-eight"><span className="btn-title">Enter Now!</span></Link>
                                                 </div>
                                         </div>
                                     </li>

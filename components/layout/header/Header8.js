@@ -28,25 +28,24 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                             </div>
                             <div className="header-upper-right-style8">
                                 <ul className="social-links clearfix">
-                                    <li><a href="#"><span className="fab fa-facebook-f" /></a></li>
-                                    <li><a href="#"><span className="fab fa-twitter" /></a></li>
-                                    <li><a href="#"><span className="fab fa-google-plus-g" /></a></li>
-                                    <li><a href="#"><span className="fab fa-skype" /></a></li>
+                                    <li><a href="https://www.facebook.com/onesoulretreats"><span className="fab fa-facebook-f" /></a></li>
+                                    <li><a href="https://www.instagram.com/onesoulretreats/"><span className="fab fa-instagram" /></a></li>
+                                    <li><a href="https://www.linkedin.com/company/one-soul-retreats/"><span className="fab fa-linkedin" /></a></li>
                                 </ul>
-                                <button type="button" className="theme-btn search-toggler" onClick={handlePopup}>
+                                {/* <button type="button" className="theme-btn search-toggler" onClick={handlePopup}>
                                     <span className="flaticon-search" />
-                                </button>
-                                <div className="shopping-cart-outer">
+                                </button> */}
+                                {/* <div className="shopping-cart-outer">
                                     <div className="shopping-cart">
                                         <i className="flaticon-shopping-cart" />
                                         <span className="count">2</span>
                                     </div>
-                                </div>
+                                </div> */}
                                 {/*Sidemenu Navigation Toggler*/}
                                 {/* <div className="sidemenu-nav-toggler" onClick={handleSidebar}><img src="/assets/images-3/icon-bar-8.png" alt="" /></div> */}
                                 <div className="right-button">
-                                    <a className="theme-btn btn-style-eight" href="#">
-                                        <span className="btn-title">Inquire Now</span>
+                                    <a className="theme-btn btn-style-eight" href="/booking">
+                                        <span className="btn-title">Book Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -73,14 +72,14 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                                     </nav>
                                     {/* Main Menu End*/}
                                     <div className="navbar-right-info">
-                                        <button type="button" className="theme-btn search-toggler" onClick={handlePopup}><span className="flaticon-search" /></button>
+                                        {/* <button type="button" className="theme-btn search-toggler" onClick={handlePopup}><span className="flaticon-search" /></button> */}
                                         {/*Sidemenu Navigation Toggler*/}
-                                        <div className="sidemenu-nav-toggler" onClick={handleSidebar}>
+                                        {/* <div className="sidemenu-nav-toggler" onClick={handleSidebar}>
                                             <img src="/assets/images-3/icon-bar-8-v2.png" alt="" />
-                                        </div>
+                                        </div> */}
                                         <div className="right-button">
-                                    <a className="theme-btn btn-style-eight" href="#">
-                                        <span className="btn-title">Inquire Now</span>
+                                    <a className="theme-btn btn-style-eight" href="/booking">
+                                        <span className="btn-title">Book Now</span>
                                     </a>
                                 </div>
                                     </div>
