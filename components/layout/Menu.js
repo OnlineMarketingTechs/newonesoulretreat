@@ -35,13 +35,13 @@ export default function Menu() {
                         <li><Link href="/support-maintenance">Support &amp; Maintenance</Link></li>
                     </ul>
                 </li> */}
-                <li className=""><Link href="#">One Soul Path</Link>
+                <li className=""><Link href="/one-soul-path">One Soul Path</Link>
             
                 </li>
-                <li className="dropdown"><Link href="#">Amenities & Services</Link>
+                <li className="dropdown"><Link href="/amenities">Amenities & Services</Link>
                     
                 </li>
-                <li className="dropdown"><Link href="#">Testimonials</Link>
+                <li className="dropdown"><Link href="#Testimonials">Testimonials</Link>
                     
                 </li>
              

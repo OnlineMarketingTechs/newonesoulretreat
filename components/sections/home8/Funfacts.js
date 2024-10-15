@@ -4,7 +4,7 @@ import CounterUp from "@/components/elements/CounterUp"
 export default function Funfacts() {
     return (
         <>
-            <section className="funfacts-section-eight" style={{ backgroundImage: 'url(assets/images-3/funfacts-section-eight-bg.jpg)' }}>
+            <section className="funfacts-section-eight" style={{ backgroundImage: 'url(/assets/images/background/shiboo-art-ayahuasca.webp)' }}>
                 <div className="auto-container">
                     {/* Fact Counter */}
                     <ul className="fact-counter-eight">
@@ -16,7 +16,7 @@ export default function Funfacts() {
                                         <span className="icon-star-1 clr8" />
                                     </div>
                                     <div className="count-outer count-box">
-                                        <CounterUp end={4200} />
+                                        <CounterUp end={2200} />
                                         <div className="counter-title">Successful Journeys</div>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@ export default function Funfacts() {
                                         <span className="icon-user clr8" />
                                     </div>
                                     <div className="count-outer count-box">
-                                        <CounterUp end={3200} />
+                                        <CounterUp end={1200} />
                                         <div className="counter-title">Members of The <br></br>One Soul Path Program</div>
                                     </div>
                                 </div>

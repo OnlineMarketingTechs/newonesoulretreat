@@ -5,7 +5,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="My Account" wrapperCls="home_1">
+            <Layout headerStyle={8} footerStyle={8} breadcrumbTitle="My Account" wrapperCls="home_8">
                 <div>
                     <section className="myaccount-section">
                         <div className="auto-container">

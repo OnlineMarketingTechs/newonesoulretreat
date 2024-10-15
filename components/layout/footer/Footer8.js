@@ -31,22 +31,22 @@ export default function Footer8() {
                             <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
                                 <div className="single-footer-widget">
                                     <div className="title">
-                                        <h3>Usefull Link</h3>
+                                        <h3>Usefull Links</h3>
                                     </div>
                                     <div className="footer-widget-link-box">
                                         <ul className="footer-widget-links1 left">
-                                            <li><Link href="#">About Company</Link></li>
-                                            <li><Link href="#">Why Choose Us</Link></li>
-                                            <li><Link href="#">Testimonials</Link></li>
+                                            <li><Link href="/one-soul-path">The One Soul Path</Link></li>
+                                            <li><Link href="/amenities">Amenitites & Services</Link></li>
+                                            <li><Link href="#TestimonialsS">Testimonials</Link></li>
                                             <li><Link href="#">FAQ’s</Link></li>
                                             
                                         </ul>
-                                        <ul className="footer-widget-links1 right">
+                                        {/* <ul className="footer-widget-links1 right">
                                             <li><Link href="#">Latest News</Link></li>
                                             <li><Link href="#">Contact Us</Link></li>
                                             <li><Link href="#">Privacy Policy</Link></li>
                                             
-                                        </ul>
+                                        </ul> */}
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@ export default function Footer8() {
                             <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
                                 <div className="single-footer-widget pdtop">
                                     <div className="title">
-                                        <h3>Important Infromation</h3>
+                                        <h3>Great Ayahuasca Infromation</h3>
                                     </div>
                                     <ul className="widget-popular-post">
                                         <li>
@@ -64,7 +64,7 @@ export default function Footer8() {
                                             </div>
                                             <div className="title-box">
                                                 <span>{new Date().getFullYear()}</span>
-                                                <h3><Link href="#">Everything You Need To Know About AYAHUASCA<br /></Link></h3>
+                                                <h3><Link href="/everything-you-need-to-know-about-ayahuasca-retreats">Everything You Need To Know About AYAHUASCA<br /></Link></h3>
                                             </div>
                                         </li>
                                         <li>

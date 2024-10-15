@@ -10,8 +10,8 @@ export default function Blog() {
                         <div className="col-xl-12">
                             <div className="news-section-eight_title">
                                 <div className="sec-title style-eight">
-                                    <h4>News &amp; Updates</h4>
-                                    <h2>Our Current Retreats</h2>
+                                    <h4>One Soul News</h4>
+                                    <h2>Great articles about Ayahuasca Retreats</h2>
                                 </div>
                                 {/* <div className="btn-box">
                                     <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">More
@@ -26,13 +26,13 @@ export default function Blog() {
                             <div className="news-block-eight wow fadeInUp" data-wow-duration="1500ms">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images-3/blog/blog-v8-1.jpg" alt="" />
+                                        <img src="/assets/images/background/everything-your-need-to-know-about-ayahuasca.webp" alt="Everything you need to know about Ayahuasca Retreats" />
                                         <div className="overlay-icon">
-                                            <Link href="#"><span className="icon-plus" /></Link>
+                                            <Link href="/everything-you-need-to-know-about-ayahuasca-retreats"><span className="icon-plus" /></Link>
                                         </div>
                                     </div>
                                     <div className="categories-box bgclr1">
-                                        <p>Business</p>
+                                        <p>Ayahuasca Retreats</p>
                                     </div>
                                 </div>
                                 <div className="text-holder">
@@ -41,7 +41,7 @@ export default function Blog() {
                                         <li><Link href="#">By Raana irave</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
-                                        <Link href="/blog-single">Everything You Need To Know About AYAHUASCA</Link>
+                                        <Link href="/everything-you-need-to-know-about-ayahuasca-retreats">Everything You Need To Know About AYAHUASCA Retreats</Link>
                                     </h3>
                                 </div>
                             </div>
@@ -52,13 +52,13 @@ export default function Blog() {
                             <div className="news-block-eight wow fadeInUp" data-wow-duration="1500ms">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images-3/blog/blog-v8-2.jpg" alt="" />
+                                        <img src="/assets/images/background/legal-ayahuasca-retreats-in-aspen-colorado.webp" alt="Legal Ayahuasca Retreat Aspen Colorado" />
                                         <div className="overlay-icon">
-                                            <Link href="#"><span className="icon-plus" /></Link>
+                                            <Link href="/everything-you-need-to-know-about-ayahuasca-retreats"><span className="icon-plus" /></Link>
                                         </div>
                                     </div>
                                     <div className="categories-box bgclr1">
-                                        <p>Projects</p>
+                                        <p>Ayhuasca Retreats Colorado</p>
                                     </div>
                                 </div>
                                 <div className="text-holder">
@@ -78,13 +78,13 @@ export default function Blog() {
                             <div className="news-block-eight wow fadeInUp" data-wow-duration="1500ms">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images-3/blog/blog-v8-3.jpg" alt="" />
+                                        <img src="/assets/images/background/Transforming-depression-with-ayahuasca.webp" alt="Transforming Depression with Ayahuasca" />
                                         <div className="overlay-icon">
                                             <Link href="#"><span className="icon-plus" /></Link>
                                         </div>
                                     </div>
                                     <div className="categories-box bgclr1">
-                                        <p>Marketing</p>
+                                        <p>Depression and Ayahuasca</p>
                                     </div>
                                 </div>
                                 <div className="text-holder">

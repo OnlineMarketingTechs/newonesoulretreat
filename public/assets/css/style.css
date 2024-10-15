@@ -31037,6 +31037,14 @@ figure {
     margin-bottom: 0;
     padding-bottom: 37px;
 }
+.sec-title.style-eight2 {
+    position: relative;
+    display: block;
+    margin-top: -27px;
+    margin-bottom: 0;
+    padding-bottom: 37px;
+    padding-top: 63px;
+}
 
 .sec-title.style-eight h4 {
     position: relative;
@@ -31048,8 +31056,27 @@ figure {
     padding-bottom: 8px;
     margin-bottom: 19px;
 }
+.sec-title.style-eight2 h4 {
+    position: relative;
+    display: inline-block;
+    color: #a04e3f;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 19px;
+}
 
 .sec-title.style-eight h4:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #a04e3f;
+    content: "";
+}
+.sec-title.btn-style-eight2:hover h4:before {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -32365,7 +32392,7 @@ background-repeat: no-repeat; */
     left: 0;
     bottom: 0;
     right: 0;
-    background: #005050;
+    background: #00505070;
     opacity: 0.80;
     z-index: -1;
     transition: all 200ms linear;
@@ -32486,10 +32513,27 @@ background-repeat: no-repeat; */
     padding: 0px 0 100px;
     z-index: 1;
 }
-
+.testimonial-section-eight2-h8 {
+    position: relative;
+    display: block;
+    padding: 0px 0 100px;
+    z-index: 1;
+}
 .testimonial-section-eight-h8 .layer-outer {
     position: absolute;
     top: -355px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: -1;
+}
+.testimonial-section-eight2-h8 .layer-outer {
+    position: absolute;
+    top: -5px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -32510,7 +32554,16 @@ background-repeat: no-repeat; */
     background: #ffffff;
     opacity: 0.75;
 }
-
+.testimonial-section-eight2-h8 .layer-outer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #ffffff;
+    opacity: 0.75;
+}
 
 .testimonial-block-eight {
     position: relative;
@@ -32756,12 +32809,11 @@ background-repeat: no-repeat; */
     position: absolute;
     left: 30px;
     bottom: -12px;
-    width: 100px;
+    width: 221px;
     height: 24px;
     text-align: center;
     z-index: 3;
 }
-
 .news-block-eight .img-holder .categories-box p {
     color: #ffffff;
     font-size: 13px;
