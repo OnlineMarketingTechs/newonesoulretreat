@@ -38,7 +38,7 @@ export default function Footer8() {
                                             <li><Link href="/one-soul-path">The One Soul Path</Link></li>
                                             <li><Link href="/amenities">Amenitites & Services</Link></li>
                                             <li><Link href="#TestimonialsS">Testimonials</Link></li>
-                                            <li><Link href="#">FAQ’s</Link></li>
+                                            <li><Link href="#"></Link></li>
                                             
                                         </ul>
                                         {/* <ul className="footer-widget-links1 right">
