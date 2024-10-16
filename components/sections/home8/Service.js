@@ -23,12 +23,12 @@ export default function Service() {
                                         <span className="icon-fear" />
                                     </div> */}
                                     <div className="button">
-                                        <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Read
+                                        <Link href="/one-soul-path" className="theme-btn btn-style-eight"><span className="btn-title">Read
                                             More</span></Link>
                                     </div>
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="/onesoulpath">The One Soul Path</Link></h3>
+                                    <h3><Link href="/one-soul-path">The One Soul Path</Link></h3>
                                     <p>We guide your journey every step along your path, for optimal results.</p>
                                 </div>
                             </div>

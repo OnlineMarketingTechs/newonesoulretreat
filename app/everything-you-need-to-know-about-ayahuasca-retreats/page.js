@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
-                <section className="page-title-two" style={{ backgroundImage: 'url(assets/images/background/bg-26.jpg)' }}>
+                <section className="page-title-two" style={{ backgroundImage: 'url(/assets/images/background/titia_getting_into_it.webp)' }}>
                     <div className="auto-container">
                         <div className="content-box">
                             <div className="content-wrapper">
@@ -31,35 +31,70 @@ export default function Home() {
                         <div className="row">
                             <div className="col-lg-8 content-side">
                                 <div className="blog-single-post">
-                                    <h3>First, we make it work. Then we make it last.</h3>
+                                    <h3>Everything You Need to Know About Ayahuasca Retreats Introduction</h3>
                                     <div className="text">
-                                        <p>“On the other hand, we denounce with righteous, indignation and dislike men who are so beguiled and demoralized by charms pleasure of the moment, so blinded by desire. that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through power.”</p><p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed pain avoided but in certain circum- stances owing to the claims take a trivial example.</p><p>Who are so beguiled and demoralized by <Link href="#">charms pleasure of the moment,</Link> blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.</p>
+                                        <p>Ayahuasca, a traditional South American brew made from the Psychotria viridis plant and the Banisteriopsis caapi vine, has gained significant attention in recent years. Ayahuasca retreats offer a unique opportunity for individuals to explore their consciousness, heal emotional wounds, and gain spiritual insights.</p>
+
+                                        <h4 className="mt-5 mb-4">What is Ayahuasca?</h4>
+                                        <p>Ayahuasca is a powerful psychoactive substance that induces a profound state of altered consciousness. When consumed, it can produce vivid hallucinations, emotional release, and spiritual experiences. It's important to note that ayahuasca should only be consumed under the guidance of experienced facilitators in a safe and supportive environment.</p>
+
+                                        
                                     </div>
-                                    <div className="image"><img src="/assets/images/resource/news-35.jpg" alt="" /></div>
+                                    <div className="image"><img src="/assets/images/background/titia_getting_into_it.webp" alt="Ayahuasca Retreat in progress at One Soul Retreats" /></div>
                                     <blockquote>“ Works together with Envolver consulting firms active in USA. <br />Globally we work with more than 150 leading consulting firms and with a select number of partners. ”</blockquote>
-                                    <div className="text">
-                                        <p>Their through weakness will shrinking duty the obligations of business it will frequently occur that pleasures, have to repudiated annoyances accepted the wise man therefore always holds in these matters this principle selection rejects  greater pleasures.</p>
-                                        <p>Find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one avoids pain that produces no resultant teachings of the great explorer of the truth.</p>
-                                    </div>
-                                    <div className="row py-4">
+                                    
+                                    
+                                    
+                                    {/* <div className="row py-4">
                                         <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-36.jpg" alt="" /></div>
                                         <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-37.jpg" alt="" /></div>
                                         <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-38.jpg" alt="" /></div>
                                         <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-39.jpg" alt="" /></div>
-                                    </div>
-                                    <h3>Leading your business to evolution</h3>
+                                    </div> */}
+                                    <h3>Why attend an Ayahuasca Retreat?</h3>
                                     <div className="text">
-                                        <p>Who are so beguiled and demoralized by charms pleasure of the moment, blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue and equal.</p>
-                                        <p>How all this mistaken idea of denouncing pleasure and praising pain was born and we will give you  complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, but because those who do not know.</p>
-                                        <p>Praising pain was born and we will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itselfrationally encounter consequences.</p>
+                                        <p className="mb-4 ml-3"><b>Guided Experience:</b> Ayahuasca retreats provide a safe and controlled setting for consuming ayahuasca under the guidance of experienced facilitators.
+</p>
+                                        <p className="mb-4 ml-3"><b>Therapeutic Benefits:</b> Many people report experiencing therapeutic benefits from ayahuasca, including healing emotional wounds, overcoming addictions, and gaining spiritual insights.
+</p>
+                                        <p className="mb-4 ml-3"><b>Community and Support:</b> Retreats offer the opportunity to connect with like-minded individuals and receive support from a community of people who have shared similar experiences.</p>
+
+                                        <p className="mb-4 ml-3"><b>Immersive Experience:</b>  Ayahuasca retreats often include additional activities, such as yoga, meditation, and group therapy, to enhance the overall experience.</p>
                                     </div>
-                                    <ul className="tag">
+
+                                    <h3>What to Expect from an Ayahuasca Retreat?</h3>
+                                    <div className="text">
+                                        <p className="mb-4 ml-3"><b>Preparation:</b>  Most retreats require participants to complete a pre-retreat questionnaire and undergo a screening process to ensure they are physically and mentally prepared.</p>
+
+                                        <p className="mb-4 ml-3"><b>The Ayahuasca Ceremony:</b> The ceremony typically involves drinking the ayahuasca brew in a group setting, with facilitators providing guidance and support.
+
+</p>
+                                        <p className="mb-4 ml-3"><b>Integration:</b> After the ceremony, participants often engage in group discussions, journaling, or individual therapy sessions to integrate their experiences.</p>
+
+                                        <p className="mb-4 ml-3"><b>Additional Activities:</b> Many retreats also offer additional activities, such as yoga, meditation, and nature walks.</p>
+                                    </div>
+
+                                    <h4 className="mt-5 mb-4">Choosing the Right Ayahuasca Retreat</h4>
+                                        <p>When selecting an ayahuasca retreat, consider the following factors:</p>
+                                        <p className="ml-4 mb-4 mt-4"><b>Reputation and Experience:</b> Choose a retreat center with a positive reputation and experienced facilitators.</p>
+                                        <p className="ml-4 mb-4"><b>Location:</b> Consider the location of the retreat and the cultural context.</p>
+                                        <p className="ml-4 mb-4"><b>Cost:</b> Ayahuasca retreats can vary in price. Set a budget and research options that fit your financial constraints.</p>
+                                        <p className="ml-4 mb-4"><b>Duration:</b> Retreats can range from a few days to several weeks. Choose a duration that aligns with your goals and commitments.</p>
+
+
+                                        <h4 className="mt-5 mb-4">Safety Considerations</h4>
+                                        <p className="ml-4 mb-4"><b>Legal Status: </b>Ayahuasca is legal in some countries and illegal in others. Research the legal status of ayahuasca in the country where the retreat is located.</p>
+                                        <p className="ml-4 mb-4"><b>Health Considerations:</b> Ayahuasca may not be suitable for individuals with certain medical conditions or who are taking certain medications. Consult with a healthcare professional before participating in an ayahuasca retreat.</p>
+                                        <p className="ml-4 mb-4"><b>Facilitator Qualifications:</b> Ensure that the retreat facilitators have the necessary qualifications and experience to guide participants safely through the ayahuasca experience.</p>
+                       
+                                        <p className="mb-5 pb-5"><b></b></p>
+                                    {/* <ul className="tag">
                                         <li><Link href="#">#Analytics</Link></li>
                                         <li><Link href="#">#Consult</Link></li>
                                         <li><Link href="#">#Data</Link></li>
                                         <li><Link href="#">#Industry</Link></li>
-                                    </ul>
-                                    <div className="share-icon">
+                                    </ul> */}
+                                    {/* <div className="share-icon">
                                         <h5>Share this post with your friends</h5>
                                         <ul className="social-links">
                                             <li><Link href="#" className="facebook"><i className="fab fa-facebook-f" />Facebook</Link></li>
@@ -67,9 +102,9 @@ export default function Home() {
                                             <li><Link href="#" className="linkedin"><i className="fab fa-linkedin-in" />Linkedin</Link></li>
                                             <li><Link href="#" className="pinterest"><i className="fab fa-pinterest-p" />Pinterest</Link></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     {/* Post Author */}
-                                    <div className="author-box">
+                                    {/* <div className="author-box">
                                         <div className="image"><img src="/assets/images/resource/author-thumb-13.jpg" alt="" /></div>
                                         <h4>Paul Anderson</h4>
                                         <h5><Link href="#">Visit: http://my.blog.com</Link></h5>
@@ -80,9 +115,9 @@ export default function Home() {
                                             <li><Link href="#"><span className="fab fa-google-plus-g" /></Link></li>
                                             <li><Link href="#"><span className="fab fa-skype" /></Link></li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     {/* Blog Post Pagination */}
-                                    <div className="blog-post-pagination">
+                                    {/* <div className="blog-post-pagination">
                                         <div className="clearfix">
                                             <div className="float-left prev-post">
                                                 <Link href="#"><i className="flaticon-right" /> Prev Post</Link>
@@ -99,17 +134,17 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* Comments */}
-                                    <div className="comments-area">
+                                    <div className="comments-area mt-5">
                                         <h3>Comments</h3>
                                         {/*Comment Box*/}
                                         <div className="comment-box">
                                             <div className="comment">
-                                                <div className="author-thumb"><img src="/assets/images/resource/author-thumb-14.jpg" alt="" /></div>
+                                                {/* <div className="author-thumb"><img src="/assets/images/resource/author-thumb-14.jpg" alt="" /></div> */}
                                                 <div className="comment-inner">
-                                                    <div className="comment-info">Steven Rich, <span className="date">February 28, 2020 [ 11.00am]</span></div>
-                                                    <div className="text">On the other hand, we denounce with righteous indignation  dislike men which toil and some great pleasure.</div>
+                                                    <div className="comment-info">Steven Rich, <span className="date">February 28, 2023 [ 11.00am]</span></div>
+                                                    <div className="text">This is amazing I would love to learn more about booking an Ayahuasca Retreat with One Soul Retreats.</div>
                                                     <Link className="reply-comment-btn" href="#"> Reply</Link>
                                                 </div>
                                             </div>
@@ -117,10 +152,10 @@ export default function Home() {
                                         {/*Comment Box*/}
                                         <div className="comment-box reply-comment">
                                             <div className="comment">
-                                                <div className="author-thumb"><img src="/assets/images/resource/author-thumb-15.jpg" alt="" /></div>
+                                                {/* <div className="author-thumb"><img src="/assets/images/resource/author-thumb-15.jpg" alt="" /></div> */}
                                                 <div className="comment-inner">
-                                                    <div className="comment-info">William Cobus, <span className="date">February 28, 2020 [11.12am]</span></div>
-                                                    <div className="text">Our power of choice is untrammelled and when nothing prevents able to do what we like best is to be welcomed.</div>
+                                                    <div className="comment-info">Eula, <span className="date">February 28, 2023 [11.12am]</span></div>
+                                                    <div className="text">Great, we would love to help click book now and book an appointment with one of our guides and they will help you through the process of booking your Ayahuasca Retreat.</div>
                                                     <Link className="reply-comment-btn" href="#"> Reply</Link>
                                                 </div>
                                             </div>
@@ -128,10 +163,10 @@ export default function Home() {
                                         {/*Comment Box*/}
                                         <div className="comment-box">
                                             <div className="comment">
-                                                <div className="author-thumb"><img src="/assets/images/resource/author-thumb-16.jpg" alt="" /></div>
+                                                {/* <div className="author-thumb"><img src="/assets/images/resource/author-thumb-16.jpg" alt="" /></div> */}
                                                 <div className="comment-inner">
-                                                    <div className="comment-info">Boris Elbert, <span className="date">February 27, 2020 [ 06.00pm]</span></div>
-                                                    <div className="text">These cases are perfectly simple and easy to distinguish. In a free hour, of choice is untrammelled and when nothing prevents.</div>
+                                                    <div className="comment-info">Boris Elbert, <span className="date">February 27, 2023 [ 06.00pm]</span></div>
+                                                    <div className="text">Wow the book is great, thank you.</div>
                                                     <Link className="reply-comment-btn" href="#">Reply</Link>
                                                 </div>
                                             </div>
@@ -225,7 +260,7 @@ export default function Home() {
                 </section>
                 {/* sidebar-page-container end */}
                 {/* Feature Section Two */}
-                <section className="feature-section-two mt-0">
+                {/* <section className="feature-section-two mt-0">
                     <div className="auto-container">
                         <div className="row">
                             <div className="col-lg-6 feature-block-two style-two">
@@ -248,7 +283,7 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
             </Layout>
         </>

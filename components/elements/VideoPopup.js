@@ -48,7 +48,7 @@ export default function VideoPopup({ style, text }) {
 
 
 
-            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="X_qcefTfrzU" onClose={() => setOpen(false)} />
+            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="i4PMn57LiI0" onClose={() => setOpen(false)} />
         </>
     )
 }
