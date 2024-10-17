@@ -31025,12 +31025,15 @@ figure {
     background: #1e4fc8;
 }
 
-
-
-
-
-
 .sec-title.style-eight {
+    position: relative;
+    display: block;
+    margin-top: -9px;
+    margin-bottom: 0;
+    padding-bottom: 37px;
+}
+
+.sec-title.style-eightB2a {
     position: relative;
     display: block;
     margin-top: -9px;
@@ -31057,6 +31060,17 @@ figure {
     margin-bottom: 19px;
 }
 .sec-title.style-eight2 h4 {
+    position: relative;
+    display: inline-block;
+    color: #a04e3f;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    margin-bottom: 19px;
+}
+
+.sec-title.style-eightB2a h4 {
     position: relative;
     display: inline-block;
     color: #a04e3f;
@@ -31095,7 +31109,15 @@ figure {
     padding-bottom: 0px;
     letter-spacing: normal;
 }
-
+.sec-title.style-eightB2a h2 {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1.3em;
+    font-weight: 600;
+    text-transform: none;
+    padding-bottom: 0px;
+    letter-spacing: normal;
+}
 
 .sec-title.style-eight.clr2 h4 {
     color: #b0bebe;
@@ -31404,6 +31426,7 @@ figure {
     text-transform: none;
 }
 
+
 .banner-section.style-eight .banner-carousel .content-box h2:before {
     position: absolute;
     content: "";
@@ -31412,8 +31435,9 @@ figure {
     height: 2px;
     width: 70px;
     background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .banner-section.style-eight .banner-carousel .content-box h2::after {
     display: none;
 }
@@ -31561,6 +31585,111 @@ background-repeat: no-repeat; */
     z-index: 2;
 }
 
+/* the welcome eight sub */
+        .welcome-content-eightB2a {
+            position: relative;
+            display: block;
+        }
+
+        .welcome-content-eightB2a .sec-title.style-eight {
+            padding-bottom: 35px;
+        }
+
+        .welcome-content-eightB2a .inner {
+            position: relative;
+            display: block;
+        }
+
+        .welcome-content-eightB2a .inner h3 {
+            color: #d09d61;
+            font-size: 22px;
+            line-height: 30px;
+            font-weight: 600;
+            margin: 0 0 13px;
+        }
+
+        .welcome-content-eightB2a .inner p {
+            color: #abbcbc;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0;
+        }
+
+        .welcome-content-eightB2a .inner li {
+            color: #abbcbc;
+        }
+
+        .welcome-content-eightB2a .inner li b {
+            color: #d09d61;
+        }
+
+
+        .welcome-content-eightB2a .inner .authorized {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 43px;
+        }
+
+        .welcome-content-eightB2a .inner .authorized .left {
+            position: relative;
+            display: flex;
+        }
+
+        .welcome-content-eightB2a .inner .authorized .image {
+            position: relative;
+            display: block;
+            width: 60px;
+            z-index: 1;
+        }
+
+        .welcome-content-eightB2a .inner .authorized .social {
+            position: relative;
+            display: block;
+            margin-left: -15px;
+        }
+
+        .welcome-content-eightB2a .inner .authorized .social a {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: #a04e3f;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        .welcome-content-eightB2a .inner .text {
+            position: relative;
+            display: block;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .welcome-content-eightB2a .inner .text h3 {
+            color: #005050;
+            font-size: 22px;
+            line-height: 22px;
+            font-weight: 600;
+            margin: 0 0 5px;
+        }
+
+        .welcome-content-eightB2a .inner .text span {
+            color: #717e7e;
+            font-size: 18px;
+        }
+
+        .welcome-content-eightB2a .inner .signature {
+            position: relative;
+            display: block;
+            margin-top: 40px;
+        }
+
+
+/*  end the welcome eight sub  */
 .welcome-content-eight {
     position: relative;
     display: block;

@@ -3,17 +3,20 @@ import Layout from "@/components/layout/Layout"
 
 import Awards from "@/components/sections/home8/Awards"
 import Banner from "@/components/sections/home8/Banner"
-import Onesoul from "@/components/sections/home8/Onesoul"
+import Amenities from "@/components/sections/home8/Amenities"
 import Blog from "@/components/sections/home8/Blog"
-import OnesoulForm from "@/components/sections/home8/OnesoulForm"
+import Choose from "@/components/sections/home8/Choose"
 import ContactFormFaq from "@/components/sections/home8/ContactFormFaq"
 import ContactInfo from "@/components/sections/home8/ContactInfo"
 import Funfacts from "@/components/sections/home8/Funfacts"
 import PricingPlan from "@/components/sections/home8/PricingPlan"
 import Service from "@/components/sections/home8/Service"
+import OneSoulCostaRica from "@/components/sections/home8/OneSoulCostaRica"
+import OneSoulColorado from "@/components/sections/home8/OneSoulColorado"
 import Team from "@/components/sections/home8/Team"
 import Testimonialdl from "@/components/sections/home8/Testimonialdl"
-import WelcomeOnesoul from "@/components/sections/home8/WelcomeOnesoul"
+import WelcomeAmenities from "@/components/sections/home8/WelcomeAmenities"
+import WelcomeAmenitiesTwo from "@/components/sections/home8/WelcomeAmenitiesTwo"
 import WorkingProcess from "@/components/sections/home8/WorkingProcess"
 
 export const metadata = {
@@ -26,11 +29,14 @@ export default function Home() {
     return (
         <>
             <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
-            <Onesoul />
+            <Amenities />
                 {/* <ContactInfo /> */}
-                <WelcomeOnesoul />
+                <WelcomeAmenities />
+                <OneSoulCostaRica />
+                <WelcomeAmenitiesTwo />
+                <OneSoulColorado />
                 <Service />
-                <OnesoulForm />
+                <Choose />
                 {/* <WorkingProcess /> */}
                 {/* <Team /> */}
                 {/* <PricingPlan /> */}
