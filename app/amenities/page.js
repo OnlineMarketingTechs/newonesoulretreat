@@ -17,6 +17,7 @@ import Team from "@/components/sections/home8/Team"
 import Testimonialdl from "@/components/sections/home8/Testimonialdl"
 import WelcomeAmenities from "@/components/sections/home8/WelcomeAmenities"
 import WelcomeAmenitiesTwo from "@/components/sections/home8/WelcomeAmenitiesTwo"
+import WelcomeAmenitiesThree from "@/components/sections/home8/WelcomeAmenitiesThree"
 import WorkingProcess from "@/components/sections/home8/WorkingProcess"
 
 export const metadata = {
@@ -35,6 +36,7 @@ export default function Home() {
                 <OneSoulCostaRica />
                 <WelcomeAmenitiesTwo />
                 <OneSoulColorado />
+                <WelcomeAmenitiesThree />
                 <Service />
                 <Choose />
                 {/* <WorkingProcess /> */}

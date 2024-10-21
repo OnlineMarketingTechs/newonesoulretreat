@@ -22,19 +22,22 @@ export default function Service() {
                                 </div>
                                 <div className="inner text-left">
                                     <h3>Theres really nothing like this anywhere in the world, its awe inspiring.</h3>
-                                    <p className="mt-5">Experience the pinnacle of luxury and tranquility at One Soul Retreat, nestled amidst 100 acres of majestic mountains in Aspen, Colorado. Our stunning estate offers world-class amenities and breathtaking natural beauty, creating the perfect setting for your transformative journey.
-</p>
+                                    <p className="mt-5">Experience the pinnacle of luxury and tranquility at One Soul Retreat, nestled amidst 100 acres of majestic mountains in Aspen, Colorado. Our stunning estate offers world-class amenities and breathtaking natural beauty, creating the perfect setting for your transformative journey.</p>
+
                                     
                                     
                                     <ul className="mt-5 mb-5">
                                         <li className="ml-5 mb-4"><b>Accommodations:</b> </li>
-                                        <li className="ml-5"><b>A Private Room:</b> Relax in our cozy and well-appointed rooms, each featuring modern amenities for your comfort and breathtaking natural landscapes.</li>
+                                        <li className="ml-5"><b>Luxurious Suites:</b> Indulge in spacious and elegantly appointed suites with panoramic mountain views.</li>
+                                        <li className="ml-5"><b>Luxury Cabins:</b> Amazing luxury cabins available for groups. Each cabin includes a spacious deck and hot tub.</li>
+
                                         <li className="ml-5 mt-5 mb-4"><b>Wellness and Relaxation:</b></li>
                                         <li className="ml-5"><b>Spa Services:</b> Pamper yourself with a variety of rejuvenating treatments, including massages, facials, body wraps, and steam baths.</li>
                                         <li className="ml-5"><b>Yoga and Meditation:</b>  Find inner peace and balance through daily yoga and meditation classes led by experienced instructors.</li>
-                                        {/* <li className="ml-5 mt-5 mb-4"><b>Dining Experiences:</b></li>
-                                        <li className="ml-5"><b>Gourmet Cuisine:</b> Savor delicious and nutritious meals prepared by our talented chefs using fresh, locally sourced ingredients.</li>
-                                        <li className="ml-5"><b>Healthy Options:</b>  Catering to various dietary needs, we offer a variety of healthy and delicious meal choices.</li> */}
+                                      
+                                        <li className="ml-5"><b>Scenic Hiking Trails:</b> Explore the natural beauty of the surrounding area on our scenic hiking trails.</li> 
+                                        <li className="ml-5"><b>Private Gardens:</b> Wander through our meticulously manicured gardens and enjoy the peaceful ambiance.</li>
+                                    
                                     </ul>
                                 
                                     
