@@ -44,13 +44,6 @@ export default function Home() {
                                     <blockquote>“ Ayahuasca is a powerful and generous teacher, get this book now.”</blockquote>
                                     
                                     
-                                    
-                                    {/* <div className="row py-4">
-                                        <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-36.jpg" alt="" /></div>
-                                        <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-37.jpg" alt="" /></div>
-                                        <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-38.jpg" alt="" /></div>
-                                        <div className="col-md-3 col-sm-6 mb-4"><img src="/assets/images/resource/news-39.jpg" alt="" /></div>
-                                    </div> */}
                                     <h3>Why attend an Ayahuasca Retreat?</h3>
                                     <div className="text">
                                         <p className="mb-4 ml-3"><b>Guided Experience:</b> Ayahuasca retreats provide a safe and controlled setting for consuming ayahuasca under the guidance of experienced facilitators.
@@ -88,53 +81,12 @@ export default function Home() {
                                         <p className="ml-4 mb-4"><b>Facilitator Qualifications:</b> Ensure that the retreat facilitators have the necessary qualifications and experience to guide participants safely through the ayahuasca experience.</p>
                        
                                         <p className="mb-5 pb-5"><b></b></p>
-                                    {/* <ul className="tag">
-                                        <li><Link href="#">#Analytics</Link></li>
-                                        <li><Link href="#">#Consult</Link></li>
-                                        <li><Link href="#">#Data</Link></li>
-                                        <li><Link href="#">#Industry</Link></li>
-                                    </ul> */}
-                                    {/* <div className="share-icon">
-                                        <h5>Share this post with your friends</h5>
-                                        <ul className="social-links">
-                                            <li><Link href="#" className="facebook"><i className="fab fa-facebook-f" />Facebook</Link></li>
-                                            <li><Link href="#" className="twitter"><i className="fab fa-twitter" />Twiter</Link></li>
-                                            <li><Link href="#" className="linkedin"><i className="fab fa-linkedin-in" />Linkedin</Link></li>
-                                            <li><Link href="#" className="pinterest"><i className="fab fa-pinterest-p" />Pinterest</Link></li>
-                                        </ul>
-                                    </div> */}
+                                  
+                                    
                                     {/* Post Author */}
-                                    {/* <div className="author-box">
-                                        <div className="image"><img src="/assets/images/resource/author-thumb-13.jpg" alt="" /></div>
-                                        <h4>Paul Anderson</h4>
-                                        <h5><Link href="#">Visit: http://my.blog.com</Link></h5>
-                                        <div className="text">Denouncing pleasure and praising pain was born and I will give you a work complete all account of the system and expound.</div>
-                                        <ul className="social-links clearfix">
-                                            <li><Link href="#"><span className="fab fa-facebook-f" /></Link></li>
-                                            <li><Link href="#"><span className="fab fa-twitter" /></Link></li>
-                                            <li><Link href="#"><span className="fab fa-google-plus-g" /></Link></li>
-                                            <li><Link href="#"><span className="fab fa-skype" /></Link></li>
-                                        </ul>
-                                    </div> */}
+                                  
                                     {/* Blog Post Pagination */}
-                                    {/* <div className="blog-post-pagination">
-                                        <div className="clearfix">
-                                            <div className="float-left prev-post">
-                                                <Link href="#"><i className="flaticon-right" /> Prev Post</Link>
-                                                <div className="image-box">
-                                                    <img src="/assets/images/resource/news-40.jpg" alt="" />
-                                                    <h4>How to Manage Business <br /> Online Reputation</h4>
-                                                </div>
-                                            </div>
-                                            <div className="float-right next-post">
-                                                <Link href="#">Next Post <i className="flaticon-right" /> </Link>
-                                                <div className="image-box">
-                                                    <img src="/assets/images/resource/news-41.jpg" alt="" />
-                                                    <h4>Is your Business Ready for <br /> Integration?</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
+                                   
                                     {/* Comments */}
                                     <div className="comments-area mt-5">
                                         <h3>Comments</h3>
@@ -250,32 +202,7 @@ export default function Home() {
                     </div>
                 </section>
                 {/* sidebar-page-container end */}
-                {/* Feature Section Two */}
-                {/* <section className="feature-section-two mt-0">
-                    <div className="auto-container">
-                        <div className="row">
-                            <div className="col-lg-6 feature-block-two style-two">
-                                <div className="shape-box">
-                                    <div className="inner-box">
-                                        <div className="icon"><img src="/assets/images/icons/icon-9.png" alt="" /></div>
-                                        <h4>Become a Partner of Envolve</h4>
-                                        <div className="text">To take a trivial example, which of us undertakes <br />laborious physical exercise.</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 feature-block-two style-two">
-                                <div className="shape-box">
-                                    <div className="inner-box">
-                                        <div className="icon"><img src="/assets/images/icons/icon-10.png" alt="" /></div>
-                                        <h4>Career Opportunities in Envolve</h4>
-                                        <div className="text">Who chooses to enjoy a pleasure that has no one <br />annoying consequences.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section> */}
-
+                
             </Layout>
         </>
     )
