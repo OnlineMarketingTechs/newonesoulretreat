@@ -37,8 +37,8 @@ export default function Blog() {
                                 </div>
                                 <div className="text-holder">
                                     <ul className="meta-info">
-                                        <li>14 February, 2021</li>
-                                        <li><Link href="#">By Raana irave</Link></li>
+                                        <li>14 February, 2023</li>
+                                        <li><Link href="#">By Elua</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
                                         <Link href="/everything-you-need-to-know-about-ayahuasca-retreats">Everything You Need To Know About AYAHUASCA Retreats</Link>
@@ -63,8 +63,8 @@ export default function Blog() {
                                 </div>
                                 <div className="text-holder">
                                     <ul className="meta-info">
-                                        <li>14 February, 2021</li>
-                                        <li><Link href="/legal-ayahuasca-retreats-in-aspen-colorado">By Brendan Duke</Link></li>
+                                        <li>12 March, 2023</li>
+                                        <li><Link href="/legal-ayahuasca-retreats-in-aspen-colorado">By Eula</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
                                         <Link href="/legal-ayahuasca-retreats-in-aspen-colorado">Legal Ayahuasca Retreats in Aspen Colorado!</Link>
@@ -89,7 +89,7 @@ export default function Blog() {
                                 </div>
                                 <div className="text-holder">
                                     <ul className="meta-info">
-                                        <li>14 February, 2021</li>
+                                        <li>10 March, 2023</li>
                                         <li><Link href="/transforming-depression-with-ayahuasca">By Raana irave</Link></li>
                                     </ul>
                                     <h3 className="blog-title">

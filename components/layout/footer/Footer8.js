@@ -63,7 +63,7 @@ export default function Footer8() {
                                                 <img src="/assets/images/icons/ayahuasca-70x70.webp" alt="ayahuasca ceremony at One Soul Retreats" />
                                             </div>
                                             <div className="title-box">
-                                                <span>{new Date().getFullYear()}</span>
+                                                <span>2023</span>
                                                 <h3><Link href="/everything-you-need-to-know-about-ayahuasca-retreats">Everything You Need To Know About AYAHUASCA<br /></Link></h3>
                                             </div>
                                         </li>
@@ -72,7 +72,7 @@ export default function Footer8() {
                                                 <img src="/assets/images/icons/ayahuasca-aspen-colorado-70x70.webp" alt="Ayahuasca shaman performing ayahuasca ceremony" />
                                             </div>
                                             <div className="title-box">
-                                                <span>{new Date().getFullYear()}</span>
+                                                <span>2023</span>
                                                 <h3><Link href="/legal-ayahuasca-retreats-in-aspen-colorado">Legal Ayahuasca Retreats in Aspen Colorado!</Link></h3>
                                             </div>
                                         </li>
@@ -81,7 +81,7 @@ export default function Footer8() {
                                                 <img src="/assets/images/icons/transforming-depression-ayahuasca-70x70.webp" alt="a woman working through depression with ayahuasca" />
                                             </div>
                                             <div className="title-box">
-                                                <span>{new Date().getFullYear()}</span>
+                                                <span>2023</span>
                                                 <h3><Link href="/transforming-depression-with-ayahuasca">Transforming Depression With Ayahuasca</Link></h3>
                                             </div>
                                         </li>

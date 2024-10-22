@@ -12,7 +12,7 @@ export default function Home() {
                             <div className="content-wrapper">
                                 <div className="category">Legal Ayahuasca Retreats CO</div>
                                 <ul className="post-meta">
-                                    <li><a href="#">10 March, 2023</a></li>
+                                    <li><a href="#">12 March, 2023</a></li>
                                     <li>/</li>
                                     <li>By Elua </li>
                                     <li>/</li>
