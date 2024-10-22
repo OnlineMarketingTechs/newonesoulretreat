@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import Breadcrumb_Services from "@/components/layout/Breadcrumb_Services"
 import ContactForm from "@/components/contact/ContactForm"
+import Testimonialdl from "@/components/sections/home8/Testimonialdl"
 
 
 export default function Home() {
@@ -86,7 +87,7 @@ export default function Home() {
 
      </div>
 </div>
-                
+  <Testimonialdl />                
             </Layout> 
             
         </>
