@@ -38,11 +38,11 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                     </ul>
                                     <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="fa fa-angle-right" /></div>
                                 </li> */}
-                                <li className=""><Link href="#">One Soul Path</Link> </li>
-                                <li className="dropdown"><Link href="#">Amenities & Services</Link>
+                                <li className=""><Link href="/one-soul-path">One Soul Path</Link> </li>
+                                <li className="dropdown"><Link href="/amenities">Amenities & Services</Link>
                     
                                 </li>
-                                <li className="dropdown"><Link href="#">Testimonials</Link>
+                                <li className="dropdown"><Link href="#Testimonials">Testimonials</Link>
                                 
                                 </li>
                             
@@ -53,15 +53,15 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
 
                     </div>
                     {/*Social Links*/}
-                    <div className="social-links">
+                    {/* <div className="social-links">
                         <ul className="clearfix">
-                            {/* <li><Link href="https://www.facebook.com/journeycafe"><span className="fab fa-twitter" /></Link></li> */}
+                        
                             <li><Link href="https://www.facebook.com/journeycafe"><span className="fab fa-facebook-square" /></Link></li>
-                            {/* <li><Link href="/#"><span className="fab fa-pinterest-p" /></Link></li> */}
+                         
                             <li><Link href="https://www.instagram.com/journeytogoodhealthcafe/"><span className="fab fa-instagram" /></Link></li>
                             <li><Link href="https://www.youtube.com/@journeycafe1766"><span className="fab fa-youtube" /></Link></li>
                         </ul>
-                    </div>
+                    </div> */}
                 </nav>
             </div>{/* End Mobile Menu */}
             <div className="nav-overlay" style={{ display: `${isSidebar ? "block" : "none"}` }} onClick={handleSidebar} />
