@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Choose() {
     return (
         <>
-            <section className="choose-section-eight">
+            <section className="choose-section-eight"  id="onesoulform">
                 <div className="auto-container">
                     <div className="row">
                         <div className="col-xl-6">
@@ -15,7 +15,7 @@ export default function Choose() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6">
+                        <div className="col-xl-6" >
                             <div className="choose-content-eight">
                                 <div className="sec-title style-eight">
                                     <h4>Why Choose Us</h4>

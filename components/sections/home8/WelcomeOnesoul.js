@@ -43,7 +43,7 @@ export default function Welcome() {
                                     
                                     <div className="btn-box text-center mt-4">
                                       
-                                            <Link href="/ayahuasca-for-real-people" className="theme-btn btn-style-eight mt-3"><span className="btn-title">Download Your Free Copy Now !</span></Link>
+                                            <Link href="#onesoulform" className="theme-btn btn-style-eight mt-3"><span className="btn-title">Download Your Free Copy Now !</span></Link>
                                         </div>
                           
                                 </div>
