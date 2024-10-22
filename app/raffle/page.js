@@ -68,7 +68,7 @@ export default function Home() {
                                         </div>
                                         <div className="col-md-12">
                                             <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
-                                                <span className="btn-title">Book Now</span>
+                                                <span className="btn-title">Enter Now</span>
                                             </button>
                                         </div>
                                         <div className="mt-2 ml-3">
