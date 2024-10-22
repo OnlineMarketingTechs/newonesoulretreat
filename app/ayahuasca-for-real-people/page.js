@@ -40,7 +40,7 @@ export default function Home() {
                             <div className="contact-form-eight-b">
                                 <div className="title">
                                     <h2 className="text-center">Get Your Free Copy Now!</h2>
-                                    <p className="pt-3">Find out everything about Ayahuasca</p>
+                                    <p className="pt-3 mb-3">Find out everything about Ayahuasca</p>
                                     
                                 </div>
                                 <form method="post" action="sendemail.php" className="contact-form-h8">
@@ -61,6 +61,9 @@ export default function Home() {
                                             <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
                                                 <span className="btn-title">Book Now</span>
                                             </button>
+                                        </div>
+                                        <div className="mt-2 ml-3">
+                                           <Link className="mr-2" href="/privacy">Privacy Policy</Link> <Link href="/terms">Terms &amp; Conditions</Link>
                                         </div>
                                     </div>
                                 </form>

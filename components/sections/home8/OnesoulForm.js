@@ -1,4 +1,5 @@
 import VideoPopup from "@/components/elements/VideoPopup"
+import Link from "next/link"
 
 
 export default function Choose() {
@@ -47,7 +48,12 @@ export default function Choose() {
                                             <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
                                                 <span className="btn-title">Download Now</span>
                                             </button>
+                                            
                                         </div>
+                                        <div className="mt-2 ml-3">
+                                           <Link className="mr-2" href="/privacy">Privacy Policy</Link> <Link href="/terms">Terms &amp; Conditions</Link>
+                                        </div>
+
                                     </div>
                                 </form>
                             </div>

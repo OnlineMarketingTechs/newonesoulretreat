@@ -41,7 +41,7 @@ export default function Home() {
                                         
                                     </div>
                                     <div className="image"><img src="/assets/images/background/titia_getting_into_it.webp" alt="Ayahuasca Retreat in progress at One Soul Retreats" /></div>
-                                    <blockquote>“ Ayahuasca is a powerful and generous teacher, get this book now.”</blockquote>
+                                    <blockquote>“ Works together with Envolver consulting firms active in USA. <br />Globally we work with more than 150 leading consulting firms and with a select number of partners. ”</blockquote>
                                     
                                     
                                     
@@ -209,10 +209,10 @@ export default function Home() {
                                     <div className="widget widget_categories">
                                         <h3 className="widget-title">Ayahuasca Retreats</h3>
                                         <div className="widget-content">
-                                        <ul className="categories-list clearfix">
-                                                <li><Link href="/amenities">Colorado Ayahuasca Retreats<span>12</span></Link></li>
-                                                <li><Link href="/amenities">Costa Rica Ayahuasca Retreats<span>05</span></Link></li>
-                                                <li><Link href="/amenities">Peru Ayahuasca Retreats <span>07</span></Link></li>
+                                            <ul className="categories-list clearfix">
+                                                <li><Link href="#">Colorado Ayahuasca Retreats<span>12</span></Link></li>
+                                                <li><Link href="#">Costa Rica Ayahuasca Retreats<span>05</span></Link></li>
+                                                <li><Link href="#">Peru Ayahuasca Retreats <span>07</span></Link></li>
                                         
                                             </ul>
                                         </div>
@@ -221,11 +221,20 @@ export default function Home() {
                                     <div className="widget widget_popular_post">
                                         <h3 className="widget-title">Learn More About Ayahuasca Retreats</h3>
                                         <article className="post">
-                                            <figure className="post-thumb"><Link href="/ayahuasca-for-real-people"><img src="/assets/images/background/ayahuasca-for-real-people-cover1-small.webp" width="80px" alt="ayahuasca for real people the book" /></Link></figure>
-                                            <h5><Link href="/ayahuasca-for-real-people">Get our Free Book - Ayahuasca for Real People</Link></h5>
+                                            <figure className="post-thumb"><Link href="/blog-details"><img src="/assets/images/resource/news-32.jpg" alt="" /></Link></figure>
+                                            <h5><Link href="/blog-details">Get our Free Book - Ayahuasca for Real People</Link></h5>
                                             <div className="post-info">Learn everything you need to know about Ayahuasca</div>
                                         </article>
-                                        
+                                        <article className="post">
+                                            <figure className="post-thumb"><Link href="/blog-details"><img src="/assets/images/resource/news-33.jpg" alt="" /></Link></figure>
+                                            <h5><Link href="/blog-details">Your Business Ready for Integration</Link></h5>
+                                            <div className="post-info">21 January, 2020 </div>
+                                        </article>
+                                        <article className="post">
+                                            <figure className="post-thumb"><Link href="/blog-details"><img src="/assets/images/resource/news-34.jpg" alt="" /></Link></figure>
+                                            <h5><Link href="/blog-details">That Should You Include In Marketing Plan</Link></h5>
+                                            <div className="post-info">May 10, 2018</div>
+                                        </article>
                                     </div>
                                     {/* Instagram Widget */}
                                     <div className="widget widget_popular_post">
@@ -236,7 +245,7 @@ export default function Home() {
                                             <article className="post">
                                             <figure className="post-thumb"><Link href="/one-soul-path"><img src="/assets/images/background/onesoul-standing-up-small.webp" width="80px" height="120px" alt="Walk your path with The One Soul Path and find your highest potential" /></Link></figure>
                                             <h3>The One Soul Path</h3>
-                                            <h5><Link href="/one-soul-path">We guide your journey every step along your path, for optimal results</Link></h5>
+                                            <h5><Link href="/blog-details">We guide your journey every step along your path, for optimal results</Link></h5>
                                             <div className="post-info">Get your free copy today and start walking your path.</div>
                                         </article>
                                                

@@ -51,7 +51,7 @@ export default function PricingPlan() {
                                     </div>
                                 </div>
                                 <div className="table-button">
-                                    <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Download Now</span></Link>
+                                    <Link href="/one-soul-path" className="theme-btn btn-style-eight"><span className="btn-title">Download Now</span></Link>
                                 </div>
                                 <div className="price-list">
                                     <ul>
@@ -77,7 +77,7 @@ export default function PricingPlan() {
                                     </div>
                                 </div>
                                 <div className="table-button">
-                                    <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Get Started
+                                    <Link href="/ayahuasca-for-real-people" className="theme-btn btn-style-eight" title="Ayahusca for Real People"><span className="btn-title">Get Your Copy Free
                                         Now</span></Link>
                                 </div>
                                 <div className="price-list">

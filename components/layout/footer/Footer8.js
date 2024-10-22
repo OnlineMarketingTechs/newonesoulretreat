@@ -73,7 +73,7 @@ export default function Footer8() {
                                             </div>
                                             <div className="title-box">
                                                 <span>{new Date().getFullYear()}</span>
-                                                <h3><Link href="#">Legal Ayahuasca Retreats in Aspen Colorado!</Link></h3>
+                                                <h3><Link href="/legal-ayahuasca-retreats-in-aspen-colorado">Legal Ayahuasca Retreats in Aspen Colorado!</Link></h3>
                                             </div>
                                         </li>
                                         <li>
@@ -100,8 +100,8 @@ export default function Footer8() {
                             </div>
                             <div className="footer-menu-style1">
                                 <ul>
-                                    <li><Link href="#">Privacy Policy</Link></li>
-                                    <li><Link href="#">Terms &amp; Conditions</Link></li>
+                                    <li><Link href="/privacy">Privacy Policy</Link></li>
+                                    <li><Link href="/terms">Terms &amp; Conditions</Link></li>
                                 </ul>
                             </div>
                         </div>

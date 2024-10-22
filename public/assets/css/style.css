@@ -32187,13 +32187,8 @@ background-repeat: no-repeat; */
 }
 
 .working-process-block-eight .img-holder .counting-step-box {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background: #ffffff;
-    border-radius: 50%;
+    display: none;
+
 }
 
 .working-process-block-eight .img-holder .counting-step-box:before {

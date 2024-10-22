@@ -17,12 +17,12 @@ export default function WorkingProcess() {
                                 <div className="img-holder">
                                     <div className="shape-bg" style={{ backgroundImage: 'url(assets/images-3/shape/thm-shape-2.png)' }} />
                                     <div className="inner">
-                                        <img src="/assets/images/icons/step1.webp" width={200} alt="" />
+                                        <img src="/assets/images/icons/step1.webp" width={200} alt="Connect with One Soul Retreats and join the One Soul Family" />
                                     </div>
                                     <div className="counting-step-box" />
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">You Connect with Us</Link></h3>
+                                    <h3><Link href="/booking">You Connect with Us</Link></h3>
                                     <p className="stepstext">When you join The One Soul Family we become your partners and guides through the steps of your Journey .</p>
                                 </div>
                             </div>
@@ -33,12 +33,12 @@ export default function WorkingProcess() {
                                 <div className="img-holder">
                                     <div className="shape-bg" style={{ backgroundImage: 'url(assets/images-3/shape/thm-shape-2.png)' }} />
                                     <div className="inner">
-                                        <img src="/assets/images/icons/step2.webp" alt="walking-the-path-of-ayahuasca-step-2-one-soul-retreats" />
+                                        <img src="/assets/images/icons/step2.webp" alt="Create your journey with One Soul Retreats, make your plan" />
                                     </div>
                                     <div className="counting-step-box" />
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Create Your Journey</Link></h3>
+                                    <h3><Link href="/booking">Create Your Journey</Link></h3>
                                     <p className="stepstext">Schedule a consultation with one or our senior guides and they will help you plan your jounrey, your transformation plan, and ultimatly your travel itenary.
                                     </p>
                                 </div>
@@ -50,12 +50,12 @@ export default function WorkingProcess() {
                                 <div className="img-holder">
                                     <div className="shape-bg" style={{ backgroundImage: 'url(assets/images-3/shape/thm-shape-2.png)' }} />
                                     <div className="inner">
-                                        <img src="/assets/images/icons/step3.png" alt="" />
+                                        <img src="/assets/images/icons/step3.png" alt="Live your journey travel to your One Soul Retreats destination and experiance true healing" />
                                     </div>
                                     <div className="counting-step-box" />
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Live Your Journey</Link></h3>
+                                    <h3><Link href="/booking">Live Your Journey</Link></h3>
                                     <p className="stepstext">Travel to your One Soul Retreat destination and experiance a life transformation and experience true healing.</p>
                                 </div>
                             </div>
@@ -66,12 +66,12 @@ export default function WorkingProcess() {
                                 <div className="img-holder">
                                     <div className="shape-bg" style={{ backgroundImage: 'url(assets/images-3/shape/thm-shape-2.png)' }} />
                                     <div className="inner">
-                                        <img src="/assets/images/icons/step4.webp" alt="" />
+                                        <img src="/assets/images/icons/step4.webp" alt="On going support and integration after your retreat" />
                                     </div>
                                     <div className="counting-step-box" />
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">On Going Support</Link></h3>
+                                    <h3><Link href="/booking">On Going Support</Link></h3>
                                     <p>When you complete your One Soul Journey our team will help you integrate your experiance and bring lasting healing into your daily life. </p>
                                 </div>
                             </div>

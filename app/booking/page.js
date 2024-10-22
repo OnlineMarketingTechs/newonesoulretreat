@@ -37,7 +37,7 @@ export default function Home() {
                             <div className="contact-form-eight-b">
                                 <div className="title">
                                     <h2>Get connected with a guide</h2>
-                                    <p>Lets get started planning your journey</p>
+                                    <p className="mb-3">Lets get started planning your journey</p>
                                     
                                 </div>
                                 <form method="post" action="sendemail.php" className="contact-form-h8">
@@ -58,6 +58,9 @@ export default function Home() {
                                             <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
                                                 <span className="btn-title">Book Now</span>
                                             </button>
+                                        </div>
+                                        <div className="mt-2 ml-3">
+                                           <Link className="mr-2" href="/privacy">Privacy Policy</Link> <Link href="/terms">Terms &amp; Conditions</Link>
                                         </div>
                                     </div>
                                 </form>

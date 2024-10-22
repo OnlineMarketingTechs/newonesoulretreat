@@ -17,7 +17,7 @@ export default function Service() {
                             <div className="inner-box">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images/background/shaman-ayahuasca-taita.webp" alt="" />
+                                        <img src="/assets/images/background/shaman-ayahuasca-taita.webp" alt="Ayahuasca Shamen inviting you to come experience Ayahuasca in a safe and beautiful setting" />
                                     </div>
                                     {/* <div className="icon">
                                         <span className="icon-fear" />
@@ -39,18 +39,18 @@ export default function Service() {
                             <div className="inner-box">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images/background/woman-enjoying-her-ayahuasca-retreat.webp" alt="" />
+                                        <img src="/assets/images/background/woman-enjoying-her-ayahuasca-retreat.webp" alt="woman enjoying the amenities at a One Soul Retreats ayahuasca retreat" />
                                     </div>
                                     {/* <div className="icon">
                                         <span className="icon-business" />
                                     </div> */}
                                     <div className="button">
-                                        <Link href="/onesoulpath" className="theme-btn btn-style-eight"><span className="btn-title">Read
+                                        <Link href="/amenities" className="theme-btn btn-style-eight"><span className="btn-title">Read
                                             More</span></Link>
                                     </div>
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Amenities & Services</Link></h3>
+                                    <h3><Link href="/amenities">Amenities & Services</Link></h3>
                                     <p>We offer unparalleled amenities and services offered at all of our retreats.</p>
                                 </div>
                             </div>
@@ -61,18 +61,18 @@ export default function Service() {
                             <div className="inner-box">
                                 <div className="img-holder">
                                     <div className="inner">
-                                        <img src="/assets/images/background/integration-aftercare.webp" alt="" />
+                                        <img src="/assets/images/background/integration-aftercare.webp" alt="woman doing meditation and mindfulness work after attending an ayahuasca retreat with One Soul Retreats" />
                                     </div>
                                     {/* <div className="icon">
                                         <span className="icon-rest" />
                                     </div> */}
                                     <div className="button">
-                                        <Link href="#" className="theme-btn btn-style-eight"><span className="btn-title">Read
+                                        <Link href="/booking" className="theme-btn btn-style-eight"><span className="btn-title">Read
                                             More</span></Link>
                                     </div>
                                 </div>
                                 <div className="text-holder">
-                                    <h3><Link href="#">Integration Support</Link></h3>
+                                    <h3><Link href="/booking">Integration Support</Link></h3>
                                     <p>Before and after your journey we are here to support your with integration</p>
                                 </div>
                             </div>

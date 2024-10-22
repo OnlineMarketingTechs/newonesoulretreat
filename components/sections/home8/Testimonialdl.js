@@ -8,7 +8,7 @@ export default function Testimonial() {
                 <div className="layer-outer" style={{ backgroundImage: 'url(/assets/images/background/colorado-2.webp)' }} />
                 <div className="auto-container" id="Testimonials">
                     <div className="sec-title style-eight text-center">
-                        <h4 >Testimonials</h4>
+                        <h4 className="pt-5">Testimonials</h4>
                         <h2>Words From Our Customers</h2>
                     </div>
                     <div className="row">

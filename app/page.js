@@ -32,13 +32,10 @@ export default function Home() {
                 <Service />
                 <Choose />
                 <WorkingProcess />
-                {/* <Team /> */}
                 <PricingPlan />
                 <Testimonial />
-                {/* <Awards /> */}
                 <Blog />
                 
-                {/* <ContactFormFaq /> */}
                 <Funfacts />
             </Layout>
         </>

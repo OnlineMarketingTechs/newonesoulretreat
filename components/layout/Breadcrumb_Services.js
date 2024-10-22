@@ -12,7 +12,6 @@ export default function Breadcrumb_Services({ breadcrumbTitle, pageTitle, pageIm
                             </div>
                             <ul className="bread-crumb clearfix">
                                 <li><Link href="/">Home</Link></li>
-                                <li><Link href="#">Services</Link></li>
                                 <li>{breadcrumbTitle}</li>
                             </ul>
                         </div>
