@@ -38,7 +38,7 @@ export default function Footer8() {
                                             <li><Link href="/one-soul-path">The One Soul Path</Link></li>
                                             <li><Link href="/amenities">Amenitites & Services</Link></li>
                                             <li><Link href="#Testimonials">Testimonials</Link></li>
-                                            <li><Link href="#"></Link></li>
+                                            
                                             
                                         </ul>
                                         {/* <ul className="footer-widget-links1 right">
@@ -82,7 +82,7 @@ export default function Footer8() {
                                             </div>
                                             <div className="title-box">
                                                 <span>{new Date().getFullYear()}</span>
-                                                <h3><Link href="#">Transforming Depression With Ayahuasca</Link></h3>
+                                                <h3><Link href="/transforming-depression-with-ayahuasca">Transforming Depression With Ayahuasca</Link></h3>
                                             </div>
                                         </li>
                                     </ul>

@@ -54,7 +54,7 @@ export default function Blog() {
                                     <div className="inner">
                                         <img src="/assets/images/background/legal-ayahuasca-retreats-in-aspen-colorado.webp" alt="Legal Ayahuasca Retreat Aspen Colorado" />
                                         <div className="overlay-icon">
-                                            <Link href="/everything-you-need-to-know-about-ayahuasca-retreats"><span className="icon-plus" /></Link>
+                                            <Link href="/legal-ayahuasca-retreats-in-aspen-colorado"><span className="icon-plus" /></Link>
                                         </div>
                                     </div>
                                     <div className="categories-box bgclr1">
@@ -64,10 +64,10 @@ export default function Blog() {
                                 <div className="text-holder">
                                     <ul className="meta-info">
                                         <li>14 February, 2021</li>
-                                        <li><Link href="#">By Brendan Duke</Link></li>
+                                        <li><Link href="/legal-ayahuasca-retreats-in-aspen-colorado">By Brendan Duke</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
-                                        <Link href="/blog-single">Legal Ayahuasca Retreats in Aspen Colorado!</Link>
+                                        <Link href="/legal-ayahuasca-retreats-in-aspen-colorado">Legal Ayahuasca Retreats in Aspen Colorado!</Link>
                                     </h3>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ export default function Blog() {
                                     <div className="inner">
                                         <img src="/assets/images/background/Transforming-depression-with-ayahuasca.webp" alt="Transforming Depression with Ayahuasca" />
                                         <div className="overlay-icon">
-                                            <Link href="#"><span className="icon-plus" /></Link>
+                                            <Link href="/transforming-depression-with-ayahuasca"><span className="icon-plus" /></Link>
                                         </div>
                                     </div>
                                     <div className="categories-box bgclr1">
@@ -90,10 +90,10 @@ export default function Blog() {
                                 <div className="text-holder">
                                     <ul className="meta-info">
                                         <li>14 February, 2021</li>
-                                        <li><Link href="#">By Raana irave</Link></li>
+                                        <li><Link href="/transforming-depression-with-ayahuasca">By Raana irave</Link></li>
                                     </ul>
                                     <h3 className="blog-title">
-                                        <Link href="/blog-single">Transforming Depression with Ayahuasca</Link>
+                                        <Link href="/transforming-depression-with-ayahuasca">Transforming Depression with Ayahuasca</Link>
                                     </h3>
                                 </div>
                             </div>
