@@ -1,11 +1,41 @@
 
+ 'use client'; 
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import Breadcrumb_Services from "@/components/layout/Breadcrumb_Services"
 import ContactForm from "@/components/contact/ContactForm"
 import Testimonialdl from "@/components/sections/home8/Testimonialdl"
 
-
+const handleSubmit = async (event) => {
+    event.preventDefault();
+  
+    const formData = new FormData(event.target);
+    const bookingData = Object.fromEntries(formData.entries());
+  
+    try {
+      const response = await fetch('/api/submitBooking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(bookingData),
+      });
+  
+      if (response.ok) {
+        // Booking submitted successfully
+        console.log('Booking submitted');
+        // Optionally, display a success message to the user
+      } else {
+        // Handle errors
+        console.error('Error submitting booking');
+        // Optionally, display an error message to the user
+      }
+    } catch (error) {
+      console.error('Error submitting booking:', error);
+      // Handle network or other errors
+    }
+  };
+  
 export default function Home() {
 
     return (
@@ -41,13 +71,14 @@ export default function Home() {
                                     <p className="mb-3">Lets get started planning your journey</p>
                                     
                                 </div>
-                                <form method="post" action="sendemail.php" className="contact-form-h8">
-                                    <div className="row clearfix">
+
+<form method="post" action="/api/submitBooking" onSubmit={handleSubmit} className="contact-form-h8">
+                                    <div className="row clearfix"> 
                                         <div className="col-md-12 form-group">
-                                            <input type="text" name="firstname" placeholder="Your First Name" required />
+                                            <input type="text" name="firstName" placeholder="Your First Name " required />
                                         </div>
                                         <div className="col-md-12 form-group">
-                                            <input type="text" name="lastname" placeholder="Your Last Name" required />
+                                            <input type="text" name="lastName" placeholder="Your Last Name" required />
                                         </div>
                                         <div className="col-md-12 form-group">
                                             <input type="email" name="email" placeholder="Email Address" required />

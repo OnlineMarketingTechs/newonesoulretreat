@@ -1,3 +1,5 @@
+'client side';
+
 import Link from "next/link"
 
 export default function Sidebar({ isSidebar, handleSidebar }) {
@@ -6,7 +8,7 @@ export default function Sidebar({ isSidebar, handleSidebar }) {
             <section className={`hidden-sidebar ${isSidebar ? "" : "close-sidebar"}`} style={{ right: `${isSidebar ? "0" : "-480px"}`, transform: 'matrix(1, 0, 0, 1, 0, 0)' }}>
                 <div className="wrapper-box">
                     <div className="hidden-sidebar-close" onClick={handleSidebar}><span className="flaticon-remove" /></div>
-                    <div className="logo"><Link href="#"><img src="/assets/images/logo.png" alt="" /></Link></div>
+                    <div className="logo"><Link href="/"><img src="/assets/images/logo.png" alt="" /></Link></div>
                     <div className="content">
                         <div className="about-widget-two sidebar-widget">
                             <h3>Smart Business Consultancy <br />in New Milton</h3>
@@ -35,7 +37,8 @@ export default function Sidebar({ isSidebar, handleSidebar }) {
                             </form>
                         </div>
                     </div>
-                </div>
+                </div> 
+
             </section >
 
 

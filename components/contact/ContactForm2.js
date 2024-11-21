@@ -32,36 +32,36 @@ const ContactForm = () => {
     <!-- TODO ???
     
     --><form id="WebToLeadForm" action="https://onlinemarketingapps.com/crm/public/index.php?entryPoint=WebToPersonCapture" method="POST" name="WebToLeadForm">
-    <div class="row">
-    <div class="col"><label>First Name: </label><input name="first_name" id="first_name" type="text" /></div>
-    <div class="clear"> </div>
+    <div className="row">
+    <div className="col"><label>First Name: </label><input name="first_name" id="first_name" type="text" /></div>
+    <div className="clear"> </div>
     </div>
-    <div class="row">
-    <div class="col"><label>Last Name: <span class="required">*</span></label><input name="last_name" id="last_name" type="text" required="" /></div>
+    <div className="row">
+    <div className="col"><label>Last Name: <span className="required">*</span></label><input name="last_name" id="last_name" type="text" required="" /></div>
     
-    <div class="clear"> </div>
+    <div className="clear"> </div>
     </div>
-    <div class="row">
-    <div class="col"><label>Mobile: </label><input name="phone_mobile" id="phone_mobile" type="text" /></div>
-    <div class="clear"> </div>
+    <div className="row">
+    <div className="col"><label>Mobile: </label><input name="phone_mobile" id="phone_mobile" type="text" /></div>
+    <div className="clear"> </div>
     </div>
-    <div class="row">
-    <div class="col"><label>Email Address: </label><input name="email1" id="email1" type="email" /></div>
-    <div class="clear"> </div>
+    <div className="row">
+    <div className="col"><label>Email Address: </label><input name="email1" id="email1" type="email" /></div>
+    <div className="clear"> </div>
     </div>
-    <div class="row">
-    <div class="col"><label>Website: </label><input name="website" id="website" type="text" /></div>
-    <div class="clear"> </div>
+    <div className="row">
+    <div className="col"><label>Website: </label><input name="website" id="website" type="text" /></div>
+    <div className="clear"> </div>
     </div>
-    <div class="row">
-    <div class="col">
+    <div className="row">
+    <div className="col">
         <input name="lead_source" id="lead_source" type="hidden" value="Web Site" />
     </div>
-    <div class="clear"> </div>
+    <div className="clear"> </div>
     </div>
-    <div class="row center buttons">
-        <button class="theme-btn btn-style-one mb-30 contactbump" name="Submit" type="submit" value="Submit"  /><span class="btn-title-new">Let's Get Started</span></button>
-    <div class="clear"> </div>
+    <div className="row center buttons">
+        <button className="theme-btn btn-style-one mb-30 contactbump" name="Submit" type="submit" value="Submit"  /><span className="btn-title-new">Let's Get Started</span></button>
+    <div className="clear"> </div>
     </div>
     <input name="campaign_id" id="campaign_id" type="hidden" value="8e8c55a1-6f2b-0953-8614-6626948e137a" /> 
         <input name="redirect_url" id="redirect_url" type="hidden" value="http://onlinemarketingtechs.com/thankyou" /> 

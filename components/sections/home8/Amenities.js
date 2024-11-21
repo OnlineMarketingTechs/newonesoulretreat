@@ -38,7 +38,7 @@ export default function Banner() {
                         </div>
                         <div className="auto-container ">
                             <div className="content-box">
-                               <div class="text-center">
+                               <div className="text-center">
                                     <h2 className="text-center">Breath Taking Beautiful Landscapes With Luxury Amenities Await.</h2>
                                     <h3 className="text hombanWOW">We offer the pinnicale retreat experience on your <b>transformative journey</b></h3>
                                     {/* <div className="text text-left hombanWOW">Embark on a transformative journey of self-discovery and growth with "The One Soul Path."</div> */}

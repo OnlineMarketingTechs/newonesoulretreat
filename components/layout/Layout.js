@@ -56,19 +56,48 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const handleSidebar = () => setSidebar(!isSidebar)
 
     useEffect(() => {
-        const WOW = require('wowjs')
-        window.wow = new WOW.WOW({
-            live: false
-        })
-        window.wow.init()
-
+        const initWow = async () => {
+          if (typeof window !== "undefined") {
+            const WOW = (await import("wowjs")).default.WOW;
+            new WOW().init();
+          }
+        };
+      
+        initWow();
+      
+        const handleScrollToTop = () => { // Define a separate function
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
+        };
+      
+        // Add the event listener inside a DOMContentLoaded event handler
+        document.addEventListener('DOMContentLoaded', () => {
+          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+          if (scrollToTopBtn) {
+            scrollToTopBtn.addEventListener("click", handleScrollToTop);
+          }
+        });
+      
         document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY > 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
-            }
-        })
-    }, [])
+          const scrollCheck = window.scrollY > 100;
+          if (scrollCheck !== scroll) {
+            setScroll(scrollCheck);
+          }
+        });
+      
+        // Cleanup the event listeners on component unmount
+        return () => {
+          document.removeEventListener('DOMContentLoaded', () => {});
+          document.removeEventListener('scroll', () => {});
+          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+          if (scrollToTopBtn) {
+            scrollToTopBtn.removeEventListener('click', handleScrollToTop);
+          }
+        };
+      }, []);
     return (
         <>
             <DataBg />
@@ -82,7 +111,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {headerStyle == 6 ? <Header6 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
                 {headerStyle == 7 ? <Header7 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
                 {headerStyle == 8 ? <Header8 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
-                {headerStyle == 9 ? <Header9 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
+                {headerStyle == 9 ? <Header9 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} /> : null}
                 {headerStyle == 10 ? <Header10 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
                 {headerStyle == 11 ? <Header11 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
                 {headerStyle == 12 ? <Header12 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
@@ -91,7 +120,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {headerStyle == 15 ? <Header15 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
 
 
-                <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} />
+                {/* <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} /> */}
                 <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
 
                 {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}

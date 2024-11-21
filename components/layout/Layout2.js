@@ -30,19 +30,48 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     const handleSidebar = () => setSidebar(!isSidebar)
 
     useEffect(() => {
-        const WOW = require('wowjs')
-        window.wow = new WOW.WOW({
-            live: false
-        })
-        window.wow.init()
-
+        const initWow = async () => {
+          if (typeof window !== "undefined") {
+            const WOW = (await import("wowjs")).default.WOW;
+            new WOW().init();
+          }
+        };
+      
+        initWow();
+      
+        const handleScrollToTop = () => { // Define a separate function
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
+        };
+      
+        // Add the event listener inside a DOMContentLoaded event handler
+        document.addEventListener('DOMContentLoaded', () => {
+          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+          if (scrollToTopBtn) {
+            scrollToTopBtn.addEventListener("click", handleScrollToTop);
+          }
+        });
+      
         document.addEventListener("scroll", () => {
-            const scrollCheck = window.scrollY > 100
-            if (scrollCheck !== scroll) {
-                setScroll(scrollCheck)
-            }
-        })
-    }, [])
+          const scrollCheck = window.scrollY > 100;
+          if (scrollCheck !== scroll) {
+            setScroll(scrollCheck);
+          }
+        });
+      
+        // Cleanup the event listeners on component unmount
+        return () => {
+          document.removeEventListener('DOMContentLoaded', () => {});
+          document.removeEventListener('scroll', () => {});
+          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+          if (scrollToTopBtn) {
+            scrollToTopBtn.removeEventListener('click', handleScrollToTop);
+          }
+        };
+      }, []);
     return (
         <>
             <DataBg />

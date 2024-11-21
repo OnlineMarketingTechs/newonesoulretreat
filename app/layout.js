@@ -1,3 +1,5 @@
+'use client'; 
+
 import "@/node_modules/react-modal-video/css/modal-video.css"
 import { GoogleTagManager } from "@next/third-parties/google"
 import "@/public/assets/css/bootstrap.css"
@@ -42,7 +44,7 @@ const barlow = Barlow({
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${firaSans.variable} ${barlow.variable}`}>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8"></meta>
         <GoogleTagManager gtmId="GTM-THJK26WR" />
             <body>{children}</body>
         </html>

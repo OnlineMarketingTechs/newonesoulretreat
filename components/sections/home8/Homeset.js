@@ -38,7 +38,7 @@ export default function Banner() {
                         </div>
                         <div className="auto-container">
                             <div className="content-box">
-                                <div class="text-center">
+                                <div className="text-center">
                                     {/* <h3>Be the Change</h3> */}
                                     <h2>Experience a Life-Changing Transformational Journey</h2>
                                     <div className="text text-left hombanWOW">Discover unparalleled transformative experiences at One Soul Retreats. Immerse yourself in the beauty of premiere destinations in Colorado, Costa Rica, Peru, and Mexico as you embark on a journey of self-discovery and healing. Our retreats, led by world-renowned shaman and facilitators, offer a safe and unforgettable space for personal growth. Experience the power of ancient wisdom combined with modern techniques to connect with your inner self and find lasting peace.</div>

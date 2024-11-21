@@ -38,7 +38,7 @@ export default function Banner() {
                         </div>
                         <div className="auto-container">
                             <div className="content-box">
-                                <div class="">
+                                <div className="">
                                     {/* <h3>Be the Change</h3> */}
                                     <h2 className="vCtopper">Win A Transformational Vacation</h2>
                                     <div className="text text-left hombanWOW">Experience the ultimate getaway in stunning locations like Colorado, Costa Rica, Peru, or Mexico. Immerse yourself in the beauty of nature, guided by world-renowned shamans and facilitators. Discover the power of ancient wisdom combined with modern techniques as you embark on a journey of self-discovery and healing.</div>
