@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${firaSans.variable} ${barlow.variable}`}>
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-        <GoogleTagManager gtmId="GTM-THJK26WR" />
+        <GoogleTagManager gtmId="GTM-MRWWMXXR" />
             <body>{children}</body>
         </html>
     )
