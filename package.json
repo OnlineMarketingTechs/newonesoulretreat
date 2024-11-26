@@ -10,7 +10,7 @@
     "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
   },
   "dependencies": {
-    "@next/third-parties": "^14.2.4",
+    "@next/third-parties": "^15.0.3",
     "axios": "^1.7.7",
     "better-sqlite3": "^11.5.0",
     "eslint-config-next": "^14.2.3",
