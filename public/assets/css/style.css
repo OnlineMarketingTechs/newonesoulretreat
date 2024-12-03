@@ -9,6 +9,9 @@
  ***/
 
  /* new stuff */
+ .cleanslate .botup-chat .botupchat-footer-500app {
+    display: none !important;
+ } 
  .raffleT {
     text-align: center;
 }
