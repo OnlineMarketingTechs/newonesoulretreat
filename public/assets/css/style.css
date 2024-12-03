@@ -9,6 +9,11 @@
  ***/
 
  /* new stuff */
+
+ .botup-ultra .botup-icon {
+    width: 118px !important;
+    height: 70px !important;
+}
  .cleanslate .botup-chat .botupchat-footer-500app {
     display: none !important;
  } 
