@@ -5,6 +5,7 @@ import Link from "next/link"
 import Breadcrumb_Services from "@/components/layout/Breadcrumb_Services"
 import ContactForm from "@/components/contact/ContactForm"
 import Testimonialdl from "@/components/sections/home8/Testimonialdl"
+import BookingForm from "@/components/elements/Bookingform"
 
 const handleSubmit = async (event) => {
     event.preventDefault();
@@ -71,31 +72,8 @@ export default function Home() {
                                     <p className="mb-3">Lets get started planning your journey</p>
                                     
                                 </div>
+                                <BookingForm />
 
-<form method="post" action="/api/submitBooking" onSubmit={handleSubmit} className="contact-form-h8">
-                                    <div className="row clearfix"> 
-                                        <div className="col-md-12 form-group">
-                                            <input type="text" name="firstName" placeholder="Your First Name " required />
-                                        </div>
-                                        <div className="col-md-12 form-group">
-                                            <input type="text" name="lastName" placeholder="Your Last Name" required />
-                                        </div>
-                                        <div className="col-md-12 form-group">
-                                            <input type="email" name="email" placeholder="Email Address" required />
-                                        </div>
-                                        <div className="col-md-12 form-group">
-                                            <input type="text" name="phone" placeholder="Phone" required />
-                                        </div>
-                                        <div className="col-md-12">
-                                            <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
-                                                <span className="btn-title">Book Now</span>
-                                            </button>
-                                        </div>
-                                        <div className="mt-2 ml-3">
-                                           <Link className="mr-2" href="/privacy">Privacy Policy</Link> <Link href="/terms">Terms &amp; Conditions</Link>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                         
