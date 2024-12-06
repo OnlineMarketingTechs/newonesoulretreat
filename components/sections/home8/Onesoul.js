@@ -41,7 +41,7 @@ export default function Banner() {
                                 <div className="text-center">
                                     {/* <h3>Be the Change</h3> */}
                                     <h2>Discover Your Path to Fulfillment: A Step-by-Step Guide to Living Your Highest Potential</h2>
-                                    <h3 className="text text-left hombanWOW">Embark on a transformative journey of self-discovery and growth with "The One Soul Path."</h3>
+                                    <h3 className="text hombanWOW">Embark on a transformative journey of self-discovery and growth with "The One Soul Path."</h3>
                                     {/* <div className="text text-left hombanWOW">Embark on a transformative journey of self-discovery and growth with "The One Soul Path."</div> */}
 
                                     {/* <div className="row">

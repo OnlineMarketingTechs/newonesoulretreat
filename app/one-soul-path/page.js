@@ -27,15 +27,13 @@ export default function Home() {
         <>
             <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
             <Onesoul />
-                {/* <ContactInfo /> */}
+                
                 <WelcomeOnesoul />
                 <Service />
                 <OnesoulForm />
-                {/* <WorkingProcess /> */}
-                {/* <Team /> */}
-                {/* <PricingPlan /> */}
+                
                 <Testimonialdl />
-                {/* <Awards /> */}
+                
                 <Blog />
                 
                 {/* <ContactFormFaq /> */}

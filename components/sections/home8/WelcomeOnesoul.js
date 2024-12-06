@@ -16,7 +16,7 @@ export default function Welcome() {
                             </div>
                         </div>
                         <div className="col-xl-6">
-                            <div className="welcome-content-eight">
+                            <div className="welcome-content-eight" id="welcome">
                                 <div className="sec-title style-eight">
                                     <h2>Heal, grow, and change with The One Soul Path</h2>
                                     {/* <h4>Welcome to One Soul Retreats</h4> */}

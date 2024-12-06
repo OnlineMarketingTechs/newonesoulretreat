@@ -22,6 +22,8 @@ import "@/public/assets/css/style.css"
 import "@/public/assets/css/icomoon-3.css"
 import "@/public/assets/css/responsive.css"
 
+
+
 import 'swiper/css'
 import "swiper/css/pagination"
 import 'swiper/css/free-mode';

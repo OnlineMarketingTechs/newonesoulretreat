@@ -1,6 +1,6 @@
 
 import Layout from "@/components/layout/Layout"
-
+import Popup from "@/components/elements/Popup";
 import Awards from "@/components/sections/home8/Awards"
 import Banner from "@/components/sections/home8/Banner"
 import Homeset from "@/components/sections/home8/Homeset"
@@ -35,6 +35,7 @@ export default function Home() {
                 <PricingPlan />
                 <Testimonial />
                 <Blog />
+                <Popup />
                 
                 <Funfacts />
             </Layout>
