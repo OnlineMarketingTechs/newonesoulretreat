@@ -2,8 +2,8 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'GET') {
+export default async function handler(req, res) { // Removed type annotations
+    if (req.method === 'GET') {
     const token = req.query.token;
 
     try {

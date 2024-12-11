@@ -126,11 +126,6 @@ export async function sendScheduledEmails() {
       await db.run('UPDATE contacts SET emailSequenceStep = 10 WHERE id = ?', [contact.id]);
     }
 
-
-
-
-
-
     await db.close();
   } catch (error) {
     console.error('Error sending scheduled emails:', error);
