@@ -19,8 +19,9 @@ const BookingForm = () => {
       });
 
       if (response.ok) {
-        console.log('Booking submitted');
-        // Optionally, display a success message to the user
+        const data = await response.json(); // Parse the JSON response
+        // Redirect to the thank you page with the first name
+        window.location.href = `${data.redirectUrl}?firstName=${data.firstName}`;  
       } else {
         console.error('Error submitting booking');
         // Optionally, display an error message to the user

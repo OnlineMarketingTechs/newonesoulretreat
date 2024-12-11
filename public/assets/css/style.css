@@ -12,6 +12,8 @@
 
     /* new new stuff */
 
+    /* new popup */
+
     .popup {
         background-image: url(../images/background/full-size-ayahuasca-shaman-banner.webp);
         background-size: cover;
@@ -90,6 +92,36 @@
           width: 500px; /* Wider width on larger screens */
         }
       }
+
+      /* end popup */
+
+      /* thank you page */
+      .thankYouTopper {
+        background-color: black;
+        padding-top: 120px;
+        padding-bottom: 55px;
+        color: #ffffff;
+        background-image: url(/assets/images/background/one-soul-retreat-soul-journey.webp);
+    }
+    .thankYouTopper .sec-title .text {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .thankYouTopper .sec-title.style-eight h2 {
+        color: #eeaf26;
+        font-size: 40px;
+        line-height: 1.3em;
+        font-weight: 600;
+        text-transform: none;
+        padding-bottom: 0px;
+        letter-spacing: normal;
+    }
+
+    /* end thank you page */
+
     /* new new stuff */  
 
 
