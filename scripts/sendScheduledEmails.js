@@ -1,12 +1,13 @@
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+// scripts/sendScheduledEmails.js
+
+import { supabase } from '../lib/supabase';
 import nodemailer from 'nodemailer';
-import cron from 'node-cron'; // Import node-cron here
-import fs from 'fs/promises'; // Import for reading files
+import cron from 'node-cron';
+import fs from 'fs/promises';
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT), // Parse port to a number
+  port: parseInt(process.env.SMTP_PORT),
   secure: parseInt(process.env.SMTP_PORT) === 465,
   auth: {
     user: process.env.SMTP_USER,
@@ -15,118 +16,207 @@ const transporter = nodemailer.createTransport({
 });
 
 async function sendEmail(contact, subject, text, html) {
-    try {
-      const info = await transporter.sendMail({
-        from: 'noreply@onesoulretreats.com',
-        to: contact.email,
-        subject: subject,
-        text: text,
-        html: html, // include html content 
-        // You can also use html: '<b>Hello world?</b>' for HTML emails
-      });
-  
-      console.log('Email sent:', info.messageId);
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
-  // Removed the closing curly brace for the nested function:
-  // } 
+  try {
+    const info = await transporter.sendMail({
+      from: 'noreply@onesoulretreats.com',
+      to: contact.email,
+      subject: subject,
+      text: text,
+      html: html,
+    });
+
+    console.log('Email sent:', info.messageId);
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
 }
 
 export async function sendScheduledEmails() {
   try {
-    const db = await open({
-      filename: './bookings.db',
-      driver: sqlite3.Database,
-    });
+    // Fetch contacts for each step from Supabase
+    const { data: contactsStep0, error: error0 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailsequencestep', 0); 
 
-    // Fetch contacts for each step
-    const contactsStep0 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 0');
-    const contactsStep1 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 1');
-    const contactsStep2 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 2');
-    const contactsStep3 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 3');
-    const contactsStep4 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 4');
-    const contactsStep5 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 5');
-    const contactsStep6 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 6');
-    const contactsStep7 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 7');
-    const contactsStep8 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 8');
-    const contactsStep9 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 9');
-    const contactsStep10 = await db.all('SELECT * FROM contacts WHERE emailSequenceStep = 10');
+    if (error0) {
+      throw error0;
+    }
+
+    const { data: contactsStep1, error: error1 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 1);
+
+    if (error1) {
+      throw error1;
+    }
+
+    const { data: contactsStep2, error: error2 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 2);
+
+    if (error2) {
+      throw error2;
+    }
+
+    const { data: contactsStep3, error: error3 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 3);
+
+    if (error3) {
+      throw error3;
+    }
+
+    const { data: contactsStep4, error: error4 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 4);
+
+    if (error4) {
+      throw error4;
+    }
+
+    const { data: contactsStep5, error: error5 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 5);
+
+    if (error5) {
+      throw error5;
+    }
+
+    const { data: contactsStep6, error: error6 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 6);
+
+    if (error6) {
+      throw error6;
+    }
+
+    const { data: contactsStep7, error: error7 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 7);
+
+    if (error7) {
+      throw error7;
+    }
+
+    const { data: contactsStep8, error: error8 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 8);
+
+    if (error8) {
+      throw error8;
+    }
+
+    const { data: contactsStep9, error: error9 } = await supabase
+      .from('contacts')
+      .select('*')
+      .eq('emailSequenceStep', 9);
+
+    if (error9) {
+      throw error9;
+    }
 
     // Send emails and update sequence step
-
     for (const contact of contactsStep0) {
       const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 1 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep1) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 2 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep2) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 3 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep3) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 4 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep4) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 5 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep5) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 6 WHERE id = ?', [contact.id]);
-    }  
-    for (const contact of contactsStep6) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 7 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep7) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 8 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep8) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 9 WHERE id = ?', [contact.id]);
-    }
-    for (const contact of contactsStep9) {
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-      // Personalize the HTML content
-      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName); 
-      await sendEmail(contact, 'Welcome Email', '', personalizedHtml); // Pass the contact object
-      await db.run('UPDATE contacts SET emailSequenceStep = 10 WHERE id = ?', [contact.id]);
+      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName);
+      await sendEmail(contact, 'Welcome Email', '', personalizedHtml);
+
+      const { error: updateError } = await supabase
+        .from('contacts')
+        .update({ emailsequencestep: 1 }) 
+        .eq('id', contact.id);
+
+      if (updateError) {
+        throw updateError;
+      }
     }
 
-    await db.close();
+    for (const contact of contactsStep1) {
+      const htmlContent = await fs.readFile('emails/day1.html', 'utf-8');
+      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName);
+      await sendEmail(contact, 'Day 1 Email', '', personalizedHtml);
+
+      const { error: updateError } = await supabase
+        .from('contacts')
+        .update({ emailSequenceStep: 2 })
+        .eq('id', contact.id);
+
+      if (updateError) {
+        throw updateError;
+      }
+    }
+
+    for (const contact of contactsStep2) {
+      const htmlContent = await fs.readFile('emails/day2.html', 'utf-8');
+      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName);
+      await sendEmail(contact, 'Day 2 Email', '', personalizedHtml);
+
+      const { error: updateError } = await supabase
+        .from('contacts')
+        .update({ emailSequenceStep: 3 })
+        .eq('id', contact.id);
+
+      if (updateError) {
+        throw updateError;
+      }
+    }
+
+    for (const contact of contactsStep3) {
+      const htmlContent = await fs.readFile('emails/day3.html', 'utf-8');
+      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName);
+      await sendEmail(contact, 'Day 3 Email', '', personalizedHtml);
+
+      const { error: updateError } = await supabase
+        .from('contacts')
+        .update({ emailSequenceStep: 4 })
+        .eq('id', contact.id);
+
+      if (updateError) {
+        throw updateError;
+      }
+    }
+
+    for (const contact of contactsStep4) {
+      const htmlContent = await fs.readFile('emails/day7.html', 'utf-8');
+      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName);
+      await sendEmail(contact, 'Day 7 Email', '', personalizedHtml);
+
+      const { error: updateError } = await supabase
+        .from('contacts')
+        .update({ emailSequenceStep: 5 })
+        .eq('id', contact.id);
+
+      if (updateError) {
+        throw updateError;
+      }
+    }
+
+    for (const contact of contactsStep5) {
+      const htmlContent = await fs.readFile('emails/day10.html', 'utf-8');
+      const personalizedHtml = htmlContent.replace('[firstName]', contact.firstName);
+      await sendEmail(contact, 'Day 10 Email', '', personalizedHtml);
+
+      const { error: updateError } = await supabase
+        .from('contacts')
+        .update({ emailSequenceStep: 6 })
+        .eq('id', contact.id);
+
+      if (updateError) {
+        throw updateError;
+      }
+    }
+
+    // ... and so on for other steps, if needed
+
   } catch (error) {
     console.error('Error sending scheduled emails:', error);
   }

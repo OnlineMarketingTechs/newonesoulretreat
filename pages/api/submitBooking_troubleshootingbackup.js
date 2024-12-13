@@ -42,17 +42,17 @@ export default async function handler(req, res) {
 
       // First, insert the new contact *without* the confirmationToken
       const { data, error } = await supabase
-      .from('contacts')
-      .insert([
-        {
-          firstname: firstName, 
-          lastname: lastName,  
-          email: email,
-          phone: phone,
-          emailsequencestep: 0, 
-          isconfirmed: false    
-        }
-      ]);
+        .from('contacts')
+        .insert([
+          {
+            firstname: firstName,
+            lastname: lastName,
+            email: email,
+            phone: phone,
+            emailsequencestep: 0,
+            isconfirmed: false
+          }
+        ]);
 
       if (error) {
         throw error;
@@ -68,27 +68,27 @@ export default async function handler(req, res) {
         throw newContact.error;
       }
 
-      const confirmationToken = uuidv4();
+      const confirmationtoken = uuidv4(); // Generate the token
 
       // Now, update the record with the confirmationToken
       const { data: updatedData, error: updateError } = await supabase
-      .from('contacts')
-      .update({ confirmationtoken: confirmationToken })
-      .eq('id', newContact.data.id);
+        .from('contacts')
+        .update({ confirmationtoken: confirmationtoken })
+        .eq('id', newContact.data.id);
 
       if (updateError) {
         throw updateError;
       }
 
-      // Construct the confirmation URL (using correct casing)
-      const confirmationUrl = `https://www.onesoulretreats.com/api/confirm?token=${newContact.data.confirmationtoken}`; 
+      // Construct the confirmation URL
+      const confirmationUrl = `https://www.onesoulretreats.com/api/confirm?token=${newContact.data.confirmationtoken}`;
 
       const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
 
       // Personalize the HTML content with the confirmation URL
       const personalizedHtml = htmlContent
-        .replace('[firstName]', newContact.data.firstname) 
-        .replace('[confirmationLink]', confirmationUrl); 
+        .replace('[firstName]', newContact.data.firstName)
+        .replace('[confirmationLink]', confirmationUrl);
 
       await sendEmail(newContact.data, 'Welcome Email', '', personalizedHtml);
 

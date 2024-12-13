@@ -1,23 +1,20 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import sqlite3 from 'sqlite3';
-import { open } from 'sqlite';
+// pages/api/confirm.js
 
-export default async function handler(req, res) { // Removed type annotations
-    if (req.method === 'GET') {
+import { supabase } from '../../lib/supabase'; // Import the Supabase client
+
+export default async function handler(req, res) {
+  if (req.method === 'GET') {
     const token = req.query.token;
 
     try {
-      const db = await open({
-        filename: './bookings.db',
-        driver: sqlite3.Database,
-      });
+      const { data, error } = await supabase
+        .from('contacts')
+        .update({ isconfirmed: true }) 
+        .eq('confirmationtoken', token);
 
-      await db.run(
-        'UPDATE contacts SET isConfirmed = true WHERE confirmationToken = ?',
-        [token]
-      );
-
-      await db.close();
+      if (error) {
+        throw error;
+      }
 
       res.redirect('/thank-you-confirmation'); // Redirect to a confirmation page
     } catch (error) {
