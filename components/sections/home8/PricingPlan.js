@@ -29,10 +29,7 @@ export default function PricingPlan() {
                                 </div>
                                 <div className="price-list">
                                     <ul>
-                                        <li>We will send you </li>
-                                        <li>Plant Medicine for Real People</li>
-                                        <li>and book a call </li>
-                                        <li>with an experienced guide</li>
+                                        <li>We will send you a copy of Ayahuasca for Real People and schedule a call with an experienced guide</li>
                                     </ul>
                                 </div>
                             </div>
@@ -55,10 +52,7 @@ export default function PricingPlan() {
                                 </div>
                                 <div className="price-list">
                                     <ul>
-                                        <li>You will learn</li>
-                                        <li>A powerful process to live</li>
-                                        <li>Your highest potential</li>
-                                        <li>on your One Soul path</li>
+                                        <li>You will learn A powerful process to live Your highest potential on your One Soul path</li>
                                     </ul>
                                 </div>
                             </div>
@@ -82,10 +76,7 @@ export default function PricingPlan() {
                                 </div>
                                 <div className="price-list">
                                     <ul>
-                                        <li>What are the benefits</li>
-                                        <li>What are the risks</li>
-                                        <li>What to expect during a ceremony</li>
-                                        <li>So much more...</li>
+                                        <li>What are the benefits What are the risks What to expect during a ceremony So much more...</li>
                                     </ul>
                                 </div>
                             </div>

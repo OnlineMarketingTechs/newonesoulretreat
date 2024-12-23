@@ -22,7 +22,8 @@ export default function Service() {
                                 </div>
                                 <div className="inner text-left">
                                     <h3>Theres really nothing like this anywhere in the world, its awe inspiring.</h3>
-                                    <p className="mt-5">Experience the pinnacle of luxury and tranquility at One Soul Retreat, nestled amidst 100 acres of majestic mountains in Aspen, Colorado. Our stunning estate offers world-class amenities and breathtaking natural beauty, creating the perfect setting for your transformative journey.</p>
+                                    <p className="mt-5">Experience the pinnacle of luxury and tranquility at the flagship
+                                    resort of One Soul Retreat, Nestled amidst 100 acres of majestic mountains in Aspen, Colorado, our stunning estate offers world-class amenities and breathtaking natural beauty, creating the perfect setting for your transformative journey.</p>
 
                                     
                                     

@@ -39,7 +39,7 @@ export default function WorkingProcess() {
                                 </div>
                                 <div className="text-holder">
                                     <h3><Link href="/booking">Create Your Journey</Link></h3>
-                                    <p className="stepstext">Schedule a consultation with one or our senior guides and they will help you plan your jounrey, your transformation plan, and ultimatly your travel itenary.
+                                    <p className="stepstext">Schedule a consultation with one or our senior guides and they will help you plan your jounrey, create your transformation plan, and ultimately schedule your travel itinerary.
                                     </p>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ export default function WorkingProcess() {
                                 </div>
                                 <div className="text-holder">
                                     <h3><Link href="/booking">Live Your Journey</Link></h3>
-                                    <p className="stepstext">Travel to your One Soul Retreat destination and experiance a life transformation and experience true healing.</p>
+                                    <p className="stepstext">Travel to your One Soul Retreats destination to experiance a life changing transformation and true healing.</p>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ export default function WorkingProcess() {
                                 </div>
                                 <div className="text-holder">
                                     <h3><Link href="/booking">On Going Support</Link></h3>
-                                    <p>When you complete your One Soul Journey our team will help you integrate your experiance and bring lasting healing into your daily life. </p>
+                                    <p>When you complete your One Soul Journey our team will help you integrate your eexperiences into your daily life and bring lasting healing. </p>
                                 </div>
                             </div>
                         </div>

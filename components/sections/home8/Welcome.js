@@ -22,8 +22,8 @@ export default function Welcome() {
                                     {/* <h4>Welcome to One Soul Retreats</h4> */}
                                 </div>
                                 <div className="inner">
-                                    <h3>One Soul Retreats ayahuasca-based,</h3>
-                                    <p>comprehensive transformation program is recognized as the world's best and safest place to work with ayahuasca. Enjoy luxurious amenities in a set and setting designed to give you a safe and productive place to heal. One Soul Retreats, the perfect place to experience the profound change you've been seeking, with results that last.</p>
+                                    <h3>One Soul Retreats offers ayahuasca-based,</h3>
+                                    <p>comprehensive transformation programs recognized around the world for safety when working with ayahuasca and other plant based medicines. Enjoy luxurious amenities in a setting designed to give you a safe, beautiful and productive place to heal and grow. One Soul Retreats, the perfect place to experience the profound change you've been seeking, with results that last.</p>
                                     <div className="authorized">
                                         <div className="left">
                                   
@@ -33,7 +33,7 @@ export default function Welcome() {
 
                                         </div>
                                     </div>
-                                    <div className="btn-box">
+                                    <div className="btn-box mgT">
                                 
                                         <Link href="/booking" className="theme-btn btn-style-eight"><span className="btn-title">Book Now </span></Link>
                                         </div>

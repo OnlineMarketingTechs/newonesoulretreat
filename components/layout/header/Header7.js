@@ -1,55 +1,52 @@
-import Menu from "../Menu"
+import Menulp from "../Menulp"
 import MobileMenu from "../MobileMenu"
-export default function Header7({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
+
+export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
     return (
         <>
-            {/* <header className="main-header header-style-seven"> */}
-            <header className={`main-header header-style-seven ${scroll ? "fixed-header" : ""}`}>
-                {/* Header Top */}
-                <div className="header-top">
-                    <div className="auto-container">
-                        <div className="inner">
-                            <div className="top-left">
-                                <ul className="contact-info">
-                                    <li><i className="fas fa-map-marker-alt" />96 Queen Park, Los Vegas, USA</li>
-                                    <li><a href="mailto:support@example.com"><i className="fas fa-envelope" />support@example.com</a></li>
-                                </ul>
-                                <ul className="social-links clearfix">
-                                    <li><a href="#"><span className="fab fa-facebook-f" /></a></li>
-                                    <li><a href="#"><span className="fab fa-twitter" /></a></li>
-                                    <li><a href="#"><span className="fab fa-google-plus-g" /></a></li>
-                                    <li><a href="#"><span className="fab fa-skype" /></a></li>
-                                </ul>
-                            </div>
-                            <div className="top-right">
-                                <div className="text"><i className="flaticon-trending" />Job Opportunities 2020: Team Leader, Marketing Head &amp; Sales Executive. <span className="flaticon-right" /></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            {/* <header className="main-header header-style-eight"> */}
+            <header className={`main-header header-style-eight ${scroll ? "fixed-header" : ""}`}>
                 {/* Header Upper */}
-                <div className="header-upper">
+                <div className="header-upper header-upper-style8">
                     <div className="auto-container">
                         <div className="inner-container clearfix">
                             {/*Logo*/}
-                            <div className="logo-box clearfix">
-                                <div className="logo"><a href="/"><img src="/assets/images-2/logo-home-7.png" alt="" /></a></div>
-                                <div className="login-box"><a href="/index-7"><i className="far fa-user" />Login</a></div>
+                            <div className="logo-box">
+                                <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-white-logo-small.png" alt="one soul retreats logo best retreats in the world!" /></a></div>
                             </div>
                             {/*Nav Box*/}
                             <div className="nav-outer clearfix">
                                 {/*Mobile Navigation Toggler*/}
-                                <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="/assets/images-2/icons/icon-bar-3.png" alt="" /></div>
+                                <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="/assets/images/icons/icon-bar.png" alt="" /></div>
                                 {/* Main Menu */}
-                                <nav className="main-menu navbar-expand-md navbar-light">
+                                <nav className="main-menu style8 navbar-expand-md navbar-light">
                                     <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                        <Menu />
+                                        <Menulp />
                                     </div>
                                 </nav>
                                 {/* Main Menu End*/}
-                                <div className="navbar-right-info">
-                                    <button type="button" className="theme-btn search-toggler" onClick={handlePopup}><span className="flaticon-search" /></button>
-                                    <div className="link-btn"><a href="tel:18005554400" className="theme-btn btn-style-four"><i className="flaticon-call" /><span className="btn-title">+1 800 555 44 00</span></a></div>
+                            </div>
+                            <div className="header-upper-right-style8">
+                                {/* <ul className="social-links clearfix">
+                                    <li><a href="https://www.facebook.com/onesoulretreats"><span className="fab fa-facebook-f" /></a></li>
+                                    <li><a href="https://www.instagram.com/onesoulretreats/"><span className="fab fa-instagram" /></a></li>
+                                    <li><a href="https://www.linkedin.com/company/one-soul-retreats/"><span className="fab fa-linkedin" /></a></li>
+                                </ul> */}
+                                {/* <button type="button" className="theme-btn search-toggler" onClick={handlePopup}>
+                                    <span className="flaticon-search" />
+                                </button> */}
+                                {/* <div className="shopping-cart-outer">
+                                    <div className="shopping-cart">
+                                        <i className="flaticon-shopping-cart" />
+                                        <span className="count">2</span>
+                                    </div>
+                                </div> */}
+                                {/*Sidemenu Navigation Toggler*/}
+                                {/* <div className="sidemenu-nav-toggler" onClick={handleSidebar}><img src="/assets/images-3/icon-bar-8.png" alt="" /></div> */}
+                                <div className="right-button">
+                                    <a className="theme-btn btn-style-eight" href="/booking">
+                                        <span className="btn-title">Book Now</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -58,26 +55,33 @@ export default function Header7({ scroll, isMobileMenu, handleMobileMenu, isSide
                 {/*End Header Upper*/}
                 {/* Sticky Header  */}
                 <div className={`sticky-header ${scroll ? "animated slideInDown" : ""}`}>
-                    <div className="header-upper">
+                    <div className="header-upper header-upper-eight">
                         <div className="auto-container">
                             <div className="inner-container clearfix">
                                 {/*Logo*/}
-                                <div className="logo-box clearfix">
-                                    <div className="logo"><a href="/"><img src="/assets/images-2/logo-home-7.png" alt="" /></a></div>
-                                    <div className="login-box"><a href="/index-7"><i className="far fa-user" />Login</a></div>
+                                <div className="logo-box">
+                                    <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-black-logo-small.png" alt="One Soul Retreats | The number one retreat provider in the world!" /></a></div>
                                 </div>
                                 {/*Nav Box*/}
                                 <div className="nav-outer clearfix">
                                     {/*Mobile Navigation Toggler*/}
-                                    <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="/assets/images-2/icons/icon-bar-3.png" alt="" /></div>
+                                    <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="/assets/images/logos/one-soul-retreats.png" alt="" /></div>
                                     {/* Main Menu */}
                                     <nav className="main-menu navbar-expand-md navbar-light">
-                                        <Menu />
+                                        <Menulp />
                                     </nav>
                                     {/* Main Menu End*/}
                                     <div className="navbar-right-info">
-                                        <button type="button" className="theme-btn search-toggler" onClick={handlePopup}><span className="flaticon-search" /></button>
-                                        <div className="link-btn"><a href="tel:18005554400" className="theme-btn btn-style-four"><i className="flaticon-call" /><span className="btn-title">+1 800 555 44 00</span></a></div>
+                                        {/* <button type="button" className="theme-btn search-toggler" onClick={handlePopup}><span className="flaticon-search" /></button> */}
+                                        {/*Sidemenu Navigation Toggler*/}
+                                        {/* <div className="sidemenu-nav-toggler" onClick={handleSidebar}>
+                                            <img src="/assets/images-3/icon-bar-8-v2.png" alt="" />
+                                        </div> */}
+                                        <div className="right-button">
+                                    <a className="theme-btn btn-style-eight" href="/booking">
+                                        <span className="btn-title">Book Now</span>
+                                    </a>
+                                </div>
                                     </div>
                                 </div>
                             </div>

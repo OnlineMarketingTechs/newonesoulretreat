@@ -22,7 +22,8 @@ export default function Service() {
                                 </div>
                                 <div className="inner text-left">
                                     <h3>We offer top tier Amenities and The perfect retreat experience for people like you.</h3>
-                                    <p className="mt-5">Indulge in the ultimate comfort and serenity at One Soul Retreat, where we've meticulously crafted a luxurious environment to enhance your transformative journey. Our retreat offers a range of world-class amenities designed to provide relaxation, rejuvenation, and inspiration.  our focus is on providing a safe, peaceful and supportive space for your personal growth and healing.</p>
+                                    <p className="mt-5">Indulge in the comfort and serenity of Costa Rica. We have meticulously crafted a a peaceful yet luxurious environment deep in the jungles
+                                    of Costa Rica to enhance your transformative journey. Our retreat offers a range of world-class amenities designed to provide relaxation, rejuvenation, and inspiration.  Our focus is to provide a safe, peaceful and supportive space for your personal growth and healing.</p>
                                     
                                     
                                     <ul className="mt-5 mb-5">

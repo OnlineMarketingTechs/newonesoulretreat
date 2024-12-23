@@ -27,12 +27,12 @@ export default function Welcome() {
                                     <p className="mt-4">In this transformative book, you'll learn how to:</p>
                                     <ul className="mt-5 mb-5">
                                         <li className="ml-5"><b>Identify your soul purpose:</b> Discover your unique contribution to the world.</li>
-                                        <li className="ml-5"><b>Overcome limiting beliefs:</b> Break free from negative thoughts that hold you back.</li>
+                                        <li className="ml-5"><b>Overcome limiting beliefs:</b> Break free from negative thoughts that hold you back and create doubt.</li>
                                         <li className="ml-5"><b>Cultivate self-awareness:</b> Understand your thoughts, feelings, and behaviors on a deeper level.</li>
-                                        <li className="ml-5"><b>Set meaningful goals:</b> Create a clear vision for your future and achieve your dreams.</li>
-                                        <li className="ml-5"><b>Embrace challenges as opportunities:</b> Learn to navigate life's obstacles with resilience and grace.</li>
-                                        <li className="ml-5"><b>Nourish your mind, body, and spirit:</b> Take care of yourself holistically for optimal well-being.</li>
-                                        <li className="ml-5"><b>Cultivate gratitude:</b> Focus on the positive aspects of your life and experience greater happiness.</li>
+                                        <li className="ml-5"><b>Set meaningful goals:</b> Create a clear vision for your future, clear your past and achieve your dreams.</li>
+                                        <li className="ml-5"><b>Embrace challenges as opportunities:</b> Learn to navigate life's obstacles with courage, resilience and grace.</li>
+                                        <li className="ml-5"><b>Nourish your mind, body, and spirit:</b> Take care of yourself physically and holistically for optimal well-being.</li>
+                                        <li className="ml-5"><b>Cultivate gratitude:</b> Focus on the positive aspects of your life and experience greater happiness and fulfillment.</li>
                                         <li className="ml-5"><b>Build a supportive community:</b> Connect with like-minded individuals and find belonging.</li>
                                         <li><b></b></li>
                                         <li><b></b></li>

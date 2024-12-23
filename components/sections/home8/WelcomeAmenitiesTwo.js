@@ -25,7 +25,7 @@ export default function Welcome() {
                                     <h3>We offer top tier Amenities and The perfect retreat experience for people like you.</h3>
                                     <p className="mb-4">Our organic, farm-to-table cuisine is thoughtfully designed to support your healing journey and provide optimal nourishment. Enjoy delicious and balanced meals featuring fresh, local ingredients.</p>
 
-                                    <p>For guests seeking a more stringent dietary regimen, we offer "dieta-friendly" meal options with balanced macros and plenty of fresh fruits. These carefully crafted selections complement our retreat's therapies and spiritual practices, enhancing your overall wellness experience.</p>
+                                    <p>For guests seeking a more stringent dietary regimen, we offer "diet-friendly" meal options with balanced macros and plenty of fresh fruits. These carefully crafted selections complement your therapy and spiritual practices, enhancing your overall wellness experience.</p>
                                     
                                     
                                     <ul className="mt-5 mb-5">

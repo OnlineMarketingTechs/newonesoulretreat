@@ -9,9 +9,16 @@
  ***/
 
  /* new stuff */
-
+ .mgT {
+    margin-top: 20px;
+ }
     /* new new stuff */
-
+        /* new lp  */
+        h2.LPtopper {
+            margin-left: 338px;
+            margin-top: -119px;
+        }
+        /* new lp end */
     /* new popup */
 
     .popup {
