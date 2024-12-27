@@ -15,6 +15,9 @@
  div#zsiq_float {
     padding-right: 2%;
 }
+.flogo.siqcw-drivenby {
+    display: none;
+}
  /* salesIQ display none */
  .siqcw-drivenby-cont.driven-cont {
     display: none;
