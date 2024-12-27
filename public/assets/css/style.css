@@ -16,7 +16,7 @@
     padding-right: 2%;
 }
 .flogo.siqcw-drivenby {
-    display: none;
+    display: none !important;
 }
 .siqcw-drivenby-cont.driven-cont {
     display: none;
