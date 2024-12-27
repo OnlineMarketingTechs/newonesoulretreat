@@ -12,6 +12,13 @@
  .mgT {
     margin-top: 20px;
  }
+ div#zsiq_float {
+    padding-right: 2%;
+}
+ /* salesIQ display none */
+ .siqcw-drivenby-cont.driven-cont {
+    display: none;
+}
     /* new new stuff */
         /* new lp  */
         h2.LPtopper {
@@ -6889,7 +6896,7 @@ h4.subTadjustment {
     background: #25283a;
     border-radius: 50%;
     margin-left: -26px;
-    display: none;
+    display: none!important;
     -webkit-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
