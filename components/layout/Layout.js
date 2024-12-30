@@ -1,6 +1,7 @@
-
 'use client'
-import { useEffect, useState } from "react"
+import { Suspense, useState } from "react"; // Import Suspense
+import { useRouter } from 'next/navigation'; // Import useRouter
+import DynamicWOWLoader from './DynamicWOWLoader';
 import BackToTop from '../elements/BackToTop'
 import { GoogleTagManager } from '@next/third-parties/google'
 import DataBg from "../elements/DataBg"
@@ -38,66 +39,34 @@ import Footer13 from "./footer/Footer13"
 import Footer14 from "./footer/Footer14"
 import Footer15 from "./footer/Footer15"
 
+// MainContent should be defined *inside* Layout
+const MainContent = ({ children }) => {
+  return <>{children}</>;
+};
+
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }) {
-    const [scroll, setScroll] = useState(0)
-    // Mobile Menu
-    const [isMobileMenu, setMobileMenu] = useState(false)
-    const handleMobileMenu = () => {
-        setMobileMenu(!isMobileMenu)
-        !isMobileMenu ? document.body.classList.add("mobile-menu-visible") : document.body.classList.remove("mobile-menu-visible")
-    }
+  const router = useRouter();
+  const [scroll, setScroll] = useState(0);
+  const [isMobileMenu, setMobileMenu] = useState(false);
 
-    // Popup
-    const [isPopup, setPopup] = useState(false)
-    const handlePopup = () => setPopup(!isPopup)
+  const handleMobileMenu = () => {
+      setMobileMenu(!isMobileMenu);
+      !isMobileMenu
+          ? document.body.classList.add("mobile-menu-visible")
+          : document.body.classList.remove("mobile-menu-visible");
+  };
 
-    // Sidebar
-    const [isSidebar, setSidebar] = useState(false)
-    const handleSidebar = () => setSidebar(!isSidebar)
+  const [isPopup, setPopup] = useState(false);
+  const handlePopup = () => setPopup(!isPopup);
 
-    useEffect(() => {
-        const initWow = async () => {
-          if (typeof window !== "undefined") {
-            const WOW = (await import("wowjs")).default.WOW;
-            new WOW().init();
-          }
-        };
-      
-        initWow();
-      
-        const handleScrollToTop = () => { // Define a separate function
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-          });
-        };
-      
-        // Add the event listener inside a DOMContentLoaded event handler
-        document.addEventListener('DOMContentLoaded', () => {
-          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-          if (scrollToTopBtn) {
-            scrollToTopBtn.addEventListener("click", handleScrollToTop);
-          }
-        });
-      
-        document.addEventListener("scroll", () => {
-          const scrollCheck = window.scrollY > 100;
-          if (scrollCheck !== scroll) {
-            setScroll(scrollCheck);
-          }
-        });
-      
-        // Cleanup the event listeners on component unmount
-        return () => {
-          document.removeEventListener('DOMContentLoaded', () => {});
-          document.removeEventListener('scroll', () => {});
-          const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-          if (scrollToTopBtn) {
-            scrollToTopBtn.removeEventListener('click', handleScrollToTop);
-          }
-        };
-      }, []);
+  const [isSidebar, setSidebar] = useState(false);
+  const handleSidebar = () => setSidebar(!isSidebar);
+
+   // Array of routes where you want animations
+   const animatedRoutes = ['/page1', '/page2', '/another-page']; 
+
+   const shouldLoadWOW = animatedRoutes.includes(router.pathname);
+
     return (
         <>
             <DataBg />
@@ -119,13 +88,13 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {headerStyle == 14 ? <Header14 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
                 {headerStyle == 15 ? <Header15 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} handlePopup={handlePopup} isSidebar={isSidebar} handleSidebar={handleSidebar} /> : null}
 
-
-                {/* <Sidebar isSidebar={isSidebar} handleSidebar={handleSidebar} /> */}
-                <SearchPopup isPopup={isPopup} handlePopup={handlePopup} />
-
-                {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
-
-                {children}
+                <Suspense fallback={<div>Loading...</div>}> 
+                <DynamicWOWLoader shouldLoad={shouldLoadWOW} />
+                    <MainContent>
+                        {breadcrumbTitle && <Breadcrumb breadcrumbTitle={breadcrumbTitle} />}
+                        {children}
+                    </MainContent>
+                </Suspense>
 
                 {!footerStyle && < Footer1 />}
                 {footerStyle == 1 ? < Footer1 /> : null}
@@ -146,5 +115,5 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
             </div>
             <BackToTop scroll={scroll} />
         </>
-    )
+    );
 }

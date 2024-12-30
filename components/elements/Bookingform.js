@@ -1,38 +1,56 @@
-// components/BookingForm.js
-'use client';
+
+"use client";
+import { useEffect } from "react";
 import Link from "next/link";
 
 const BookingForm = () => {
+  useEffect(() => {
+    const form = document.querySelector(".contact-form-h8");
+    if (form) {
+      form.addEventListener("submit", handleSubmit);
+    }
+
+    return () => {
+      if (form) {
+        form.removeEventListener("submit", handleSubmit);
+      }
+    };
+  }, []);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // Access form data and construct the bookingData object
     const formData = new FormData(event.target);
-    const bookingData = Object.fromEntries(formData.entries());
+    const bookingData = Object.fromEntries(formData.entries()); // Convert to plain object
 
     try {
-      const response = await fetch('/api/submitBooking', {
-        method: 'POST',
+      const response = await fetch("/api/submitBooking", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json", // Set Content-Type to JSON
         },
-        body: JSON.stringify(bookingData),
+        body: JSON.stringify(bookingData), // Stringify the data
       });
 
       if (response.ok) {
-        const data = await response.json(); // Parse the JSON response
-        // Redirect to the thank you page with the first name
-        window.location.href = `${data.redirectUrl}?firstName=${data.firstName}`;  
+        // Handle success, such as redirecting to a thank you page
+        const data = await response.json();
+        console.log("Booking submitted successfully");
+        window.location.href = data.redirectUrl;
       } else {
-        console.error('Error submitting booking');
-        // Optionally, display an error message to the user
+        // Handle errors
+        console.error("Error submitting booking");
       }
     } catch (error) {
-      console.error('Error submitting booking:', error);
+      // Handle network or other errors
+      console.error("Error submitting booking:", error);
     }
   };
 
+
   return (
-    <form method="post" action="/api/submitBooking" onSubmit={handleSubmit} className="contact-form-h8">
+    <form className="contact-form-h8"> 
       <div className="row clearfix">
         <div className="col-md-12 form-group">
           <input type="text" name="firstName" placeholder="Your First Name " required />
@@ -47,12 +65,12 @@ const BookingForm = () => {
           <input type="text" name="phone" placeholder="Phone" required />
         </div>
         <div className="col-md-12">
-          <button className="theme-btn btn-style-eight" type="submit" name="submit-form">
+          <button type="submit" className="theme-btn btn-style-eight" name="submit-form">
             <span className="btn-title">Book Now</span>
           </button>
         </div>
         <div className="mt-2 ml-3">
-          <Link className="mr-2" href="/privacy">Privacy Policy</Link> <Link href="/terms">Terms &amp; Conditions</Link>
+          <Link className="mr-2" href="/privacy">Privacy Policy</Link> <Link href="/terms">Terms & Conditions</Link>
         </div>
       </div>
     </form>

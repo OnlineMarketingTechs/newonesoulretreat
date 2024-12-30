@@ -20,7 +20,7 @@ export default function Home() {
                     <h2>Thank You, {firstName}</h2>
                     {/* Added personalized welcome message */}
                     <div className="text">Welcome, to the One Soul Retreats family!</div> 
-                    <div className="text">Your submission has been received . Please check your email you should have a message from us.</div>
+                    <div className="text">Your submission has been received . Please check your email you should have a message from us to confirm your email.</div>
                     <div className="text">Talk to you soon, <br /> One Soul Retreats</div>
                   </div>
                 </div>

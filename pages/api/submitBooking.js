@@ -1,108 +1,56 @@
 // pages/api/submitBooking.js
-
-import { v4 as uuidv4 } from 'uuid';
-import { supabase } from '../../lib/supabase';
-import nodemailer from 'nodemailer';
-import fs from 'fs/promises';
-
-// Nodemailer transporter configuration
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT),
-  secure: parseInt(process.env.SMTP_PORT) === 465,
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
-  debug: true,
-  logger: true,
-});
-
-// Define the sendEmail function
-async function sendEmail(contact, subject, text, html) {
-  try {
-    const info = await transporter.sendMail({
-      from: 'noreply@onesoulretreats.com',
-      to: contact.email,
-      subject: subject,
-      text: text,
-      html: html,
-    });
-
-    console.log('Email sent:', info.messageId);
-  } catch (error) {
-    console.error('Error sending email:', error);
-  }
-}
+import axios from "axios";
+import fetch from "node-fetch";
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
+  try {
+    // Access form data from req.body (adjust based on your framework)
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+    const phone = req.body.phone;
+
+    // Create a data object for Zoho
+    const bookingData = {
+      firstName,
+      lastName,
+      email,
+      phone,
+    };
+
     try {
-      const { firstName, lastName, email, phone } = req.body;
-
-      // First, insert the new contact *without* the confirmationToken
-      const { data, error } = await supabase
-      .from('contacts')
-      .insert([
+      // 1. Post to Zoho Webhook using node-fetch
+      const zohoResponse = await fetch(
+        "https://flow.zoho.com/874321425/flow/webhook/incoming?zapikey=1001.04cb3124ad2b3cfddc8fb58031059a97.fb2aff5295ebc75998892c79ac6af770&isdebug=true",
         {
-          firstname: firstName, 
-          lastname: lastName,  
-          email: email,
-          phone: phone,
-          emailsequencestep: 0, 
-          isconfirmed: false    
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
         }
-      ]);
+      );
 
-      if (error) {
-        throw error;
+      // Check for successful response (adjust based on Zoho's response)
+      if (zohoResponse.ok) {
+        const redirectUrl = "/thank-you";
+        res.status(200).json({ redirectUrl, firstName: bookingData.firstName });
+      } else {
+        console.error(
+          "Error posting to Zoho:",
+          zohoResponse.status,
+          zohoResponse.statusText
+        );
+        res.status(zohoResponse.status).json({
+          message: "Error submitting booking to Zoho.",
+        });
       }
-
-      const newContact = await supabase
-        .from('contacts')
-        .select('*')
-        .eq('email', email)
-        .single();
-
-      if (newContact.error) {
-        throw newContact.error;
-      }
-
-      const confirmationToken = uuidv4();
-
-      // Now, update the record with the confirmationToken
-      const { data: updatedData, error: updateError } = await supabase
-      .from('contacts')
-      .update({ confirmationtoken: confirmationToken })
-      .eq('id', newContact.data.id);
-
-      if (updateError) {
-        throw updateError;
-      }
-
-      // Construct the confirmation URL (using correct casing)
-      const confirmationUrl = `https://www.onesoulretreats.com/api/confirm?token=${newContact.data.confirmationtoken}`; 
-
-      const htmlContent = await fs.readFile('emails/welcome.html', 'utf-8');
-
-      // Personalize the HTML content with the confirmation URL
-      const personalizedHtml = htmlContent
-        .replace('[firstName]', newContact.data.firstname) 
-        .replace('[confirmationLink]', confirmationUrl); 
-
-      await sendEmail(newContact.data, 'Welcome Email', '', personalizedHtml);
-
-      // ... (rest of the API route code) ...
-
-      res.status(200).json({
-        redirectUrl: '/thank-you',
-        firstName: firstName
-      });
     } catch (error) {
-      console.error(error);
-      res.status(500).json({ message: 'Error submitting booking.' });
+      console.error("Zoho API Error:", error);
+      res.status(500).json({ message: "Error communicating with Zoho." });
     }
-  } else {
-    res.status(405).end();
+  } catch (error) {
+    console.error("Booking Submission Error:", error);
+    res.status(500).json({ message: "Error submitting booking." });
   }
 }
