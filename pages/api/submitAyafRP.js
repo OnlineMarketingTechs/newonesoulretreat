@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { firstname, lastname, email, phone } = req.body;
-    const zohoWebhookUrl = "https://flow.zoho.com/874321425/flow/webhook/incoming?zapikey=1001.217909e723998fd44ba3f14bd1bca465.36fa224546961525fbb633fe2cafe8ce&isdebug=true";
+    const zohoWebhookUrl = "https://flow.zoho.com/874321425/flow/webhook/incoming?zapikey=1001.4050f5c34368d30159ef525bcc37bbdc.c3139ad2635390778f15f47973209159&isdebug=true";
 
     const bookingData = {
       firstName: firstname,
