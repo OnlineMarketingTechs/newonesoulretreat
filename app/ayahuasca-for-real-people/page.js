@@ -36,8 +36,8 @@ export default function Home() {
       });
 
       if (response.ok) {
-        // Redirect is now handled by the API route, so no need for this:
-        // window.location.href = response.url; 
+        const data = await response.json();
+        window.location.href = data.redirectUrl;
       } else {
         console.error("Form submission error:", response.status);
         // Consider adding more user-friendly error handling here
