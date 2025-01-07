@@ -8,7 +8,7 @@ export default function Footer8() {
                     <div className="auto-container">
                         <div className="row text-right-rtl">
                             {/*Start single footer widget*/}
-                            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
+                            {/* <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
                                 <div className="single-footer-widget marbtm">
                                     <div className="our-company-info">
                                         <div className="footer-logo">
@@ -19,16 +19,13 @@ export default function Footer8() {
                                             <p>We are your guides every step of the way</p>
                                             <Link href="/booking" className="theme-btn btn-style-eight mt-3"><span className="btn-title">Speak to A Guide</span></Link>
                                         </div>
-                                        {/* <div className="phone-number">
-                                            <p>Call for free consultation!</p>
-                                            <h3><Link href="tel:+1800000000">(+800) 000-0000</Link></h3>
-                                        </div> */}
+                                       
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             {/*End single footer widget*/}
                             {/*Start single footer widget*/}
-                            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
+                            {/* <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
                                 <div className="single-footer-widget">
                                     <div className="title">
                                         <h3>Usefull Links</h3>
@@ -41,18 +38,13 @@ export default function Footer8() {
                                             
                                             
                                         </ul>
-                                        {/* <ul className="footer-widget-links1 right">
-                                            <li><Link href="#">Latest News</Link></li>
-                                            <li><Link href="#">Contact Us</Link></li>
-                                            <li><Link href="#">Privacy Policy</Link></li>
-                                            
-                                        </ul> */}
+
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             {/*End single footer widget*/}
                             {/*Start single footer widget*/}
-                            <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
+                            {/* <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
                                 <div className="single-footer-widget pdtop">
                                     <div className="title">
                                         <h3>Great Ayahuasca Infromation</h3>
@@ -87,7 +79,7 @@ export default function Footer8() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/*End single footer widget*/}
                         </div>
                     </div>
@@ -96,12 +88,12 @@ export default function Footer8() {
                     <div className="container">
                         <div className="outer-box">
                             <div className="copyright-text">
-                                <p>Copyrights © {new Date().getFullYear()} <Link href="/">OneSoulRetreats </Link>, All Rights Reserved.</p>
+                                <p>Copyrights © {new Date().getFullYear()} <Link href="#">OneSoulRetreats </Link>, All Rights Reserved.</p>
                             </div>
                             <div className="footer-menu-style1">
                                 <ul>
-                                    <li><Link href="/privacy">Privacy Policy</Link></li>
-                                    <li><Link href="/terms">Terms &amp; Conditions</Link></li>
+                                    <li><Link href="/privacy_LP">Privacy Policy</Link></li>
+                                    <li><Link href="/terms-lp">Terms &amp; Conditions</Link></li>
                                 </ul>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                         <div className="inner-container clearfix">
                             {/*Logo*/}
                             <div className="logo-box">
-                                <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-white-logo-small.png" alt="one soul retreats logo best retreats in the world!" /></a></div>
+                                <div className="logo"><a href="#"><img src="/assets/images/logos/one-soul-white-logo-small.png" alt="one soul retreats logo best retreats in the world!" /></a></div>
                             </div>
                             {/*Nav Box*/}
                             <div className="nav-outer clearfix">
@@ -27,24 +27,9 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 {/* Main Menu End*/}
                             </div>
                             <div className="header-upper-right-style8">
-                                {/* <ul className="social-links clearfix">
-                                    <li><a href="https://www.facebook.com/onesoulretreats"><span className="fab fa-facebook-f" /></a></li>
-                                    <li><a href="https://www.instagram.com/onesoulretreats/"><span className="fab fa-instagram" /></a></li>
-                                    <li><a href="https://www.linkedin.com/company/one-soul-retreats/"><span className="fab fa-linkedin" /></a></li>
-                                </ul> */}
-                                {/* <button type="button" className="theme-btn search-toggler" onClick={handlePopup}>
-                                    <span className="flaticon-search" />
-                                </button> */}
-                                {/* <div className="shopping-cart-outer">
-                                    <div className="shopping-cart">
-                                        <i className="flaticon-shopping-cart" />
-                                        <span className="count">2</span>
-                                    </div>
-                                </div> */}
-                                {/*Sidemenu Navigation Toggler*/}
-                                {/* <div className="sidemenu-nav-toggler" onClick={handleSidebar}><img src="/assets/images-3/icon-bar-8.png" alt="" /></div> */}
+                                
                                 <div className="right-button">
-                                    <a className="theme-btn btn-style-eight" href="/booking">
+                                    <a className="theme-btn btn-style-eight" href="/bookinglp">
                                         <span className="btn-title">Book Now</span>
                                     </a>
                                 </div>
@@ -60,7 +45,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                             <div className="inner-container clearfix">
                                 {/*Logo*/}
                                 <div className="logo-box">
-                                    <div className="logo"><a href="/"><img src="/assets/images/logos/one-soul-black-logo-small.png" alt="One Soul Retreats | The number one retreat provider in the world!" /></a></div>
+                                    <div className="logo"><a href="#"><img src="/assets/images/logos/one-soul-black-logo-small.png" alt="One Soul Retreats | The number one retreat provider in the world!" /></a></div>
                                 </div>
                                 {/*Nav Box*/}
                                 <div className="nav-outer clearfix">
@@ -78,7 +63,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                                             <img src="/assets/images-3/icon-bar-8-v2.png" alt="" />
                                         </div> */}
                                         <div className="right-button">
-                                    <a className="theme-btn btn-style-eight" href="/booking">
+                                    <a className="theme-btn btn-style-eight" href="/bookinglp">
                                         <span className="btn-title">Book Now</span>
                                     </a>
                                 </div>

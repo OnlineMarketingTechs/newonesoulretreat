@@ -9,6 +9,35 @@
  ***/
 
  /* new stuff */
+
+        /* start  */
+        section.testimonial-section-eight-h8-LP {
+            margin-top: -1px;
+            padding-top: 135px;
+            padding-bottom: 199px;
+            background-image: url(/assets/images/background/colorado-2.webp);
+            background-repeat: no-repeat;
+        }
+        .sec-title.style-eight-LP h2 {
+            color: #ffffff;
+            font-size: 40px;
+            line-height: 1.3em;
+            font-weight: 600;
+            text-transform: none;
+            padding-bottom: 0px;
+            letter-spacing: normal;
+        }
+        .sec-title.style-eight-LP h4 {
+            position: relative;
+            display: inline-block;
+            color: #a04e3f;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+            margin-bottom: 19px;
+        }
+        /* end  */
  .mgT {
     margin-top: 20px;
  }
@@ -37038,9 +37067,11 @@ background-repeat: no-repeat; */
 
 
 
-    .contact-info-eight {
-        padding: 40px 20px;
-    }
+        .contact-info-eight {
+            margin-top: 23px;
+            padding: 40px 20px;
+        }
+
 
     .contact-info-eight ul {
         display: flex;
