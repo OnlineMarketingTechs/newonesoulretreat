@@ -10,7 +10,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
+            <Layout headerStyle={7} footerStyle={7} wrapperCls="home_8">
             {/* <Breadcrumb_Services  pageImage="assets/images/online_maarketing_services_g.jpg" /> */}
             <div className="bookingTOp">
             <div className="bumper111">

@@ -1,6 +1,6 @@
 import VideoPopup from "@/components/elements/VideoPopup"
 import Link from "next/link"
-
+import OneSoulPathForm from "@/components/elements/OneSoulPathForm"
 
 export default function Choose() {
     return (
@@ -30,7 +30,7 @@ export default function Choose() {
                                     <p className="mt-3 mb-3">The One Soul Path will get you started on the path to best life!</p>
                                     
                                 </div>
-                                <form method="post" action="sendemail.php" className="contact-form-h8">
+                                {/* <form method="post" action="sendemail.php" className="contact-form-h8">
                                     <div className="row clearfix">
                                         <div className="col-md-12 form-group">
                                             <input type="text" name="firstname" placeholder="Your First Name" required />
@@ -55,7 +55,8 @@ export default function Choose() {
                                         </div>
 
                                     </div>
-                                </form>
+                                </form> */}
+                                <OneSoulPathForm />
                             </div>
                                     {/* end new form section */}
                                 </div>

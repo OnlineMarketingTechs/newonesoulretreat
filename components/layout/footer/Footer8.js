@@ -8,7 +8,7 @@ export default function Footer8() {
                     <div className="auto-container">
                         <div className="row text-right-rtl">
                             {/*Start single footer widget*/}
-                            {/* <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
+                            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
                                 <div className="single-footer-widget marbtm">
                                     <div className="our-company-info">
                                         <div className="footer-logo">
@@ -22,10 +22,10 @@ export default function Footer8() {
                                        
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                             {/*End single footer widget*/}
                             {/*Start single footer widget*/}
-                            {/* <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
+                            <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
                                 <div className="single-footer-widget">
                                     <div className="title">
                                         <h3>Usefull Links</h3>
@@ -41,10 +41,10 @@ export default function Footer8() {
 
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                             {/*End single footer widget*/}
                             {/*Start single footer widget*/}
-                            {/* <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
+                            <div className="col-xl-4 col-lg-12 col-md-12 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
                                 <div className="single-footer-widget pdtop">
                                     <div className="title">
                                         <h3>Great Ayahuasca Infromation</h3>
@@ -79,7 +79,7 @@ export default function Footer8() {
                                         </li>
                                     </ul>
                                 </div>
-                            </div> */}
+                            </div>
                             {/*End single footer widget*/}
                         </div>
                     </div>

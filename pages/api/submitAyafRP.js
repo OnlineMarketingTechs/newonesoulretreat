@@ -1,35 +1,57 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    const { firstname, lastname, email, phone } = req.body;
-    const zohoWebhookUrl = "https://flow.zoho.com/874321425/flow/webhook/incoming?zapikey=1001.4050f5c34368d30159ef525bcc37bbdc.c3139ad2635390778f15f47973209159&isdebug=true";
+  try {
+    // Access form data from req.body (adjust based on your framework)
+    const firstName = req.body.firstName;
+    const lastName = req.body.lastName;
+    const email = req.body.email;
+    const phone = req.body.phone;
 
+    // Create a data object for Zoho
     const bookingData = {
-      firstName: firstname,
-      lastName: lastname,
+      firstName,
+      lastName,
       email,
       phone,
     };
 
     try {
-      const response = await fetch(zohoWebhookUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(bookingData),
-      });
+      // 1. Post to Zoho Webhook using node-fetch
+      const zohoResponse = await fetch(
+         
+        "https://flow.zoho.com/874321425/flow/webhook/incoming?zapikey=1001.3e47d0361bbd36fdc357bc9ca66aad3d.835da4d5df36ba9b33a5c7f93acfd11d&isdebug=false",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
+        }
+      );
 
-      if (response.ok) {
-        res.status(200).json({ redirectUrl: '/ayahuasca-for-real-people-dlset-type1' });
+      // Check for successful response (adjust based on Zoho's response)
+      if (zohoResponse.ok) {
+        const redirectUrl = "/ayahuasca-for-real-people-dlset-type1";
+        res.status(200).json({ redirectUrl, firstName: bookingData.firstName });
       } else {
-        res.status(response.status).json({ message: 'Error submitting to Zoho' });
+        console.error(
+          "Error posting to Zoho:",
+          zohoResponse.status,
+          zohoResponse.statusText
+        );
+        res.status(zohoResponse.status).json({
+          message: "Error submitting booking to Zoho.",
+        });
       }
     } catch (error) {
-      res.status(500).json({ message: 'Internal server error' });
+      console.error("Zoho API Error:", error);
+      res.status(500).json({ message: "Error communicating with Zoho." });
     }
-  } else {
-    res.status(405).json({ message: 'Method not allowed' });
+  } catch (error) {
+    console.error("Booking Submission Error:", error);
+    res.status(500).json({ message: "Error submitting booking." });
   }
 }
+
+

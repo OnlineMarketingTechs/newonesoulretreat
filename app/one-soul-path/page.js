@@ -15,6 +15,7 @@ import Team from "@/components/sections/home8/Team"
 import Testimonialdl from "@/components/sections/home8/Testimonialdl"
 import WelcomeOnesoul from "@/components/sections/home8/WelcomeOnesoul"
 import WorkingProcess from "@/components/sections/home8/WorkingProcess"
+  
 
 export const metadata = {
     title: 'The One Soul Path - Learn to walk the path to your highest potential',

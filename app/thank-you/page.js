@@ -21,7 +21,7 @@ export default function Home() {
                     {/* Added personalized welcome message */}
                     <div className="text">Welcome, to the One Soul Retreats family!</div> 
                     <div className="text">Your submission has been received . Please check your email you should have a message from us to confirm your email.</div>
-                    <div className="text">Talk to you soon, <br /> One Soul Retreats</div>
+                    <div className="text">Love and Light, <br /> One Soul Retreats</div>
                   </div>
                 </div>
               </div>
@@ -32,6 +32,7 @@ export default function Home() {
                     <section className="testimonial-section-eight">
                         <div className="auto-container">
                             <div className="row">
+                            <iframe width='100%' height='750px' src='https://onesoulretreats.zohobookings.com/portal-embed#/onesoulretreats' frameborder='0' allowfullscreen='' > </iframe>
                                 {/* <div className="col-lg-8 testimonial-block-four">
                                     <div className="inner-box">
                                         <div className="row m-0">

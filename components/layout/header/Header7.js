@@ -1,7 +1,19 @@
+import { useState } from 'react';
 import Menulp from "../Menulp"
 import MobileMenu from "../MobileMenu"
+import LpBooking from "@/components/elements/LpBooking";
+import Bookingform from "@/components/elements/Bookingform";
 
 export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+      
+        const handleOpenModal = () => {
+          setIsModalOpen(true);
+        };
+      
+        const handleCloseModal = () => {
+          setIsModalOpen(false);
+        };
     return (
         <>
             {/* <header className="main-header header-style-eight"> */}
@@ -29,8 +41,11 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                             <div className="header-upper-right-style8">
                                 
                                 <div className="right-button">
-                                    <a className="theme-btn btn-style-eight" href="/bookinglp">
-                                        <span className="btn-title">Book Now</span>
+                                    <a className="theme-btn btn-style-eight">
+                                        <span className="btn-title" onClick={handleOpenModal}>Book Now</span>
+                                        <LpBooking isOpen={isModalOpen} onClose={handleCloseModal}> 
+          <Bookingform />
+        </LpBooking>
                                     </a>
                                 </div>
                             </div>
