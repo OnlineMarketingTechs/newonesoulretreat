@@ -34,97 +34,7 @@
     .modalLP {
       width: 60%;
        }
-      }
-  @media only screen and (max-width: 1399px) {
-    .modalLP {
-      width: 80%;
-       }
-      }
-  @media only screen and (max-width: 1299px) {
-    .modalLP {
-      width: 80%;
-       }
-      }
-  @media only screen and (max-width: 1199px) {
-    .modalLP {
-      width: 70%;
-       }
-      }
-  @media only screen and (max-width: 767px) {
-    .modalLP {
-      width: 90%;
-       }
-      }
-  @media only screen and (max-width: 575px) {
-  .modalLP {
-    width: 80%;
-     }
-    }
-    @media only screen and (min-width: 320px) and (max-width: 480px) {
-        .modalLP {
-            width: 80%;
-             }
-    }
-  .modal-headerLP {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-  }
-
-        /* start  */
-        section.testimonial-section-eight-h8-LP {
-            margin-top: -1px;
-            padding-top: 135px;
-            padding-bottom: 199px;
-            background-image: url(/assets/images/background/colorado-2.webp);
-            background-repeat: no-repeat;
-        }
-        .sec-title.style-eight-LP h2 {
-            color: #ffffff;
-            font-size: 40px;
-            line-height: 1.3em;
-            font-weight: 600;
-            text-transform: none;
-            padding-bottom: 0px;
-            letter-spacing: normal;
-        }
-        .sec-title.style-eight-LP h4 {
-            position: relative;
-            display: inline-block;
-            color: #a04e3f;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            padding-bottom: 8px;
-            margin-bottom: 19px;
-        }
-        /* end  */
- .mgT {
-    margin-top: 20px;
- }
- div#zsiq_float {
-    padding-right: 2%;
-}
-.flogo.siqcw-drivenby {
-    display: none !important;
-}
-.siqcw-drivenby-cont.driven-cont {
-    display: none;
-}
- /* salesIQ display none */
- .siqcw-drivenby-cont.driven-cont {
-    display: none;
-}
-    /* new new stuff */
-        /* new lp  */
-        h2.LPtopper {
-            margin-left: 338px;
-            margin-top: -119px;
-        }
-        /* new lp end */
-    /* new popup */
-
-    .popup {
+       .popup {
         background-image: url(../images/background/full-size-ayahuasca-shaman-banner.webp);
         background-size: cover;
         position: fixed;
@@ -197,6 +107,469 @@
         z-index: 999;
         transition: opacity 0.3s ease-in-out; /* Optional: smooth transition */
       }
+
+      }
+  @media only screen and (max-width: 1399px) {
+    .modalLP {
+      width: 80%;
+       }
+      }
+  @media only screen and (max-width: 1299px) {
+    .modalLP {
+      width: 80%;
+       }
+      }
+  @media only screen and (max-width: 1199px) {
+    .modalLP {
+      width: 70%;
+       }
+       .popup {
+        background-image: url(../images/background/full-size-ayahuasca-shaman-banner.webp);
+        background-size: cover;
+        position: fixed;
+        width: 90%!important; /* Default width */
+        bottom: -100%; 
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        transition: bottom 0.8s ease-in-out; /* Increased transition duration */
+        z-index: 1000; 
+      }
+      
+      .popup.show {
+        bottom: 60px; 
+      }
+
+      .popup.show button {
+        padding-right: 9px;
+        padding-left: 9px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 4px;
+    }
+
+      .popup-content {
+        width: 90%;
+        height: 250px;
+        background-color: #ffffffc7;
+        margin-top:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 45px;
+        padding-left: 45px;
+        float: right;
+    }
+
+    .popup-content h2 {
+        color: #040707;
+        text-shadow: 1px 1px 1px #0000009c;
+        font-family: 'Fira Sans';
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .popup-content button {
+        /* width: 194px; */
+        padding-top: 10px;
+        padding-left: 10x;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 8px;
+        background-color: #a04e3f;
+        color: #ffffff;
+        margin-top: 20px;
+        text-align: center;
+
+        ;
+    }
+
+    .popup-content p {
+        font-weight: 500;
+        color: #005050;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); 
+        z-index: 999;
+        transition: opacity 0.3s ease-in-out; /* Optional: smooth transition */
+      }
+
+      .btn-style-eight .btn-title {
+        position: relative;
+        display: block;
+        z-index: 1;
+        font-family: var(--fira-sans);
+        padding: 16px 11px!important;
+        transition: all 0.3s ease 0s;
+        overflow: hidden;
+        color: #ffffff !important;
+        text-align: center;
+    }
+    .btn-style-eight {
+        background-color: #a04e3f;
+        width: 299px;
+    }
+    .btn-style-eight {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        overflow: hidden;
+        vertical-align: middle;
+        /* margin-left: -38px; */
+    }
+
+      }
+  @media only screen and (max-width: 767px) {
+    .modalLP {
+      width: 90%;
+       }
+       .popup {
+        background-image: url(../images/background/full-size-ayahuasca-shaman-banner.webp);
+        background-size: cover;
+        position: fixed;
+        width: 90%!important; /* Default width */
+        bottom: -100%; 
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        transition: bottom 0.8s ease-in-out; /* Increased transition duration */
+        z-index: 1000; 
+      }
+      
+      .popup.show {
+        bottom: 60px; 
+      }
+
+      .popup.show button {
+        padding-right: 9px;
+        padding-left: 9px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 4px;
+    }
+
+      .popup-content {
+        width: 90%;
+        height: 450px;
+        background-color: #ffffffc7;
+        margin-top:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 45px;
+        padding-left: 45px;
+        float: right;
+    }
+
+    .popup-content h2 {
+        color: #040707;
+        text-shadow: 1px 1px 1px #0000009c;
+        font-family: 'Fira Sans';
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .popup-content button {
+        /* width: 194px; */
+        padding-top: 10px;
+        padding-left: 10x;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 8px;
+        background-color: #a04e3f;
+        color: #ffffff;
+        margin-top: 20px;
+        text-align: center;
+
+        ;
+    }
+
+    .popup-content p {
+        font-weight: 500;
+        color: #005050;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); 
+        z-index: 999;
+        transition: opacity 0.3s ease-in-out; /* Optional: smooth transition */
+      }
+
+      .btn-style-eight .btn-title {
+        position: relative;
+        display: block;
+        z-index: 1;
+        font-family: var(--fira-sans);
+        padding: 16px 11px!important;
+        transition: all 0.3s ease 0s;
+        overflow: hidden;
+        color: #ffffff !important;
+        text-align: center;
+    }
+    .btn-style-eight {
+        background-color: #a04e3f;
+        width: 299px;
+    }
+    .btn-style-eight {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        overflow: hidden;
+        vertical-align: middle;
+        /* margin-left: -38px; */
+    }
+    .contact-info-eight {
+        margin-top: 62px;
+        padding: 40px 20px;
+    }
+
+      }
+  @media only screen and (max-width: 575px) {
+  .modalLP {
+    width: 80%;
+     }
+     .popup {
+        background-image: url(/_next/static/media/full-size-ayahuasca-shaman-banner.4d3966ba.webp);
+        background-size: cover;
+        position: fixed;
+        width: 91% !important;
+        bottom: -100%;
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        transition: bottom 0.8s ease-in-out;
+        z-index: 1000;
+    }
+    .popup-content {
+        width: 90%;
+        height: 350px;
+        background-color: #ffffffc7;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 30px;
+        padding-left: 30px;
+        float: right;
+    }
+    }
+
+    @media only screen and (min-width: 415px) and (max-width: 480px) {
+        .bumper1 {
+            margin-left: -17%;
+        }
+        .contact-info-eight {
+            margin-top: 62px;
+            padding: 40px 20px;
+        }
+    }
+    @media only screen and (min-width: 391px) and (max-width: 414px) {
+        .bumper1 {
+            margin-left: -35%;
+        }
+    }
+    @media only screen and (min-width: 320px) and (max-width: 390px) {
+    .bumper1 {
+        margin-left: -34%;
+    }
+}
+    
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .modalLP {
+            width: 80%;
+             }
+
+             .contact-info-eight {
+                margin-top: 62px;
+                padding: 40px 20px;
+            }
+
+       .popup {
+        background-image: url(../images/background/full-size-ayahuasca-shaman-banner.webp);
+        background-size: cover;
+        position: fixed;
+        width: 90%!important; /* Default width */
+        bottom: -100%; 
+        right: 20px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        transition: bottom 0.8s ease-in-out; /* Increased transition duration */
+        z-index: 1000; 
+      }
+      
+      .popup.show {
+        bottom: 60px; 
+      }
+
+      .popup.show button {
+        padding-right: 9px;
+        padding-left: 9px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 4px;
+    }
+
+      .popup-content {
+        width: 90%;
+        height: 450px;
+        background-color: #ffffffc7;
+        margin-top:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 45px;
+        padding-left: 45px;
+        float: right;
+    }
+
+    .popup-content h2 {
+        color: #040707;
+        text-shadow: 1px 1px 1px #0000009c;
+        font-family: 'Fira Sans';
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .popup-content button {
+        /* width: 194px; */
+        padding-top: 10px;
+        padding-left: 10x;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        border-radius: 8px;
+        background-color: #a04e3f;
+        color: #ffffff;
+        margin-top: 20px;
+        text-align: center;
+
+        ;
+    }
+
+    .popup-content p {
+        font-weight: 500;
+        color: #005050;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); 
+        z-index: 999;
+        transition: opacity 0.3s ease-in-out; /* Optional: smooth transition */
+      }
+
+      .btn-style-eight .btn-title {
+        position: relative;
+        display: block;
+        z-index: 1;
+        font-family: var(--fira-sans);
+        padding: 16px 11px!important;
+        transition: all 0.3s ease 0s;
+        overflow: hidden;
+        color: #ffffff !important;
+        text-align: center;
+    }
+    .btn-style-eight {
+        background-color: #a04e3f;
+        width: 299px;
+    }
+    .btn-style-eight {
+        position: relative;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+        overflow: hidden;
+        vertical-align: middle;
+        /* margin-left: -38px; */
+    } 
+
+    }    
+
+  .modal-headerLP {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+
+        /* start  */
+        section.testimonial-section-eight-h8-LP {
+            margin-top: -1px;
+            padding-top: 135px;
+            padding-bottom: 199px;
+            background-image: url(/assets/images/background/colorado-2.webp);
+            background-repeat: no-repeat;
+        }
+        .sec-title.style-eight-LP h2 {
+            color: #ffffff;
+            font-size: 40px;
+            line-height: 1.3em;
+            font-weight: 600;
+            text-transform: none;
+            padding-bottom: 0px;
+            letter-spacing: normal;
+        }
+        .sec-title.style-eight-LP h4 {
+            position: relative;
+            display: inline-block;
+            color: #a04e3f;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+            margin-bottom: 19px;
+        }
+        /* end  */
+ .mgT {
+    margin-top: 20px;
+ }
+ div#zsiq_float {
+    padding-right: 2%;
+}
+.flogo.siqcw-drivenby {
+    display: none !important;
+}
+.siqcw-drivenby-cont.driven-cont {
+    display: none;
+}
+ /* salesIQ display none */
+ .siqcw-drivenby-cont.driven-cont {
+    display: none;
+}
+    /* new new stuff */
+        /* new lp  */
+        h2.LPtopper {
+            margin-left: 338px;
+            margin-top: -119px;
+        }
+        /* new lp end */
+    /* new popup */
+
+    
       @media (min-width: 768px) { 
         .popup {
           width: 500px; /* Wider width on larger screens */

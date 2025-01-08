@@ -40,7 +40,7 @@ const Popup = () => {
           <p className="pl-3">Our Step By Step Guide To Living Your Highest Potential, has been completed and is ready for download.</p>
           <p className="mt-3 pl-3">Learn more about the One Soul Path and get your free copy of the new book.</p>
 
-          <Link href="/one-soul-path/#welcome" className="theme-btn btn-style-eight mt-3 mb-3 ">
+          <Link href="/one-soul-path/#welcome" className="theme-btn btn-style-eight mt-3 mb-3 bumper1">
             <span className="btn-title">Download Your Free Copy Now !</span>
           </Link>
         </div>
