@@ -42,9 +42,9 @@ export default function MobileMenu({ isSidebar, handleMobileMenu, handleSidebar 
                                 <li className="dropdown"><Link href="/amenities">Amenities & Services</Link>
                     
                                 </li>
-                                <li className="dropdown"><Link href="#Testimonials">Testimonials</Link>
+                                {/* <li className="dropdown"><Link href="#Testimonials">Testimonials</Link>
                                 
-                                </li>
+                                </li> */}
                             
                                 
                                 
