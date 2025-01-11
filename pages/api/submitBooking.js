@@ -34,7 +34,7 @@ export default async function handler(req, res) {
 
       // Check for successful response (adjust based on Zoho's response)
       if (zohoResponse.ok) {
-        const redirectUrl = "/thank-you";
+        const redirectUrl = "/bookingapp";
         res.status(200).json({ redirectUrl, firstName: bookingData.firstName });
       } else {
         console.error(

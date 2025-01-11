@@ -17,10 +17,12 @@ export default function Home() {
                         <section className="contact-form-faq-section-eight">
                         <div className="auto-container">
                             <div className="row">
-                                <div className="sec-title style-eight">
-                                                <h2 className="pt-4">Lets Plan Your Journey Now</h2>
+                                <div className="sec-title style-eight text-center">
+                                <div></div>
+                                                <h2 className="pt-4">Welcome to the One Soul Tribe. Now Let's schedule and appointment to speak to a senior guest consultant</h2>
+                                                <div className="text">Complete this form to speak with an expert that can answer all your questions.</div>
                                 </div>
-                                <div className="text mb-4">Complete this form to speak with a senior guest consultant and get all your questions answered.</div>
+                                
                                 
                                 <iframe className="mb-5" width='100%' height='600px' src='https://onesoulretreats.zohobookings.com/portal-embed#/onesoulretreats' frameborder='0' allowfullscreen='' > </iframe>
                              
