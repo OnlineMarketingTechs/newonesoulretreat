@@ -9,7 +9,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={8} footerStyle={8} wrapperCls="home_8">
+            <Layout headerStyle={7} footerStyle={7} wrapperCls="home_8">
             <Breadcrumb_Services breadcrumbTitle="terms" pageTitle="Terms & Conditions" pageImage="/assets/images/background/Colorado-SEO-Company.jpg" />
                 <div>
                

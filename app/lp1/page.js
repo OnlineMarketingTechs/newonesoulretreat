@@ -4,13 +4,13 @@ import Layout from "@/components/layout/Layout"
 import Lp2 from "@/components/sections/home8/Lp2"
 import Choose from "@/components/sections/home8/Choose"
 import Funfacts from "@/components/sections/home8/Funfacts"
-import Service from "@/components/sections/home8/Service"
+import ServiceLP from "@/components/sections/home8/ServiceLP"
 import TestimonialLP from "@/components/sections/home8/TestimonialLP"
-import Welcome from "@/components/sections/home8/Welcome"
+import WelcomeLP from "@/components/sections/home8/WelcomeLP"
 
 import LpAyaToday from "@/components/sections/home8/LpAyaToday"
 import LpBooking from "@/components/elements/LpBooking"; // Import the Modal component
-import Bookingform from "@/components/elements/Bookingform"; // Import your BookingForm
+import BookingformLP from "@/components/elements/BookingformLP"; // Import your BookingForm
 
 // export const metadata = {
 //     title: 'One Soul Retreats - The #1 Provider of Ayahuasca Retreats in the World',
@@ -34,9 +34,9 @@ export default function Home() {
                 <Lp2 />
                             <LpAyaToday /> 
                             
-                            <Welcome />
+                            <WelcomeLP />
 
-                            <Service />
+                            <ServiceLP />
 
                             <Choose />
 
@@ -44,11 +44,7 @@ export default function Home() {
 
                             <Funfacts />
                             
-                            <button onClick={handleOpenModal}>Book Now</button> {/* Button to trigger the modal */}
-
-        <LpBooking isOpen={isModalOpen} onClose={handleCloseModal}> 
-          <Bookingform />
-        </LpBooking>
+                          
                 </Layout>
         </>
     )

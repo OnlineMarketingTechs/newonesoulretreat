@@ -1,7 +1,18 @@
 import Link from "next/link"
-
+import { useState } from 'react';
+import AyahuascaTodayForm from "@/components/elements/AyahuascaTodayForm"
+import LpBooking from "@/components/elements/LpBooking";
 
 export default function ContactInfo() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+          
+            const handleOpenModal = () => {
+              setIsModalOpen(true);
+            };
+          
+            const handleCloseModal = () => {
+              setIsModalOpen(false);
+            };
     return (
         <>
             <section className="contact-info-section-eight">
@@ -14,8 +25,8 @@ export default function ContactInfo() {
                                         <div className="inner"> 
                                         <div className="title">
                                                 <h3>Get Your Copy Now!</h3>
-                                                <p>We Choose a New Winner Each Season!</p>
-                                                <p className="tsmall">Spring-Summer-Fall-Winter</p>
+                                                <p>Find out more about ayahuasca!</p>
+                                                <p className="tsmall">Answer your questions</p>
                                             </div>
                                             <div className="icon">
                                                 <span className="" />
@@ -24,12 +35,16 @@ export default function ContactInfo() {
                                         </div>
                                     </li>
 
-                                    <li>
+                                    <li className="contact-info-eight-b">
                                         <div className="inner">
                                                 <div className="btn-box text-center">
-                                            
-                                                    <Link href="/raffle" className="theme-btn btn-style-eight"><span className="btn-title">GET IT NOW!</span></Link>
-                                                </div>
+                                                <a className="theme-btn btn-style-eight">
+                                        <span className="btn-title" onClick={handleOpenModal}>Get This informative Book Now</span>
+                                        <LpBooking isOpen={isModalOpen} onClose={handleCloseModal}> 
+                                           <AyahuascaTodayForm />
+                                            </LpBooking>
+                                    </a>
+                                         </div>
                                         </div>
                                     </li>
                                 </ul>

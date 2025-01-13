@@ -40,8 +40,10 @@ export default function Banner() {
                             <div className="content-box">
                                 <div className="">
                                     {/* <h3>Be the Change</h3> */}
-                                    <h2 className="LPtopper">Get your copy today</h2>
-                                    
+                                    <h1 className="LPtopper2">AYAHUASCA FOR REAL PEOPLE</h1>
+                                    <h2 className="LPtopper">A Beginner's Guide to Healing and Self-Discovery </h2>
+                                    {/* <p className="text">Embark on a Journey of Self-Discovery with Ayahuasca</p>
+                                    <p className="text">Ready to unlock your true potential and experience the profound healing power of Ayahuasca? Download your FREE copy of "Demystifying Ayahuasca: A Beginner's Guide to Healing and Self-Discovery" today and gain the knowledge and confidence to embark on your transformative journey. This comprehensive guide provides everything you need to know about Ayahuasca, from its benefits and effects to choosing the right retreat and setting intentions for a life-changing experience. Start your adventure now and discover the wonders that await you!</p> */}
                                     {/* <div className="">This is your chance to:</div> */}
                                             <ui>
                                             {/* <li className="pl-3 bC3"><span className="flaticon-check bC4 pr-2" />Connect with your inner self</li>

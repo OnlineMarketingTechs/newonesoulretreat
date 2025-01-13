@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Menulp from "../Menulp"
 import MobileMenu from "../MobileMenu"
 import LpBooking from "@/components/elements/LpBooking";
-import Bookingform from "@/components/elements/Bookingform";
+import BookingformLP from "@/components/elements/BookingformLP";
 
 export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                             {/*Nav Box*/}
                             <div className="nav-outer clearfix">
                                 {/*Mobile Navigation Toggler*/}
-                                <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="/assets/images/icons/icon-bar.png" alt="" /></div>
+                                {/* <div className="mobile-nav-toggler" onClick={handleMobileMenu}><img src="/assets/images/icons/icon-bar.png" alt="" /></div> */}
                                 {/* Main Menu */}
                                 <nav className="main-menu style8 navbar-expand-md navbar-light">
                                     <div className="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
@@ -44,7 +44,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                                     <a className="theme-btn btn-style-eight">
                                         <span className="btn-title" onClick={handleOpenModal}>Book Now</span>
                                         <LpBooking isOpen={isModalOpen} onClose={handleCloseModal}> 
-          <Bookingform />
+          <BookingformLP />
         </LpBooking>
                                     </a>
                                 </div>
@@ -89,7 +89,7 @@ export default function Header8({ scroll, isMobileMenu, handleMobileMenu, isSide
                     </div>
                 </div>{/* End Sticky Menu */}
                 {/* Mobile Menu  */}
-                <MobileMenu handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} />
+                {/* <MobileMenu handleMobileMenu={handleMobileMenu} isSidebar={isSidebar} handleSidebar={handleSidebar} /> */}
 
             </header>
 

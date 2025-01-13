@@ -1,7 +1,7 @@
 import Link from "next/link"
 export default function Footer8() {
     return (
-        <>
+
             <footer className="footer-section-eight">
                 <div className="footer-eight">
                     <div className="pattern-bg" style={{ backgroundImage: 'url(assets/images-3/pattern/pattern-bg-1.jpg)' }} />
@@ -100,7 +100,5 @@ export default function Footer8() {
                     </div>
                 </div>
             </footer>
-
-        </>
     )
 }
